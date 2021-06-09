@@ -4,7 +4,7 @@ const Main = () => {
   
   return (
     <div>
-      main works!
+      main works, good job 👍!
     </div>
   );
 }

@@ -1,0 +1,87 @@
+@import "./variables.scss";
+
+.neu-left-nav {
+  display: flex;
+  flex-direction: column;
+  position: fixed;
+  top: 1.25rem;
+  left: 1.25rem;
+  width: 11.25rem;
+  padding: 0.75rem;
+  border-radius: $border-radius;
+  box-shadow: $box-shadow-1;
+
+  .left-nav-title {
+    text-align: center;
+    margin-top: 0.25rem;
+    
+    h4 {
+      font-family: $normal-font;
+      color: $primary;
+      margin-bottom: 0;
+      line-height: 0.5;
+      font-weight: bold;
+    }
+    small {
+      font-size: 0.75rem;
+      font-weight: bold;
+    }
+  }
+  .left-nav-social-links {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 0.75rem;
+    padding-bottom: 1.25rem;
+    border-bottom: 2px solid $border-color;
+    
+    a {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 2.25rem;
+      width: 2.25rem;
+      border-radius: 50%;
+      color: $primary;
+      // background: $bg-convex;
+      box-shadow: $box-shadow-2;
+      text-decoration: none!important;
+      transition: $transition;
+      
+      &:hover {
+        color: $primary-dark;
+        // background: $bg-concave;
+        box-shadow: $box-shadow-1;
+        text-decoration: none!important;
+      }
+    }
+    i {
+      font-size: 1.2rem;
+      font-weight: bold;
+      &.fa-github-alt {
+        font-size: 1.33rem;
+      }
+    }
+  }
+  .left-nav-main-links {
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    margin-top: 0.75rem;
+    
+    button {
+      background: transparent;
+      padding: 0;
+      border: none;
+      text-align: left;
+      padding: 0.25rem;
+      transition: $transition;
+      
+      &:hover {
+        color: $primary;
+      }
+      &:focus {
+        color: $primary-dark;
+      }
+    }
+  }
+}

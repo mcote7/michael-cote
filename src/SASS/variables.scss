@@ -2,12 +2,17 @@
   // $dark-bg: #444444;
   // $dark-bg-dark-shadow: #363636;
   // $dark-bg-light-shadow: #525252;
-
   // $g-text-color-dark: rgba(255, 255, 255, 0.93);
   // $g-text-color-secondary-dark: rgba(255, 255, 255, 0.7);
   // $g-text-color-disabled-dark: rgba(255, 255, 255, 0.45);
   // $g-bg-color-disabled-light: #dee5e8;
   // $g-bg-color-disabled-dark: #727272;
+
+// 🚧🚧🚧 TEST //
+$TEST-COLOR-1: red;
+$TEST-BORDER-1: 0.1px solid red;
+$TEST-COLOR-2: chartreuse;
+$TEST-BORDER-2: 0.1px solid chartreuse;
 
 // LIGHT // 
   $light-bg: #e4ebf5;
@@ -32,6 +37,7 @@
   $warning: #dfa700;
 
   $border-color: $light-bg-dark-shadow;
+  $border-radius: 0.25rem;
 
   // elevation levels 1(low) - 5(high) //
   $box-shadow-1: 3px 3px 6px $light-bg-dark-shadow,-3px -3px 6px $light-bg-light-shadow;
@@ -47,7 +53,11 @@
   $bg-convex: linear-gradient(145deg, $light-bg-light-shadow, $light-bg-dark-shadow);
   $bg-concave: linear-gradient(145deg, $light-bg-dark-shadow, $light-bg-light-shadow);
 
+$normal-font: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+sans-serif;
 
+$transition: 0.2s;
 
   // scrollbars index.css for body //
 
