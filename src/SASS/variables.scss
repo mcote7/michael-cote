@@ -47,7 +47,7 @@ $TEST-BORDER-2: 0.1px solid chartreuse;
   $box-shadow-5: 15px 15px 30px $light-bg-dark-shadow,-15px -15px 30px $light-bg-light-shadow;
 
   // depressed 
-  $box-shadow-inset: inset -2px -2px 5px $light-bg-light-shadow,inset 2px 2px 5px light-bg-dark-shadow;
+  $box-shadow-inset: inset -2px -2px 5px $light-bg-light-shadow,inset 2px 2px 5px $light-bg-dark-shadow;
 
   // 3D buttons & concave gradients 
   $bg-convex: linear-gradient(145deg, $light-bg-light-shadow, $light-bg-dark-shadow);

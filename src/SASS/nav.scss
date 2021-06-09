@@ -31,7 +31,7 @@
     display: flex;
     justify-content: space-between;
     margin-top: 0.75rem;
-    padding-bottom: 1.25rem;
+    padding-bottom: 1rem;
     border-bottom: 2px solid $border-color;
     
     a {
@@ -42,14 +42,12 @@
       width: 2.25rem;
       border-radius: 50%;
       color: $primary;
-      // background: $bg-convex;
       box-shadow: $box-shadow-2;
       text-decoration: none!important;
       transition: $transition;
       
       &:hover {
         color: $primary-dark;
-        // background: $bg-concave;
         box-shadow: $box-shadow-1;
         text-decoration: none!important;
       }
@@ -62,6 +60,7 @@
       }
     }
   }
+  
   .left-nav-main-links {
     display: flex;
     flex-direction: column;
