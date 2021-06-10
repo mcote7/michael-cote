@@ -14,9 +14,9 @@ const Nav = () => {
   // 🚧👷‍♂️ need fine tuning //
 
   const updateScrollPos = () => {
-    let aboutTop = document.getElementById('about').offsetTop - 20;
-    let projectsTop = document.getElementById('projects').offsetTop - 24;
-    let educationTop = document.getElementById('education').offsetTop - 24;
+    let aboutTop = document.getElementById('about').offsetTop; // not used in calc (is 20) //
+    let projectsTop = document.getElementById('projects').offsetTop - 300;
+    let educationTop = document.getElementById('education').offsetTop - 300;
     let winScroll = +window.scrollY.toFixed();
     console.log("🔵 tops?", aboutTop, projectsTop, educationTop)
     console.log("🟠 scrollY?", winScroll)
@@ -25,33 +25,30 @@ const Nav = () => {
       state.isAboutActive = 'active';
       state.isProjectsActive = '';
       state.isEducationActive = '';
+      console.log("🟤 show About")
     }
     if(winScroll >= projectsTop && winScroll < educationTop) {
       state.borderFloatClass = 'pro-select';
       state.isAboutActive = '';
       state.isProjectsActive = 'active';
       state.isEducationActive = '';
+      console.log("🟣 show Projects")
     }
     if(winScroll >= educationTop) {
       state.borderFloatClass = 'edu-select';
       state.isAboutActive = '';
       state.isProjectsActive = '';
       state.isEducationActive = 'active';
+      console.log("🟡 show Education")
     }
   };
 
-
-
-  // 👍 working, good job // 
-  
   useEffect(()=>{
     document.addEventListener('scroll', updateScrollPos );
     return () => document.removeEventListener('scroll', updateScrollPos );
     // eslint-disable-next-line react-hooks/exhaustive-deps 
   },[]);
 
-  // 👍 working, good job // 
-  
   const scrollTo = (e, id) => {
     // console.log("🟡 Event?", e)
     let el = document.getElementById(id);
