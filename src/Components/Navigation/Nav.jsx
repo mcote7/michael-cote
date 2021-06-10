@@ -1,16 +1,66 @@
-import React from 'react';
+import React, { useEffect } from 'react';
+import useRS from "radioactive-state";
 
 const Nav = () => {
 
+  const state = useRS({
+    borderFloatClass: 'abo-select',
+    isAboutActive: 'active',
+    isProjectsActive: '',
+    isEducationActive: ''
+  });
+
+
+  // 🚧👷‍♂️ need fine tuning //
+
+  const updateScrollPos = () => {
+    let aboutTop = document.getElementById('about').offsetTop - 20;
+    let projectsTop = document.getElementById('projects').offsetTop - 24;
+    let educationTop = document.getElementById('education').offsetTop - 24;
+    let winScroll = +window.scrollY.toFixed();
+    console.log("🔵 tops?", aboutTop, projectsTop, educationTop)
+    console.log("🟠 scrollY?", winScroll)
+    if(winScroll < projectsTop) {
+      state.borderFloatClass = 'abo-select';
+      state.isAboutActive = 'active';
+      state.isProjectsActive = '';
+      state.isEducationActive = '';
+    }
+    if(winScroll >= projectsTop && winScroll < educationTop) {
+      state.borderFloatClass = 'pro-select';
+      state.isAboutActive = '';
+      state.isProjectsActive = 'active';
+      state.isEducationActive = '';
+    }
+    if(winScroll >= educationTop) {
+      state.borderFloatClass = 'edu-select';
+      state.isAboutActive = '';
+      state.isProjectsActive = '';
+      state.isEducationActive = 'active';
+    }
+  };
+
+
+
+  // 👍 working, good job // 
+  
+  useEffect(()=>{
+    document.addEventListener('scroll', updateScrollPos );
+    return () => document.removeEventListener('scroll', updateScrollPos );
+    // eslint-disable-next-line react-hooks/exhaustive-deps 
+  },[]);
+
+  // 👍 working, good job // 
+  
   const scrollTo = (e, id) => {
-    console.log("🟡 Event?", e)
-    
+    // console.log("🟡 Event?", e)
     let el = document.getElementById(id);
     let elTop = el.offsetTop;
     if(el && elTop) {
       window.scrollTo({top: `${elTop - 24}`, behavior: 'smooth'});
     } else {
-      console.log("🔴 error?", e, id, el, elTop)
+      console.log("🔴 error?", e, id, el, elTop);
+      return;
     }
   };
 
@@ -35,9 +85,10 @@ const Nav = () => {
       </div>
       
       <div className="left-nav-main-links">
-        <button onClick={(e)=> scrollTo(e, 'about')}>About</button>
-        <button onClick={(e)=> scrollTo(e, 'projects')}>Projects</button>
-        <button onClick={(e)=> scrollTo(e, 'education')}>Education</button>
+        <button id="a" className={`neu-btn ${state.isAboutActive}`} onClick={(e)=> scrollTo(e, 'about')}>About</button>
+        <button id="p" className={`neu-btn ${state.isProjectsActive}`} onClick={(e)=> scrollTo(e, 'projects')}>Projects</button>
+        <button id="e" className={`neu-btn ${state.isEducationActive}`} onClick={(e)=> scrollTo(e, 'education')}>Education</button>
+        <div className={`border-float ${state.borderFloatClass}`}></div>
       </div>
     </div>
   );

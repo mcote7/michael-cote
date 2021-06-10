@@ -62,12 +62,13 @@
   }
   
   .left-nav-main-links {
+    position: relative;
     display: flex;
     flex-direction: column;
     text-align: left;
-    margin-top: 0.75rem;
+    margin-top: 1.25rem;
     
-    button {
+    .neu-btn {
       background: transparent;
       padding: 0;
       border: none;
@@ -78,8 +79,31 @@
       &:hover {
         color: $primary;
       }
-      &:focus {
+      
+      &.active {
         color: $primary-dark;
+        font-weight: bold;
+        padding-left: 0.5rem;
+      }
+    }
+    
+    .border-float {
+      pointer-events: none;
+      display: flex;
+      position: absolute;
+      height: 2rem;
+      width: 9.75rem;
+      border-radius: $border-radius;
+      box-shadow: $box-shadow-inset;
+      transition: 0.1s ease-in-out;
+      &.abo-select {
+        transform: translateY(0rem);
+      }
+      &.pro-select {
+        transform: translateY(2rem);
+      }
+      &.edu-select {
+        transform: translateY(4rem);
       }
     }
   }
