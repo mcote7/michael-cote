@@ -10,7 +10,6 @@ const Nav = () => {
     isEducationActive: ''
   });
 
-
   // 🚧👷‍♂️ need fine tuning //
 
   const updateScrollPos = () => {
@@ -25,6 +24,7 @@ const Nav = () => {
       state.isAboutActive = 'active';
       state.isProjectsActive = '';
       state.isEducationActive = '';
+      document.title = "Michael Cote 👨‍🔬";
       console.log("🟤 show About")
     }
     if(winScroll >= projectsTop && winScroll < educationTop) {
@@ -32,6 +32,7 @@ const Nav = () => {
       state.isAboutActive = '';
       state.isProjectsActive = 'active';
       state.isEducationActive = '';
+      document.title = "Cote's projects 👨‍💻";
       console.log("🟣 show Projects")
     }
     if(winScroll >= educationTop) {
@@ -39,11 +40,13 @@ const Nav = () => {
       state.isAboutActive = '';
       state.isProjectsActive = '';
       state.isEducationActive = 'active';
+      document.title = "Cote's education 👨‍🎓";
       console.log("🟡 show Education")
     }
   };
 
   useEffect(()=>{
+    document.title = 'Michael Cote 👋';
     document.addEventListener('scroll', updateScrollPos );
     return () => document.removeEventListener('scroll', updateScrollPos );
     // eslint-disable-next-line react-hooks/exhaustive-deps 
