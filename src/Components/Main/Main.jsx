@@ -1,21 +1,21 @@
 import React from 'react';
+import About from './About';
 
 const Main = () => {
   
   return (
-    <div className="main-col">
+    <div className="main-wrap">
       
-      <div id="about" style={{minHeight: '100vh'}}>
-        {/* about */}
-        About
+      <div id="about" className="row" style={{minHeight: '100vh'}}>
+        <About/>
       </div>
       
-      <div id="projects" style={{minHeight: '100vh'}}>
+      <div id="projects" className="row" style={{minHeight: '100vh'}}>
         {/* projects */}
         Projects
       </div>
       
-      <div id="education" style={{minHeight: '100vh'}}>
+      <div id="education" className="row" style={{minHeight: '100vh'}}>
         {/* education */}
         Education
       </div>

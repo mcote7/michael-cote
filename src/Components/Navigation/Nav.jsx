@@ -53,7 +53,6 @@ const Nav = () => {
   },[]);
 
   const scrollTo = (e, id) => {
-    // console.log("🟡 Event?", e)
     let el = document.getElementById(id);
     let elTop = el.offsetTop;
     if(el && elTop) {
@@ -90,6 +89,7 @@ const Nav = () => {
         <button id="e" className={`neu-btn ${state.isEducationActive}`} onClick={(e)=> scrollTo(e, 'education')}>Education</button>
         <div className={`border-float ${state.borderFloatClass}`}></div>
       </div>
+      
     </div>
   );
 };

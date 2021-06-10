@@ -8,9 +8,7 @@ const App = () => {
   return (
     <div className="container-fluid neu-app">
       <Nav/>
-      <div className="row neu-row">
-        <Main/>
-      </div>
+      <Main/>
     </div>
   );
 }
