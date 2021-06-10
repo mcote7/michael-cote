@@ -1,13 +1,25 @@
 import React from 'react';
 
 const Nav = () => {
-  
+
+  const scrollTo = (e, id) => {
+    console.log("🟡 Event?", e)
+    
+    let el = document.getElementById(id);
+    let elTop = el.offsetTop;
+    if(el && elTop) {
+      window.scrollTo({top: `${elTop - 24}`, behavior: 'smooth'});
+    } else {
+      console.log("🔴 error?", e, id, el, elTop)
+    }
+  };
+
   return (
     <div className="neu-left-nav">
       
       <div className="left-nav-title">
         <h4>Michael Cote</h4>
-        <small>a software developer.</small>
+        <small>software developer</small>
       </div>
       
       <div className="left-nav-social-links">
@@ -23,9 +35,9 @@ const Nav = () => {
       </div>
       
       <div className="left-nav-main-links">
-        <button>About</button>
-        <button>Projects</button>
-        <button>Education</button>
+        <button onClick={(e)=> scrollTo(e, 'about')}>About</button>
+        <button onClick={(e)=> scrollTo(e, 'projects')}>Projects</button>
+        <button onClick={(e)=> scrollTo(e, 'education')}>Education</button>
       </div>
     </div>
   );
