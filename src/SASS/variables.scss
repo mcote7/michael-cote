@@ -1,18 +1,20 @@
 // DARK // 
+
   // $dark-bg: #444444;
   // $dark-bg-dark-shadow: #363636;
   // $dark-bg-light-shadow: #525252;
+
   // $g-text-color-dark: rgba(255, 255, 255, 0.93);
   // $g-text-color-secondary-dark: rgba(255, 255, 255, 0.7);
   // $g-text-color-disabled-dark: rgba(255, 255, 255, 0.45);
-  // $g-bg-color-disabled-light: #dee5e8;
+
   // $g-bg-color-disabled-dark: #727272;
 
 // 🚧🚧🚧 TEST //
   $TEST-COLOR-1: red;
-  $TEST-BORDER-1: 0.1px solid red;
+  $TEST-BORDER-1: 0.1px dashed red;
   $TEST-COLOR-2: chartreuse;
-  $TEST-BORDER-2: 0.1px solid chartreuse;
+  $TEST-BORDER-2: 0.1px dashed chartreuse;
 
 // LIGHT // 
   $light-bg: #e4ebf5;
@@ -22,6 +24,8 @@
   $g-text-color-primary-light: rgba(0, 0, 0, 0.93);
   $g-text-color-secondary-light: rgba(0, 0, 0, 0.7);
   $g-text-color-disabled-light: rgba(0, 0, 0, 0.45);
+
+  $g-bg-color-disabled-light: #dee5e8;
 
 // SHARED // 
   $white: #ffffff;

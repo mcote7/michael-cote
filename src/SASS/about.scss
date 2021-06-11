@@ -3,13 +3,28 @@
 
 .self-wrap {
   display: flex;
-  justify-content: center;
-  align-items: center;
+  justify-content: space-between;
+  padding: 2rem 2rem 2rem 1rem;
+  border-radius: $border-radius;
+  // border: $TEST-BORDER-1;
+  
+  .self-text {
+    display: flex;
+    flex-direction: column;
+    
+    h3 {
+      color: $primary;
+    }
+    // p {
+    // }
+  }
   
   .self {
+    display: inline-table; // so that it does not shrink on flex... //
     position: relative;
     height: 6rem;
     width: 6rem;
+    margin-left: 1rem;
     border-radius: 50%;
     background-image: url('../Images/abo/self1.jfif');
     background-size: cover;
