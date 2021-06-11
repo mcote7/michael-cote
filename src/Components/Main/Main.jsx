@@ -11,12 +11,10 @@ const Main = () => {
       </div>
       
       <div id="projects" className="row" style={{minHeight: '100vh'}}>
-        {/* projects */}
         Projects
       </div>
       
       <div id="education" className="row" style={{minHeight: '100vh'}}>
-        {/* education */}
         Education
       </div>
       

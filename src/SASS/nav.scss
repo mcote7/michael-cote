@@ -41,15 +41,17 @@
       height: 2.25rem;
       width: 2.25rem;
       border-radius: 50%;
-      border: 1px solid transparent;
+      // border: 1px solid transparent;
       color: $primary;
       box-shadow: $box-shadow-2;
       text-decoration: none!important;
+      background: $light-bg;
       transition: $transition;
       
       &:hover {
+        background: $bg-concave;
         color: $primary-dark;
-        border: 1px solid $border-color;
+        // border: 1px solid $border-color;
         box-shadow: $box-shadow-1;
         text-decoration: none!important;
       }

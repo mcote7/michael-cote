@@ -1,44 +1,44 @@
 @import './variables.scss';
 
-.about-wrap {
+
+.self-wrap {
   display: flex;
   justify-content: center;
   align-items: center;
   
-  .self-wrap {
+  .self {
+    position: relative;
+    height: 6rem;
+    width: 6rem;
+    border-radius: 50%;
+    background-image: url('../Images/abo/self1.jfif');
+    background-size: cover;
+    background-repeat: no-repeat;
+    border: 0.25rem solid $light-bg;
+    box-shadow: $box-shadow-1;
     
-    .self {
-      position: relative;
+    .back-1, .back-2 {
+      position: absolute;
+      top: -4px;
+      left: -4px;
       height: 6rem;
       width: 6rem;
+      filter: blur(1px);
       border-radius: 50%;
-      background-image: url('../images/self1.jfif');
-      background-size: cover;
-      background-repeat: no-repeat;
-      border: 0.25rem solid $light-bg;
+      z-index: -1;
+    }
+    .back-1 {
       box-shadow: $box-shadow-1;
-      
-      .back-1, .back-2 {
-        position: absolute;
-        top: -4px;
-        left: -4px;
-        height: 6rem;
-        width: 6rem;
-        filter: blur(1px);
-        border-radius: 50%;
-      }
-      .back-1 {
-        box-shadow: $box-shadow-1;
-        animation: waves 4s linear infinite;
-      }
-      .back-2 {
-        box-shadow: $box-shadow-3;
-        background-color: $bg-convex;
-        animation: waves 4s linear 2s infinite;
-      }
+      background: $bg-concave;
+      animation: waves 4s linear infinite;
+    }
+    .back-2 {
+      box-shadow: $box-shadow-3;
+      animation: waves 4s linear 2s infinite;
     }
   }
 }
+
 
 @keyframes waves {
   from {opacity: 1; transform: scale(1);}
