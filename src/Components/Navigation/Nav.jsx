@@ -10,7 +10,7 @@ const Nav = () => {
     isEducationActive: ''
   });
 
-  // 🚧👷‍♂️ need fine tuning //
+  // 🚧👷‍♂️ needs fine tuning //
 
   const updateScrollPos = () => {
     let aboutTop = document.getElementById('about').offsetTop; // not used in calc (is 20) //
@@ -72,13 +72,18 @@ const Nav = () => {
       </div>
       
       <div className="left-nav-social-links">
-        <a target="_blank" rel="noopener noreferrer" href="https://facebook.com/profile.php?id=100012957396194">
-          <i className="fa fa-facebook" aria-hidden="true"></i>
-        </a>
-        <a target="_blank" rel="noopener noreferrer" href="https://github.com/mcote7">
+        <a 
+          title="🔗 GitHub"
+          target="_blank" 
+          rel="noopener noreferrer" 
+          href="https://github.com/mcote7">
           <i className="fa fa-github-alt" aria-hidden="true"></i>
         </a>
-        <a target="_blank" rel="noopener noreferrer" href="https://linkedin.com/in/michael-cote-wa">
+        <a 
+          title="🔗 LinkedIn"
+          target="_blank" 
+          rel="noopener noreferrer" 
+          href="https://linkedin.com/in/michael-cote-wa">
           <i className="fa fa-linkedin" aria-hidden="true"></i>
         </a>
       </div>
