@@ -1,9 +1,15 @@
 @import './variables.scss';
 
+@keyframes waves {
+  from {opacity: 1; transform: scale(1);}
+  50% {opacity: 1;}
+  to {opacity: 0; transform: scale(1.5);}
+}
 
 .self-wrap {
   display: flex;
   flex-direction: row;
+  justify-content: center;
   padding: 2rem 2rem 2rem 1rem;
   border-radius: $border-radius;
   
@@ -14,16 +20,14 @@
     h3 {
       color: $primary;
     }
-    // p {
-    // }
   }
   
   .self {
-    display: inline-table; // so that it does not shrink on flex... //
+    // display: inline-table; // so that it does not shrink on flex... //
     position: relative;
     height: 6rem;
     width: 6rem;
-    margin-left: 1rem;
+    margin-left: 2.75rem;
     border-radius: 50%;
     background-image: url('../Images/abo/self1.jfif');
     background-size: cover;
@@ -53,21 +57,40 @@
   }
 }
 
-@keyframes waves {
-  from {opacity: 1; transform: scale(1);}
-  50% {opacity: 1;}
-  to {opacity: 0; transform: scale(1.5);}
-}
-
 .stats-wrap {
-  margin-left: 1rem;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
   
   img {
+    margin: 2rem;
     width: 340px;
-    height: auto;
+    height: fit-content;
     border-radius: $border-radius;
     border: 0.25rem solid $background-color;
     box-shadow: $box-shadow-1;
+  }
+  
+  .role-card {
+    display: flex;
+    flex-direction: row;
+    width: 340px;
+    padding: 0.75rem 0.75rem;
+    height: fit-content;
+    border-radius: $border-radius;
+    box-shadow: $box-shadow-inset;
+    
+    .angular {
+      height: 2.5rem;
+      width: 2.5rem;
+      margin-right: 1rem;
+      background-image: url('../Images/abo/ang-logo.png');
+      background-size: contain;
+      background-repeat: no-repeat;
+    }
+    p {
+      
+    }
   }
 }
 

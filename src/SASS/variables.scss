@@ -25,14 +25,18 @@
 
     --bg-color-disabled: #dee5e8;
 
-    --primary: hsl(218, 100%, 58%);
-    --primary-dark: hsl(230, 100%, 58%);
-    --primary-light: hsl(217, 100%, 75%);
+    --primary: #2977ff;
+    --primary-dark: #294cff;
+    --primary-light: #80b0ff;
   }
 
   // $testColor0: hsl(32, 100%, 48%);
   // $testColor1: hsl(28, 100%, 48%);
   // $testColor2: hsl(32, 100%, 62%);
+
+  $testColor3: #27c200;
+  $testColor4: hsl(120, 100%, 38%);
+  $testColor5: hsl(107, 100%, 52%);
 
 // SHARED // 
 

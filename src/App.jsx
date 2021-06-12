@@ -33,6 +33,8 @@ const App = () => {
 
 
   const [colorMode, setColorMode] = useState('blue');
+  const [primaryColor, setPrimaryColor] = useState('#2977ff');
+  
   const [isBlueActive, setIsBlueActive] = useState('active');
   const [isGreenActive, setIsGreenActive] = useState('');
   const [isOrangeActive, setIsOrangeActive] = useState('');
@@ -45,6 +47,7 @@ const App = () => {
       root?.style.setProperty("--primary", "hsl(218, 100%, 58%)");
       root?.style.setProperty("--primary-dark", "hsl(230, 100%, 58%)");
       root?.style.setProperty("--primary-light", "hsl(217, 100%, 75%)");
+      setPrimaryColor('#2977ff');
       setIsBlueActive('active');
       setIsGreenActive('');
       setIsOrangeActive('');
@@ -53,6 +56,7 @@ const App = () => {
       root?.style.setProperty("--primary", "hsl(108, 100%, 38%)");
       root?.style.setProperty("--primary-dark", "hsl(120, 100%, 38%)");
       root?.style.setProperty("--primary-light", "hsl(107, 100%, 52%)");
+      setPrimaryColor('#27c200');
       setIsGreenActive('active');
       setIsBlueActive('');
       setIsOrangeActive('');
@@ -61,6 +65,7 @@ const App = () => {
       root?.style.setProperty("--primary", "hsl(32, 100%, 48%)");
       root?.style.setProperty("--primary-dark", "hsl(28, 100%, 48%)");
       root?.style.setProperty("--primary-light", "hsl(32, 100%, 62%)");
+      setPrimaryColor('#f58300');
       setIsOrangeActive('active');
       setIsBlueActive('');
       setIsGreenActive('');
@@ -79,7 +84,7 @@ const App = () => {
         isBlueActive={isBlueActive} 
         isGreenActive={isGreenActive} 
         isOrangeActive={isOrangeActive}/>
-      <Main/>
+      <Main darkMode={darkMode} primaryColor={primaryColor}/>
     </div>
   );
 };
