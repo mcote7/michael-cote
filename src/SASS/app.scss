@@ -6,6 +6,7 @@
 
 @media only screen and (max-width: 650px) {
   .neu-app {
-    padding: 0rem;
+    padding-right: var(--bs-gutter-x,.75rem);
+    padding-left: var(--bs-gutter-x,.75rem);
   }
 }

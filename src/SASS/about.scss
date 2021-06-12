@@ -6,7 +6,6 @@
   justify-content: space-between;
   padding: 2rem 2rem 2rem 1rem;
   border-radius: $border-radius;
-  // border: $TEST-BORDER-1;
   
   .self-text {
     display: flex;
@@ -72,35 +71,31 @@
   }
 }
 
+
 @media only screen and (max-width: 650px) {
   .self-wrap {
+    flex-direction: column-reverse;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    
     .self {
       display: inline-table; // so that it does not shrink on flex... //
       position: relative;
-      height: 4.75rem;
-      width: 4.75rem;
-      // margin-left: 1rem;
+      margin-left: 0rem;
+      margin-bottom: 2.25rem;
       border-radius: 50%;
       background-image: url('../Images/abo/self1.jfif');
       background-size: cover;
       background-repeat: no-repeat;
       border: 0.25rem solid $background-color;
       box-shadow: $box-shadow-1;
-      
-      .back-1, .back-2 {
-        position: absolute;
-        top: -4px;
-        left: -4px;
-        height: 4.75rem;
-        width: 4.75rem;
-        filter: blur(1px);
-        border-radius: 50%;
-        z-index: -1;
-      }
     }
   }
+  
   .stats-wrap {
     margin-left: 1rem;
+    
     img {
       width: calc(100% - 1rem);
       height: auto;

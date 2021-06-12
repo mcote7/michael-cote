@@ -18,9 +18,6 @@ const About = () => {
         <img src="https://github-readme-stats.vercel.app/api?username=mcote7&show_icons=true&theme=graywhite" alt="stats"/>
       </div>
     </div>
-    {/* <div className="col-xl-6 col-lg-8 col-md-10">
-
-    </div> */}
   </React.Fragment>);
 };
 
