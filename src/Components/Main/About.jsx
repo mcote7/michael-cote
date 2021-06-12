@@ -27,10 +27,28 @@ const About = ({darkMode, primaryColor, isBlueActive, isGreenActive, isOrangeAct
           <img src={`https://github-readme-stats.vercel.app/api?username=mcote7&show_icons=true&icon_color=${primaryColor.substring(1)}&theme=graywhite&border_color=e4ebf5&bg_color=e4ebf5`} alt="stats"/>}
         
         <div className="role-card">
-          {isBlueActive && <div className="angular blue"></div>}
-          {isGreenActive && <div className="angular green"></div>}
-          {isOrangeActive && <div className="angular"></div>}
-          <p>i am currently working for </p>
+          
+          <div className="role-title">
+            {isBlueActive && <div className="angular blue"></div>}
+            {isGreenActive && <div className="angular green"></div>}
+            {isOrangeActive && <div className="angular"></div>}
+            <div>
+              <p>current role: </p>
+              <p className="sub">software developer @</p>
+            </div>
+          </div>
+          
+          <div className="role-body">
+            <a 
+              target="_blank" 
+              rel="noopener noreferrer" 
+              href="https://videonet.us/">videonet holdings&nbsp;
+              <i class="fa fa-external-link-square" aria-hidden="true"></i>
+            </a>
+            <div className="quote">
+              <small>We are building secure business solutions using modern communications tools like videoconferencing, live streaming, real-time screen sharing, and the like.</small>
+            </div>
+          </div>
         </div>
       </div>
       

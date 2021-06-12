@@ -64,7 +64,7 @@
   
   img {
     margin: 2rem;
-    width: 340px;
+    width: 380px;
     height: fit-content;
     border-radius: $border-radius;
     border: 0.25rem solid $background-color;
@@ -73,29 +73,79 @@
   
   .role-card {
     display: flex;
-    flex-direction: row;
-    width: 340px;
+    flex-direction: column;
+    width: 320px;
     padding: 0.75rem 0.75rem;
+    padding-top: 1.5rem;
     height: fit-content;
     border-radius: $border-radius;
     box-shadow: $box-shadow-inset;
     
-    .angular {
-      height: 2.5rem;
-      width: 2.5rem;
-      margin-right: 1rem;
-      background-image: url('../Images/abo/ang-logo.png');
-      background-size: contain;
-      background-repeat: no-repeat;
-      &.blue {
-        filter: hue-rotate(225deg) brightness(1.5);
+    .role-title {
+      display: flex;
+      justify-content: center;
+      margin-left: -1rem;
+      
+      .angular {
+        height: 2.5rem;
+        width: 2.5rem;
+        margin-right: 0.5rem;
+        background-image: url('../Images/abo/ang-logo.png');
+        background-size: contain;
+        background-repeat: no-repeat;
+        &.blue {
+          filter: hue-rotate(225deg) brightness(1.5);
+        }
+        &.green {
+          filter: hue-rotate(140deg) brightness(1.5);
+        }
       }
-      &.green {
-        filter: hue-rotate(140deg) brightness(1.5);
+      div {
+        p {
+          font-weight: bold;
+          margin-bottom: 0rem;
+        }
+        .sub {
+          color: $primary;
+        }
       }
     }
-    p {
+    .role-body {
+      display: flex;
+      justify-content: center;
+      flex-direction: column;
+      margin: 2rem;
       
+      a{
+        width: fit-content;
+        padding: 0.133rem 1.25rem;
+        margin: 0rem auto;
+        border-radius: 1.25rem;
+        box-shadow: $box-shadow-1;
+        color: $primary!important;
+        i {
+          opacity: 0.8;
+          transform: translateX(0rem);
+          transition: $transition-long;
+        }
+        &:hover {
+          box-shadow: $box-shadow-inset;
+          color: $primary-dark!important;
+          i {
+            opacity: 1;
+            transform: translateX(0.5rem);
+          }
+        }
+      }
+      .quote {
+        display: flex;
+        margin: 2rem 0rem;
+        border-radius: 0.5rem;
+        border: 2px solid $border-color;
+        small {
+          padding: 1rem;
+        }
+      }
     }
   }
 }
