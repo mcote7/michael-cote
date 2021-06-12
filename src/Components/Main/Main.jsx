@@ -3,8 +3,7 @@ import About from './About';
 
 const Main = () => {
   
-  return (
-    <div className="main-wrap">
+  return (<React.Fragment>
       
       <div id="about" className="row" style={{minHeight: '100vh'}}>
         <About/>
@@ -18,8 +17,7 @@ const Main = () => {
         Education
       </div>
       
-    </div>
-  );
+  </React.Fragment>);
 };
 
 export default Main;

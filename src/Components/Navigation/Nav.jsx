@@ -54,11 +54,10 @@ const Nav = ({darkMode, handleDarkMode, setColorMode, isBlueActive, isOrangeActi
   const scrollTo = (e, id) => {
     let el = document.getElementById(id);
     let elTop = el.offsetTop;
-    if(el && elTop) {
+    if(el.id !== 'about') {
       window.scrollTo({top: `${elTop - 24}`, behavior: 'smooth'});
     } else {
-      // console.log("🔴 error?", e, id, el, elTop);
-      return;
+      window.scrollTo({top: 0, behavior: 'smooth'});
     }
   };
 

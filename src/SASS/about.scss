@@ -71,3 +71,42 @@
     box-shadow: $box-shadow-1;
   }
 }
+
+@media only screen and (max-width: 650px) {
+  .self-wrap {
+    .self {
+      display: inline-table; // so that it does not shrink on flex... //
+      position: relative;
+      height: 4.75rem;
+      width: 4.75rem;
+      // margin-left: 1rem;
+      border-radius: 50%;
+      background-image: url('../Images/abo/self1.jfif');
+      background-size: cover;
+      background-repeat: no-repeat;
+      border: 0.25rem solid $background-color;
+      box-shadow: $box-shadow-1;
+      
+      .back-1, .back-2 {
+        position: absolute;
+        top: -4px;
+        left: -4px;
+        height: 4.75rem;
+        width: 4.75rem;
+        filter: blur(1px);
+        border-radius: 50%;
+        z-index: -1;
+      }
+    }
+  }
+  .stats-wrap {
+    margin-left: 1rem;
+    img {
+      width: calc(100% - 1rem);
+      height: auto;
+      border-radius: $border-radius;
+      border: 0.25rem solid $background-color;
+      box-shadow: $box-shadow-1;
+    }
+  }
+}
