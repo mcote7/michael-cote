@@ -114,7 +114,7 @@
       display: flex;
       justify-content: center;
       flex-direction: column;
-      margin: 2rem;
+      margin: 1.5rem 2rem 0rem 2rem;
       
       a{
         width: fit-content;
@@ -139,11 +139,29 @@
       }
       .quote {
         display: flex;
-        margin: 2rem 0rem;
+        margin: 1.5rem 0rem 0rem 0rem;
         border-radius: 0.5rem;
         border: 2px solid $border-color;
+        transition: $transition-long;
+        &:hover {
+          border: 2px solid $primary-dark;
+          small {
+            font-weight: bold;
+          }
+        }
         small {
+          transition: $transition-long;
           padding: 1rem;
+        }
+        &.via3 {
+          text-align: center;
+          border: 2px solid transparent;
+          flex-direction: column;
+          padding-bottom: 1rem;
+          margin: 0rem 0rem 0rem 0rem;
+          small {
+            font-weight: bold;
+          }
         }
       }
     }

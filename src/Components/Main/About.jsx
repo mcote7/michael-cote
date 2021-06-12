@@ -48,6 +48,15 @@ const About = ({darkMode, primaryColor, isBlueActive, isGreenActive, isOrangeAct
             <div className="quote">
               <small>We are building secure business solutions using modern communications tools like videoconferencing, live streaming, real-time screen sharing, and the like.</small>
             </div>
+            <div className="quote via3">
+              <small>check out our platform:</small>
+              <a 
+                target="_blank" 
+                rel="noopener noreferrer" 
+                href="https://unity.via3.com/">via3&nbsp;
+                <i class="fa fa-external-link-square" aria-hidden="true"></i>
+              </a>
+            </div>
           </div>
         </div>
       </div>
