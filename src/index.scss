@@ -5,8 +5,8 @@ body {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New', monospace!important;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  background-color: $light-bg!important;
-  color: $g-text-color-primary-light!important;
+  background-color: $background-color!important;
+  color: $text-color-primary!important;
 }
 ::-webkit-scrollbar {
   width: 8px!important;
@@ -15,10 +15,10 @@ body {
 ::-webkit-scrollbar-thumb {
 border-radius: 4px!important;
 border: 6px solid transparent!important;
-background-color: rgba(0, 0, 0, 0.45)!important;
+background-color: $text-color-secondary!important;
 }
 
 ::-webkit-scrollbar-track {
-box-shadow: inset -2px -2px 5px #ffffff,inset 2px 2px 5px #363636!important;
+box-shadow: $box-shadow-inset!important;
 }
 /*  */

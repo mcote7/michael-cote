@@ -45,7 +45,7 @@
       color: $primary;
       box-shadow: $box-shadow-2;
       text-decoration: none!important;
-      background: $light-bg;
+      background: $background-color;
       transition: $transition;
       
       &:hover {
@@ -78,7 +78,7 @@
       border: none;
       text-align: left;
       padding: 0.25rem;
-      color: $g-text-color-primary-light;
+      color: $text-color-primary;
       transition: $transition;
       
       &:hover {
