@@ -55,12 +55,45 @@
         box-shadow: $box-shadow-1;
         text-decoration: none!important;
       }
+      
+      i {
+        font-size: 1.2rem;
+        font-weight: bold;
+        &.fa-github-alt {
+          font-size: 1.33rem;
+        }
+      }
     }
-    i {
-      font-size: 1.2rem;
-      font-weight: bold;
-      &.fa-github-alt {
-        font-size: 1.33rem;
+    
+    button {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 2.25rem;
+      width: 2.25rem;
+      border-radius: 50%;
+      border: 1px solid transparent;
+      color: $primary;
+      box-shadow: $box-shadow-2;
+      text-decoration: none!important;
+      background: $background-color;
+      transition: $transition;
+      
+      &:hover {
+        color: $primary-dark;
+        border: 1px solid $border-color;
+        box-shadow: $box-shadow-1;
+        text-decoration: none!important;
+      }
+      
+      &:active {
+        border: 1px solid transparent;
+        box-shadow: $box-shadow-inset;
+      }
+      
+      i {
+        font-size: 1.2rem;
+        font-weight: bold;
       }
     }
   }

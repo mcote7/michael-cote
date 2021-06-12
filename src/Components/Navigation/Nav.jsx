@@ -1,7 +1,7 @@
 import React, { useEffect } from 'react';
 import useRS from "radioactive-state";
 
-const Nav = () => {
+const Nav = ({darkMode, setDarkMode}) => {
 
   const state = useRS({
     borderFloatClass: 'abo-select',
@@ -13,19 +13,19 @@ const Nav = () => {
   // 🚧👷‍♂️ needs fine tuning //
 
   const updateScrollPos = () => {
-    let aboutTop = document.getElementById('about').offsetTop; // not used in calc (is 20) //
+    // let aboutTop = document.getElementById('about').offsetTop; // not used in calc (is 20) //
     let projectsTop = document.getElementById('projects').offsetTop - 300;
     let educationTop = document.getElementById('education').offsetTop - 300;
     let winScroll = +window.scrollY.toFixed();
-    console.log("🔵 tops?", aboutTop, projectsTop, educationTop)
-    console.log("🟠 scrollY?", winScroll)
+    // console.log("🔵 tops?", aboutTop, projectsTop, educationTop)
+    // console.log("🟠 scrollY?", winScroll)
     if(winScroll < projectsTop) {
       state.borderFloatClass = 'abo-select';
       state.isAboutActive = 'active';
       state.isProjectsActive = '';
       state.isEducationActive = '';
       document.title = "Michael Cote 👨‍🔬";
-      console.log("🟤 show About")
+      // console.log("🟤 show About")
     }
     if(winScroll >= projectsTop && winScroll < educationTop) {
       state.borderFloatClass = 'pro-select';
@@ -33,7 +33,7 @@ const Nav = () => {
       state.isProjectsActive = 'active';
       state.isEducationActive = '';
       document.title = "Cote's projects 👨‍💻";
-      console.log("🟣 show Projects")
+      // console.log("🟣 show Projects")
     }
     if(winScroll >= educationTop) {
       state.borderFloatClass = 'edu-select';
@@ -41,7 +41,7 @@ const Nav = () => {
       state.isProjectsActive = '';
       state.isEducationActive = 'active';
       document.title = "Cote's education 👨‍🎓";
-      console.log("🟡 show Education")
+      // console.log("🟡 show Education")
     }
   };
 
@@ -58,7 +58,7 @@ const Nav = () => {
     if(el && elTop) {
       window.scrollTo({top: `${elTop - 24}`, behavior: 'smooth'});
     } else {
-      console.log("🔴 error?", e, id, el, elTop);
+      // console.log("🔴 error?", e, id, el, elTop);
       return;
     }
   };
@@ -72,6 +72,10 @@ const Nav = () => {
       </div>
       
       <div className="left-nav-social-links">
+        
+        <button onClick={(e)=>setDarkMode(!darkMode)}>
+          {darkMode ? <i className="fa fa-sun-o" aria-hidden="true"></i> : <i className="fa fa-moon-o" aria-hidden="true"></i> }
+        </button>
         <a 
           title="🔗 GitHub"
           target="_blank" 
