@@ -1,8 +1,8 @@
 import React from 'react';
 
 const About = () => {
-  return (
-    // parent is '.row' //
+  return (<React.Fragment>
+    {/* // parent is '.row' // */}
     <div className="col-xl-6 col-lg-8 col-md-10">
       <div className="self-wrap">
         <div className="self-text">
@@ -14,8 +14,14 @@ const About = () => {
           <span className="back-2"></span>
         </div>
       </div>
+      <div className="stats-wrap">
+        <img src="https://github-readme-stats.vercel.app/api?username=mcote7&show_icons=true&theme=graywhite" alt="stats"/>
+      </div>
     </div>
-  );
+    {/* <div className="col-xl-6 col-lg-8 col-md-10">
+
+    </div> */}
+  </React.Fragment>);
 };
 
 export default About;

@@ -54,9 +54,20 @@
   }
 }
 
-
 @keyframes waves {
   from {opacity: 1; transform: scale(1);}
   50% {opacity: 1;}
   to {opacity: 0; transform: scale(1.5);}
+}
+
+.stats-wrap {
+  margin-left: 1rem;
+  
+  img {
+    width: 340px;
+    height: auto;
+    border-radius: $border-radius;
+    border: 0.25rem solid $background-color;
+    box-shadow: $box-shadow-1;
+  }
 }
