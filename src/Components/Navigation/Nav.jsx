@@ -23,7 +23,7 @@ const Nav = ({darkMode, handleDarkMode, setColorMode, isBlueActive, isOrangeActi
       state.isAboutActive = 'active';
       state.isProjectsActive = '';
       state.isEducationActive = '';
-      document.title = "Michael Cote 👨‍🔬";
+      document.title = "about me 👨‍🔬";
       // console.log("🟤 show About")
     }
     if(winScroll >= projectsTop && winScroll < educationTop) {
@@ -31,7 +31,7 @@ const Nav = ({darkMode, handleDarkMode, setColorMode, isBlueActive, isOrangeActi
       state.isAboutActive = '';
       state.isProjectsActive = 'active';
       state.isEducationActive = '';
-      document.title = "Cote's projects 👨‍💻";
+      document.title = "my projects 👨‍💻";
       // console.log("🟣 show Projects")
     }
     if(winScroll >= educationTop) {
@@ -39,13 +39,13 @@ const Nav = ({darkMode, handleDarkMode, setColorMode, isBlueActive, isOrangeActi
       state.isAboutActive = '';
       state.isProjectsActive = '';
       state.isEducationActive = 'active';
-      document.title = "Cote's education 👨‍🎓";
+      document.title = "my education 👨‍🎓";
       // console.log("🟡 show Education")
     }
   };
 
   useEffect(()=>{
-    document.title = 'Michael Cote 👋';
+    document.title = 'Hi 👋';
     document.addEventListener('scroll', updateScrollPos );
     return () => document.removeEventListener('scroll', updateScrollPos );
     // eslint-disable-next-line react-hooks/exhaustive-deps 

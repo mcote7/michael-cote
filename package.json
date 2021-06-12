@@ -1,5 +1,6 @@
 {
   "name": "michael-cote",
+  "homepage": "http://mcote7.github.io/michael-cote",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
@@ -8,6 +9,7 @@
     "@testing-library/user-event": "^12.8.3",
     "bootstrap": "^5.0.1",
     "font-awesome": "^4.7.0",
+    "gh-pages": "^3.2.0",
     "history": "^5.0.0",
     "node-sass": "^6.0.0",
     "radioactive-state": "^1.4.0",
@@ -19,6 +21,8 @@
   },
   "scripts": {
     "start": "react-scripts start",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build",
     "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject"
