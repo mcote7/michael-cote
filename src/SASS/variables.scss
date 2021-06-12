@@ -1,3 +1,10 @@
+// 🚧🚧🚧 TEST //
+  $TEST-COLOR-1: red;
+  $TEST-BORDER-1: 0.1px dashed red;
+  $TEST-COLOR-2: chartreuse;
+  $TEST-BORDER-2: 0.1px dashed chartreuse;
+
+
 // DARK // 
 
   // $dark-bg: #444444;
@@ -10,11 +17,6 @@
 
   // $g-bg-color-disabled-dark: #727272;
 
-// 🚧🚧🚧 TEST //
-  $TEST-COLOR-1: red;
-  $TEST-BORDER-1: 0.1px dashed red;
-  $TEST-COLOR-2: chartreuse;
-  $TEST-BORDER-2: 0.1px dashed chartreuse;
 
 // LIGHT // 
   $light-bg: #e4ebf5;
@@ -27,7 +29,13 @@
 
   $g-bg-color-disabled-light: #dee5e8;
 
+  :root {
+    --bgcolor: $light-bg;
+  }
+
 // SHARED // 
+
+
   $white: #ffffff;
   $black: #000000;
 
@@ -63,6 +71,15 @@
 
   $transition: 0.125s;
   $transition-long: 0.325s;
+
+// end //
+
+
+
+
+
+
+
 
   // scrollbars index.css for body //
 
