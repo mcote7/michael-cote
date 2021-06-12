@@ -3,7 +3,7 @@ import useRS from "radioactive-state";
 
 // 🚀 this component holds & handles the scrolling functions, and handles theme changes.
 
-const Nav = ({darkMode, handleDarkMode, setColorMode, isBlueActive, isOrangeActive, isGreenActive}) => {
+const Nav = ({darkMode, handleDarkMode, setColorMode, isBlueActive, isGreenActive, isOrangeActive }) => {
 
   const state = useRS({
     borderFloatClass: 'abo-select',

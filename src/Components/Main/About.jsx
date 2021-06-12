@@ -2,7 +2,8 @@ import React from 'react';
 
 // 🚧 this component holds the section about me, *** parent is .row *** .
 
-const About = ({darkMode, primaryColor}) => {
+const About = ({darkMode, primaryColor,}) => {
+
   return (<React.Fragment>
     <div className="col-sm-12">
       
@@ -25,7 +26,7 @@ const About = ({darkMode, primaryColor}) => {
           <img src={`https://github-readme-stats.vercel.app/api?username=mcote7&show_icons=true&icon_color=${primaryColor.substring(1)}&theme=graywhite&border_color=e4ebf5&bg_color=e4ebf5`} alt="stats"/>}
         
         <div className="role-card">
-          <div className="angular"></div>
+          <div id="ang" className="angular"></div>
           <p>i am currently working for </p>
         </div>
       </div>

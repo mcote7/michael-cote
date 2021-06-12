@@ -78,13 +78,16 @@ const App = () => {
   return (
     <div className="container-fluid neu-app">
       <Nav 
+        darkMode={darkMode}
         handleDarkMode={handleDarkMode} 
-        colorMode={colorMode} 
         setColorMode={setColorMode} 
         isBlueActive={isBlueActive} 
         isGreenActive={isGreenActive} 
         isOrangeActive={isOrangeActive}/>
-      <Main darkMode={darkMode} primaryColor={primaryColor}/>
+        
+      <Main 
+        darkMode={darkMode} 
+        primaryColor={primaryColor}/>
     </div>
   );
 };
