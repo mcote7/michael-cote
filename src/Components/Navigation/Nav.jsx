@@ -11,7 +11,6 @@ const Nav = ({darkMode, handleDarkMode, setColorMode, isBlueActive, isOrangeActi
   });
 
   // 🚧👷‍♂️ needs fine tuning //
-
   const updateScrollPos = () => {
     // let aboutTop = document.getElementById('about').offsetTop; // not used in calc (is 20) //
     let projectsTop = document.getElementById('projects').offsetTop - 300;
@@ -93,6 +92,7 @@ const Nav = ({darkMode, handleDarkMode, setColorMode, isBlueActive, isOrangeActi
       </div>
       
       <div className="left-nav-main-links">
+        
         <button id="a" className={`neu-btn ${state.isAboutActive}`} onClick={(e)=> scrollTo(e, 'about')}>About</button>
         <button id="p" className={`neu-btn ${state.isProjectsActive}`} onClick={(e)=> scrollTo(e, 'projects')}>Projects</button>
         <button id="e" className={`neu-btn ${state.isEducationActive}`} onClick={(e)=> scrollTo(e, 'education')}>Education</button>
@@ -116,7 +116,6 @@ const Nav = ({darkMode, handleDarkMode, setColorMode, isBlueActive, isOrangeActi
           className={`color-pick orange ${isOrangeActive}`}>
           {isOrangeActive ? <i className="fa fa-circle" aria-hidden="true"></i> : <i className="fa fa-circle-o" aria-hidden="true"></i>}
         </button>
-        
       </div>
     </div>
   );
