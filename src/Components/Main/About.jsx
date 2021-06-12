@@ -22,10 +22,15 @@ const About = ({darkMode, primaryColor, isBlueActive, isGreenActive, isOrangeAct
       </div>
       
       <div className="stats-wrap my-5">
-        {darkMode ? 
-          <img src={`https://github-readme-stats.vercel.app/api?username=mcote7&show_icons=true&theme=dark&icon_color=${primaryColor.substring(1)}&border_color=444444&bg_color=444444`} alt="stats"/>:
-          <img src={`https://github-readme-stats.vercel.app/api?username=mcote7&show_icons=true&icon_color=${primaryColor.substring(1)}&theme=graywhite&border_color=e4ebf5&bg_color=e4ebf5`} alt="stats"/>}
-        
+        <div className="git-card">
+          {darkMode ? 
+            <><img src={`https://github-readme-stats.vercel.app/api?username=mcote7&show_icons=true&theme=dark&icon_color=${primaryColor.substring(1)}&border_color=444444&bg_color=444444`} alt="stats"/>
+            <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=mcote7&hide_title=true&layout=compact&theme=dark&border_color=444444&bg_color=444444" alt="langs"/></>:
+            <><img src={`https://github-readme-stats.vercel.app/api?username=mcote7&show_icons=true&icon_color=${primaryColor.substring(1)}&theme=graywhite&border_color=e4ebf5&bg_color=e4ebf5`} alt="stats"/>
+            <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=mcote7&hide_title=true&layout=compact&theme=greywhite&border_color=e4ebf5&bg_color=e4ebf5" alt="langs"/></>
+            }
+        </div>
+          
         <div className="role-card">
           
           <div className="role-title">
@@ -60,10 +65,6 @@ const About = ({darkMode, primaryColor, isBlueActive, isGreenActive, isOrangeAct
           </div>
         </div>
       </div>
-      
-      {/* <div className="more">
-        <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=mcote7&layout=compact&theme=greywhite" alt="langs"/>
-      </div> */}
     </div>
   </React.Fragment>);
 };
