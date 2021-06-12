@@ -7,7 +7,29 @@ const App = () => {
 
   const [darkMode, setDarkMode] = useState(false);
 
+  const [colorMode, setColorMode] = useState('blue');
   // 🚧 TODO set color theme (3) //
+  useEffect(()=> {
+    console.log("color mode?", colorMode)
+    // 🟠 set color mode
+    const root = document.documentElement;
+
+    if(colorMode === 'blue') {
+      root?.style.setProperty("--primary", "hsl(218, 100%, 58%)");
+      root?.style.setProperty("--primary-dark", "hsl(230, 100%, 58%)");
+      root?.style.setProperty("--primary-light", "hsl(217, 100%, 75%)");
+    }
+    if(colorMode === 'green') {
+      root?.style.setProperty("--primary", "hsl(108, 100%, 38%)");
+      root?.style.setProperty("--primary-dark", "hsl(120, 100%, 38%)");
+      root?.style.setProperty("--primary-light", "hsl(107, 100%, 52%)");
+    }
+    if(colorMode === 'orange') {
+      root?.style.setProperty("--primary", "hsl(32, 100%, 48%)");
+      root?.style.setProperty("--primary-dark", "hsl(28, 100%, 48%)");
+      root?.style.setProperty("--primary-light", "hsl(32, 100%, 62%)");
+    }
+  },[colorMode]);
 
   useEffect(()=> {
     console.log("dark mode?", darkMode)
@@ -27,7 +49,7 @@ const App = () => {
   
   return (
     <div className="container-fluid neu-app">
-      <Nav darkMode={darkMode} setDarkMode={setDarkMode}/>
+      <Nav darkMode={darkMode} setDarkMode={setDarkMode} colorMode={colorMode} setColorMode={setColorMode}/>
       <Main/>
     </div>
   );

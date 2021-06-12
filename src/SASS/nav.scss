@@ -8,9 +8,10 @@
   left: 1.25rem;
   width: 11.25rem;
   padding: 0.75rem;
+  padding-bottom: 2rem;
   border-radius: $border-radius;
   box-shadow: $box-shadow-1;
-
+  
   .left-nav-title {
     text-align: center;
     margin-top: 0.25rem;
@@ -142,6 +143,56 @@
       }
       &.edu-select {
         transform: translateY(4rem);
+      }
+    }
+  }
+  
+  .colors {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 1.25rem;
+    padding-top: 1.25rem;
+    border-top: 2px solid $border-color;
+    
+    .color-pick {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 2.25rem;
+      width: 2.25rem;
+      border-radius: 50%;
+      border: 1px solid transparent;
+      color: $primary;
+      box-shadow: $box-shadow-2;
+      text-decoration: none!important;
+      background: $background-color;
+      transition: $transition;
+      
+      &:hover {
+        color: $primary-dark;
+        // border: 1px solid $border-color;
+        box-shadow: $box-shadow-1;
+        text-decoration: none!important;
+      }
+      
+      &:active {
+        border: 1px solid transparent;
+        box-shadow: $box-shadow-inset;
+      }
+      
+      &.blue {
+        color: hsl(218, 100%, 58%);
+      }
+      &.green {
+        color: hsl(108, 100%, 38%);
+      }
+      &.orange {
+        color: hsl(32, 100%, 48%);
+      }
+      
+      i {
+        font-size: 1.2rem;
+        font-weight: bold;
       }
     }
   }

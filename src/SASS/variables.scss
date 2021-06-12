@@ -24,7 +24,15 @@
     --text-color-disabled: rgba(0, 0, 0, 0.45);
 
     --bg-color-disabled: #dee5e8;
+
+    --primary: hsl(218, 100%, 58%);
+    --primary-dark: hsl(230, 100%, 58%);
+    --primary-light: hsl(217, 100%, 75%);
   }
+
+  // $testColor0: hsl(32, 100%, 48%);
+  // $testColor1: hsl(28, 100%, 48%);
+  // $testColor2: hsl(32, 100%, 62%);
 
 // SHARED // 
 
@@ -37,13 +45,14 @@
   $text-color-secondary: var(--text-color-secondary);
   $text-color-secondary: var(--text-color-disabled);
 
-  $g-bg-color-disabled-light: var(--bg-color-disabled);
+  $background-color-disabled: var(--bg-color-disabled);
 
   // ❔ next theme //
-  $primary: #2977ff;
-  $primary-dark: #2962ff;
-  $primary-light: #80b0ff;
+  $primary: var(--primary);
+  $primary-dark: var(--primary-dark);
+  $primary-light: var(--primary-light);
 
+  // default . don't change //
   $white: #ffffff;
   $black: #000000;
 

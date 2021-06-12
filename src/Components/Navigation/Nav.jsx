@@ -1,7 +1,7 @@
 import React, { useEffect } from 'react';
 import useRS from "radioactive-state";
 
-const Nav = ({darkMode, setDarkMode}) => {
+const Nav = ({darkMode, setDarkMode, colorMode, setColorMode}) => {
 
   const state = useRS({
     borderFloatClass: 'abo-select',
@@ -99,6 +99,25 @@ const Nav = ({darkMode, setDarkMode}) => {
         <div className={`border-float ${state.borderFloatClass}`}></div>
       </div>
       
+      <div className="colors">
+        
+        <button 
+          onClick={(e)=>setColorMode('blue')}
+          className="color-pick blue">
+          <i className="fa fa-circle-o" aria-hidden="true"></i>
+        </button>
+        <button 
+          onClick={(e)=>setColorMode('green')}
+          className="color-pick green">
+          <i className="fa fa-circle-o" aria-hidden="true"></i>
+        </button>
+        <button 
+          onClick={(e)=>setColorMode('orange')}
+          className="color-pick orange">
+          <i className="fa fa-circle-o" aria-hidden="true"></i>
+        </button>
+        
+      </div>
     </div>
   );
 };
