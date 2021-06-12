@@ -3,3 +3,9 @@
 .neu-app {
   padding: 1.25rem 1.25rem 1.25rem 14.5rem;
 }
+
+@media only screen and (max-width: 650px) {
+  .neu-app {
+    padding: 1.25rem;
+  }
+}
