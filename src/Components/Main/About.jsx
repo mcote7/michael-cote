@@ -5,7 +5,7 @@ const About = () => {
     {/* // parent is '.row' // */}
     <div className="col-xl-6 col-lg-8 col-md-10">
       <div className="self-wrap">
-        <div className="self-text">
+        <div className="self-text col-sm-6">
           <h3><i className="fa fa-globe" aria-hidden="true"></i> hello world</h3>
           <p>i'm michael, a software developer in Seattle.</p>
         </div>

@@ -3,7 +3,7 @@
 
 .self-wrap {
   display: flex;
-  justify-content: space-between;
+  flex-direction: row;
   padding: 2rem 2rem 2rem 1rem;
   border-radius: $border-radius;
   

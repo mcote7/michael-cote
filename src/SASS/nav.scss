@@ -14,6 +14,16 @@
   border-radius: $border-radius;
   box-shadow: $box-shadow-1;
   
+  .nav-toggle {
+    display: none;
+    position: absolute;
+    right: 0px;
+    top: 0px;
+    border: none;
+    padding: none;
+    background-color: $background-color;
+  }
+  
   .left-nav-title {
     text-align: center;
     margin-top: 0.25rem;
@@ -24,15 +34,14 @@
       margin-bottom: 0;
       line-height: 0.5;
       font-weight: bold;
-      span {
-        //
-      }
     }
+    
     small {
       font-size: 0.75rem;
       font-weight: bold;
     }
   }
+  
   .left-nav-social-links {
     display: flex;
     justify-content: space-around;
@@ -211,10 +220,26 @@
   .neu-left-nav {
     height: fit-content;
     width: calc(100% - 2.5rem);
-    top: auto;
+    top: calc(100% - 4rem);
     bottom: 0rem;
     padding-bottom: 4rem;
     border-radius: $border-radius $border-radius 0rem 0rem;
     box-shadow: $box-shadow-1;
+    &.show {
+      top: auto;
+      .nav-toggle {
+        i {
+          &::before {
+            content: '\f00d';
+          }
+        }
+      }
+    }
+    .nav-toggle {
+      display: block;
+    }
+    .left-nav-title {
+      margin-bottom: 0.75rem;
+    }
   }
 }
