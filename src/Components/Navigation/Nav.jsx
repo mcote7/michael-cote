@@ -1,7 +1,7 @@
 import React, { useEffect } from 'react';
 import useRS from "radioactive-state";
 
-const Nav = ({darkMode, setDarkMode, colorMode, setColorMode}) => {
+const Nav = ({darkMode, handleDarkMode, setColorMode, isBlueActive, isOrangeActive, isGreenActive}) => {
 
   const state = useRS({
     borderFloatClass: 'abo-select',
@@ -73,7 +73,7 @@ const Nav = ({darkMode, setDarkMode, colorMode, setColorMode}) => {
       
       <div className="left-nav-social-links">
         
-        <button onClick={(e)=>setDarkMode(!darkMode)}>
+        <button onClick={(e)=>handleDarkMode(e)}>
           {darkMode ? <i className="fa fa-sun-o" aria-hidden="true"></i> : <i className="fa fa-moon-o" aria-hidden="true"></i> }
         </button>
         <a 
@@ -103,18 +103,18 @@ const Nav = ({darkMode, setDarkMode, colorMode, setColorMode}) => {
         
         <button 
           onClick={(e)=>setColorMode('blue')}
-          className="color-pick blue">
-          <i className="fa fa-circle-o" aria-hidden="true"></i>
+          className={`color-pick blue ${isBlueActive}`}>
+          {isBlueActive ? <i className="fa fa-circle" aria-hidden="true"></i> : <i className="fa fa-circle-o" aria-hidden="true"></i>}
         </button>
         <button 
           onClick={(e)=>setColorMode('green')}
-          className="color-pick green">
-          <i className="fa fa-circle-o" aria-hidden="true"></i>
+          className={`color-pick green ${isGreenActive}`}>
+          {isGreenActive ? <i className="fa fa-circle" aria-hidden="true"></i> : <i className="fa fa-circle-o" aria-hidden="true"></i>}
         </button>
         <button 
           onClick={(e)=>setColorMode('orange')}
-          className="color-pick orange">
-          <i className="fa fa-circle-o" aria-hidden="true"></i>
+          className={`color-pick orange ${isOrangeActive}`}>
+          {isOrangeActive ? <i className="fa fa-circle" aria-hidden="true"></i> : <i className="fa fa-circle-o" aria-hidden="true"></i>}
         </button>
         
       </div>

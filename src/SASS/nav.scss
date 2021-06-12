@@ -170,14 +170,18 @@
       
       &:hover {
         color: $primary-dark;
-        // border: 1px solid $border-color;
+        border: 1px solid $border-color;
         box-shadow: $box-shadow-1;
         text-decoration: none!important;
       }
       
-      &:active {
+      &.active {
         border: 1px solid transparent;
         box-shadow: $box-shadow-inset;
+        i {
+          font-size: 0.8rem;
+          font-weight: bold;
+        }
       }
       
       &.blue {
