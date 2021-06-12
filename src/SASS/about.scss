@@ -87,6 +87,12 @@
       background-image: url('../Images/abo/ang-logo.png');
       background-size: contain;
       background-repeat: no-repeat;
+      &.blue {
+        filter: hue-rotate(225deg) brightness(1.5);
+      }
+      &.green {
+        filter: hue-rotate(140deg) brightness(1.5);
+      }
     }
     p {
       

@@ -87,7 +87,10 @@ const App = () => {
         
       <Main 
         darkMode={darkMode} 
-        primaryColor={primaryColor}/>
+        primaryColor={primaryColor}
+        isBlueActive={isBlueActive} 
+        isGreenActive={isGreenActive} 
+        isOrangeActive={isOrangeActive}/>
     </div>
   );
 };
