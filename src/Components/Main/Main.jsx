@@ -1,6 +1,8 @@
 import React from 'react';
 import About from './About';
 
+// 🚀 this component holds the rows that wrap each section (3).
+
 const Main = () => {
   
   return (<React.Fragment>

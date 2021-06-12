@@ -1,8 +1,9 @@
 import React from 'react';
 
+// 🚧 this component holds the section about me, *** parent is .row *** .
+
 const About = () => {
   return (<React.Fragment>
-    {/* // parent is '.row' // */}
     <div className="col-xl-6 col-lg-8 col-md-10">
       <div className="self-wrap">
         <div className="self-text col-sm-6">

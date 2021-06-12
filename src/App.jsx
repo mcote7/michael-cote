@@ -3,13 +3,13 @@ import React, { useEffect, useState } from 'react';
 import Main from './Components/Main/Main';
 import Nav from './Components/Navigation/Nav';
 
+// 🚀 this component holds the theme change functions, which are passed to Nav controller.
 
 const App = () => {
 
   const [darkMode, setDarkMode] = useState(false);
 
   const handleDarkMode = (e) => {
-    // console.log("change mode?", e)
     setDarkMode(!darkMode);
   };
 
