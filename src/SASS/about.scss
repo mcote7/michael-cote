@@ -11,7 +11,8 @@
   display: flex;
   justify-content: center;
   align-items: flex-end;
-  padding: 2rem 2rem 2rem 1rem;
+  padding: 2rem;
+  margin-bottom: 3rem;
   
   .self-img {
     position: relative;
@@ -75,6 +76,7 @@
 .stats-wrap {
   display: flex;
   justify-content: center;
+  margin-bottom: 100vh;
   
   .git-card {
     display: flex;
@@ -189,23 +191,18 @@
 
 // mobile //
 @media only screen and (max-width: 650px) {
-  // .self-wrap {
-  //   flex-direction: column-reverse;
-  //   justify-content: center;
-  //   text-align: center;
-  //   align-items: center;
+  .self-wrap {
+    margin-bottom: 0rem;
     
-  //   .self {
-  //     position: relative;
-  //     margin-left: 0rem;
-  //     margin-bottom: 2.25rem;
-  //     border-radius: 50%;
-  //     background-image: url('../Images/abo/self1.jfif');
-  //     background-size: cover;
-  //     background-repeat: no-repeat;
-  //     border: 0.25rem solid $background-color;
-  //     box-shadow: $box-shadow-1;
-  //   }
-  // }
+    .self-img {
+      margin-right: 0rem;
+    }
+    .self-text {
+      text-align: center;
+    }
+  }
+  .stats-wrap {
+    //
+  }
 }
 // 

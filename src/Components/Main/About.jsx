@@ -6,9 +6,10 @@ const About = ({darkMode, primaryColor, isBlueActive, isGreenActive, isOrangeAct
 
 
   return (<React.Fragment>
-    <div className="col-sm-12">
+    <div className="col col-sm-12">
       
-      <div className="self-wrap row mb-5">
+      {/* ok? */}
+      <div className="self-wrap row">
         
         <div className="self-img col-lg-6">
           <span className="back-1"></span>
@@ -22,7 +23,7 @@ const About = ({darkMode, primaryColor, isBlueActive, isGreenActive, isOrangeAct
       </div>
       
       {/* good */}
-      <div className="stats-wrap row my-5">
+      <div className="stats-wrap row">
         
         <div className="git-card col-lg-6">
           {darkMode ? 
