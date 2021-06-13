@@ -52,7 +52,7 @@ const About = ({darkMode, primaryColor, isBlueActive, isGreenActive, isOrangeAct
               <i className="fa fa-external-link-square" aria-hidden="true"></i>
             </a>
             <div className="quote">
-              <small>We are building secure business solutions using modern communications tools like videoconferencing, live streaming, real-time screen sharing, and the like.</small>
+              <small>We are building secure business solutions using modern communication tools like videoconferencing, live streaming and real-time screen sharing.</small>
             </div>
             <div className="quote via3">
               <small>check out our platform:</small>
