@@ -27,8 +27,8 @@ const About = ({darkMode, primaryColor, isBlueActive, isGreenActive, isOrangeAct
         
         <div className="git-card col-lg-6">
           {darkMode ? 
-            <><img src={`https://github-readme-stats.vercel.app/api?username=mcote7&show_icons=true&theme=dark&icon_color=${primaryColor.substring(1)}&border_color=444444&bg_color=444444`} alt="stats"/>
-            <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=mcote7&hide_title=true&layout=compact&theme=dark&border_color=444444&bg_color=444444" alt="langs"/></>:
+            <><img src={`https://github-readme-stats.vercel.app/api?username=mcote7&show_icons=true&theme=dark&icon_color=${primaryColor.substring(1)}&border_color=444444&bg_color=444444&text_color=E1E1E1&title_color=${primaryColor.substring(1)}`} alt="stats"/>
+            <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=mcote7&hide_title=true&layout=compact&theme=dark&border_color=444444&bg_color=444444&text_color=E1E1E1" alt="langs"/></>:
             <><img src={`https://github-readme-stats.vercel.app/api?username=mcote7&show_icons=true&icon_color=${primaryColor.substring(1)}&theme=graywhite&border_color=e4ebf5&bg_color=e4ebf5`} alt="stats"/>
             <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=mcote7&hide_title=true&layout=compact&theme=greywhite&border_color=e4ebf5&bg_color=e4ebf5" alt="langs"/></>
             }

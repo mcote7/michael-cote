@@ -25,6 +25,7 @@
     background-repeat: no-repeat;
     border: 0.25rem solid $background-color;
     box-shadow: $box-shadow-1;
+    transition: $transition-long;
     
     &:hover {
       .back-1 {
