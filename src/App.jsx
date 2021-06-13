@@ -10,7 +10,11 @@ const App = () => {
   const [darkMode, setDarkMode] = useState(false);
 
   const handleDarkMode = (e) => {
+    document.body.classList.add('no-transition');
     setDarkMode(!darkMode);
+    setTimeout(() => {
+      document.body.classList.remove('no-transition');
+    }, 50);
   };
 
   useEffect(()=> {
@@ -41,6 +45,8 @@ const App = () => {
 
   useEffect(()=> {
     
+    document.body.classList.add('no-transition');
+
     const root = document.documentElement;
     
     if(colorMode === 'blue') {
@@ -73,6 +79,10 @@ const App = () => {
     
     console.log("color mode?", colorMode)
     
+    setTimeout(() => {
+      document.body.classList.remove('no-transition');
+    }, 50);
+
   },[colorMode]);
   
   return (

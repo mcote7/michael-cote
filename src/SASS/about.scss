@@ -72,12 +72,10 @@
   }
 }
 
-
-
 .stats-wrap {
   display: flex;
   justify-content: center;
-  margin-bottom: 100vh;
+  margin-bottom: 100vh; // <-----<<<|) adjust for projects 
   
   .git-card {
     display: flex;

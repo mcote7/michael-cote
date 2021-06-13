@@ -90,6 +90,12 @@
   * {
     user-select: none;
   }
+
+  .no-transition {
+    * {
+      transition: none!important;
+    }
+  }
 // end //
 
 // 🚧🚧🚧 TEST //
