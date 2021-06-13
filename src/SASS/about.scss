@@ -6,23 +6,14 @@
   to {opacity: 0; transform: scale(1.5);}
 }
 
+
 .self-wrap {
   display: flex;
-  flex-direction: row-reverse;
   justify-content: center;
+  align-items: flex-end;
   padding: 2rem 2rem 2rem 1rem;
-  border-radius: $border-radius;
   
-  .self-text {
-    display: flex;
-    flex-direction: column;
-    
-    h3 {
-      color: $primary;
-    }
-  }
-  
-  .self {
+  .self-img {
     position: relative;
     height: 6rem;
     width: 6rem;
@@ -67,11 +58,22 @@
       animation: waves 4s linear 2s infinite;
     }
   }
+  
+  .self-text {
+    display: flex;
+    flex-direction: column;
+    width: fit-content;
+    
+    h3 {
+      color: $primary;
+    }
+  }
 }
+
+
 
 .stats-wrap {
   display: flex;
-  flex-direction: row;
   justify-content: center;
   
   .git-card {
@@ -187,35 +189,23 @@
 
 // mobile //
 @media only screen and (max-width: 650px) {
-  .self-wrap {
-    flex-direction: column-reverse;
-    justify-content: center;
-    text-align: center;
-    align-items: center;
+  // .self-wrap {
+  //   flex-direction: column-reverse;
+  //   justify-content: center;
+  //   text-align: center;
+  //   align-items: center;
     
-    .self {
-      position: relative;
-      margin-left: 0rem;
-      margin-bottom: 2.25rem;
-      border-radius: 50%;
-      background-image: url('../Images/abo/self1.jfif');
-      background-size: cover;
-      background-repeat: no-repeat;
-      border: 0.25rem solid $background-color;
-      box-shadow: $box-shadow-1;
-    }
-  }
-  
-  .stats-wrap {
-    margin-left: 1rem;
-    
-    img {
-      width: calc(100% - 1rem);
-      height: auto;
-      border-radius: $border-radius;
-      border: 0.25rem solid $background-color;
-      box-shadow: $box-shadow-1;
-    }
-  }
+  //   .self {
+  //     position: relative;
+  //     margin-left: 0rem;
+  //     margin-bottom: 2.25rem;
+  //     border-radius: 50%;
+  //     background-image: url('../Images/abo/self1.jfif');
+  //     background-size: cover;
+  //     background-repeat: no-repeat;
+  //     border: 0.25rem solid $background-color;
+  //     box-shadow: $box-shadow-1;
+  //   }
+  // }
 }
 // 
