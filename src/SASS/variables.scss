@@ -87,6 +87,9 @@
   $transition: 0.125s;
   $transition-long: 0.325s;
 
+  * {
+    user-select: none;
+  }
 // end //
 
 // 🚧🚧🚧 TEST //
