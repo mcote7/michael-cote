@@ -9,7 +9,7 @@ const App = () => {
 
   const [darkMode, setDarkMode] = useState(false);
 
-  const handleDarkMode = (e) => {
+  const handleDarkMode = () => {
     document.body.classList.add('no-transition');
     setDarkMode(!darkMode);
     setTimeout(() => {
@@ -31,7 +31,7 @@ const App = () => {
     
     root?.style.setProperty("--bg-color-disabled", darkMode ? "#727272" : "#dee5e8");
     
-    console.log("dark mode?", darkMode)
+    // console.log("dark mode?", darkMode)
     
   },[darkMode]);
 
@@ -77,7 +77,7 @@ const App = () => {
       setIsGreenActive('');
     }
     
-    console.log("color mode?", colorMode)
+    // console.log("color mode?", colorMode)
     
     setTimeout(() => {
       document.body.classList.remove('no-transition');

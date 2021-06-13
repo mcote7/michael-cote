@@ -63,8 +63,7 @@ const Nav = ({darkMode, handleDarkMode, setColorMode, isBlueActive, isGreenActiv
     }
   };
 
-  const handleNavToggle = (e) => {
-    console.log("nav toggle", e)
+  const handleNavToggle = () => {
     const nav = document.getElementById('nav');
     nav.classList.toggle('show-nav');
   };
@@ -117,17 +116,17 @@ const Nav = ({darkMode, handleDarkMode, setColorMode, isBlueActive, isGreenActiv
       <div className="colors">
         
         <button 
-          onClick={(e)=>setColorMode('blue')}
+          onClick={()=>setColorMode('blue')}
           className={`color-pick blue ${isBlueActive}`}>
           {isBlueActive ? <i className="fa fa-circle" aria-hidden="true"></i> : <i className="fa fa-circle-o" aria-hidden="true"></i>}
         </button>
         <button 
-          onClick={(e)=>setColorMode('green')}
+          onClick={()=>setColorMode('green')}
           className={`color-pick green ${isGreenActive}`}>
           {isGreenActive ? <i className="fa fa-circle" aria-hidden="true"></i> : <i className="fa fa-circle-o" aria-hidden="true"></i>}
         </button>
         <button 
-          onClick={(e)=>setColorMode('orange')}
+          onClick={()=>setColorMode('orange')}
           className={`color-pick orange ${isOrangeActive}`}>
           {isOrangeActive ? <i className="fa fa-circle" aria-hidden="true"></i> : <i className="fa fa-circle-o" aria-hidden="true"></i>}
         </button>

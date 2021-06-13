@@ -49,7 +49,7 @@ const About = ({darkMode, primaryColor, isBlueActive, isGreenActive, isOrangeAct
               target="_blank" 
               rel="noopener noreferrer" 
               href="https://videonet.us/">videonet holdings&nbsp;
-              <i class="fa fa-external-link-square" aria-hidden="true"></i>
+              <i className="fa fa-external-link-square" aria-hidden="true"></i>
             </a>
             <div className="quote">
               <small>We are building secure business solutions using modern communications tools like videoconferencing, live streaming, real-time screen sharing, and the like.</small>
@@ -60,7 +60,7 @@ const About = ({darkMode, primaryColor, isBlueActive, isGreenActive, isOrangeAct
                 target="_blank" 
                 rel="noopener noreferrer" 
                 href="https://unity.via3.com/">via3&nbsp;
-                <i class="fa fa-external-link-square" aria-hidden="true"></i>
+                <i className="fa fa-external-link-square" aria-hidden="true"></i>
               </a>
             </div>
           </div>
