@@ -4,9 +4,11 @@
   padding: 1.25rem 1.25rem 1.25rem 14.5rem;
 }
 
+// mobile //
 @media only screen and (max-width: 650px) {
   .neu-app {
     padding-right: var(--bs-gutter-x,.75rem);
     padding-left: var(--bs-gutter-x,.75rem);
   }
 }
+// 

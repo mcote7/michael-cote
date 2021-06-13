@@ -22,6 +22,7 @@ const About = ({darkMode, primaryColor, isBlueActive, isGreenActive, isOrangeAct
       </div>
       
       <div className="stats-wrap my-5">
+        
         <div className="git-card">
           {darkMode ? 
             <><img src={`https://github-readme-stats.vercel.app/api?username=mcote7&show_icons=true&theme=dark&icon_color=${primaryColor.substring(1)}&border_color=444444&bg_color=444444`} alt="stats"/>

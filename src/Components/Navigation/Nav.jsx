@@ -1,7 +1,7 @@
 import React, { useEffect } from 'react';
 import useRS from "radioactive-state";
 
-// 🚀 this component holds & handles the scrolling functions, and handles theme changes.
+// 🚀 this component holds & handles the scrolling functions, and sets theme changes in template.
 
 const Nav = ({darkMode, handleDarkMode, setColorMode, isBlueActive, isGreenActive, isOrangeActive }) => {
 
