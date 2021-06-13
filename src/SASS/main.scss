@@ -2,15 +2,10 @@
 
 .break-section {
   display: flex;
-  margin: 0rem 0rem;
   height: 0.5rem;
-  width: calc(100% - 2rem);
+  margin: 0rem auto;
+  width: calc(100% - 1.5rem);
   box-shadow: $box-shadow-inset;
 }
 
-@media only screen and (max-width: 650px) {
-  .break-section {
-    margin: 0rem auto;
-    width: calc(100% - 1.5rem);
-  }
-}
+// @media only screen and (max-width: 650px) {}

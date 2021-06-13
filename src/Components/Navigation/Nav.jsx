@@ -66,7 +66,7 @@ const Nav = ({darkMode, handleDarkMode, setColorMode, isBlueActive, isGreenActiv
   const handleNavToggle = (e) => {
     console.log("nav toggle", e)
     const nav = document.getElementById('nav');
-    nav.classList.toggle('show');
+    nav.classList.toggle('show-nav');
   };
 
   return (
@@ -78,7 +78,9 @@ const Nav = ({darkMode, handleDarkMode, setColorMode, isBlueActive, isGreenActiv
         <i className="fa fa-bars" aria-hidden="true"></i>
       </button>
       
-      <div className="left-nav-title">
+      <div 
+        className="left-nav-title"
+        onClick={(e)=>handleNavToggle(e)}>
         <h4>Michael Cote</h4>
         <small>software developer</small>
       </div>
