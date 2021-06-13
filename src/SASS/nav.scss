@@ -47,7 +47,7 @@
     justify-content: space-around;
     margin-top: 0.75rem;
     padding-bottom: 1.25rem;
-    border-bottom: 2px solid $border-color;
+    border-bottom: 0.125rem solid $border-color;
     
     a {
       display: flex;
@@ -165,7 +165,7 @@
     justify-content: space-around;
     margin-top: 1.25rem;
     padding-top: 1.25rem;
-    border-top: 2px solid $border-color;
+    border-top: 0.125rem solid $border-color;
     
     .color-pick {
       display: flex;
