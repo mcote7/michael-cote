@@ -17,11 +17,11 @@ const Main = ({darkMode, primaryColor, isBlueActive, isGreenActive, isOrangeActi
       </div>
       
       <div id="projects" className="row" style={{minHeight: '100vh'}}>
-        Projects
+        Projects <small>🚧 in dev...</small>
       </div>
       
       <div id="education" className="row" style={{minHeight: '100vh'}}>
-        Education
+        Education <small>🚧 in dev...</small>
       </div>
       
   </React.Fragment>);

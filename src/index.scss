@@ -1,6 +1,8 @@
 @import './SASS/variables.scss';
 
 body {
+  scrollbar-width: thin!important;
+  scrollbar-color: $background-color!important;
   margin: 0;
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New', monospace!important;
   -webkit-font-smoothing: antialiased;
