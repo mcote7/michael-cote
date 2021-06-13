@@ -21,7 +21,8 @@ const Main = ({darkMode, primaryColor, isBlueActive, isGreenActive, isOrangeActi
       </div>
       
       <div id="projects" className="row" style={{minHeight: '100vh'}}>
-        Projects <small>🚧 in dev...</small>
+        <p>Projects</p>
+        <small>🚧 in dev...</small>
       </div>
       
       <div className="row">
@@ -29,7 +30,8 @@ const Main = ({darkMode, primaryColor, isBlueActive, isGreenActive, isOrangeActi
       </div>
       
       <div id="education" className="row" style={{minHeight: '100vh'}}>
-        Education <small>🚧 in dev...</small>
+        <p>Education</p> 
+        <small>🚧 in dev...</small>
       </div>
       
   </React.Fragment>);
