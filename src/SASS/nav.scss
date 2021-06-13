@@ -189,6 +189,7 @@
       }
       
       &.active {
+        cursor: none;
         border: 1px solid transparent;
         box-shadow: $box-shadow-inset;
         
