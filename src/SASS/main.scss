@@ -1,1 +1,8 @@
 @import "./variables.scss";
+
+.break-section {
+  display: flex;
+  height: 0.5rem;
+  width: calc(100% - 2rem);
+  box-shadow: $box-shadow-inset;
+}

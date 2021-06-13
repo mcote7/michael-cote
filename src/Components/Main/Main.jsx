@@ -16,8 +16,16 @@ const Main = ({darkMode, primaryColor, isBlueActive, isGreenActive, isOrangeActi
           isOrangeActive={isOrangeActive}/>
       </div>
       
+      <div className="row">
+        <div className="break-section"></div>
+      </div>
+      
       <div id="projects" className="row" style={{minHeight: '100vh'}}>
         Projects <small>🚧 in dev...</small>
+      </div>
+      
+      <div className="row">
+        <div className="break-section"></div>
       </div>
       
       <div id="education" className="row" style={{minHeight: '100vh'}}>
