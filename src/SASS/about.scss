@@ -6,8 +6,8 @@
   to {opacity: 0; transform: scale(1.8);}
 }
 
-
-.self-wrap {
+// 🟣 //
+.self-wrap { // is .row
   display: flex;
   justify-content: center;
   align-items: flex-end;
@@ -72,7 +72,8 @@
   }
 }
 
-.stats-wrap {
+// 🟣 //
+.stats-wrap { // is .row
   display: flex;
   justify-content: center;
   margin-bottom: 100vh; // <-----<<<|) adjust for projects 
@@ -188,9 +189,17 @@
   }
 }
 
+// 🟣 //
+.skills-wrap { // is .row
+  display: flex;
+  justify-content: center;
+}
+
+
 // mobile //
 @media only screen and (max-width: 650px) {
-  .self-wrap {
+
+  .self-wrap { // .row
     margin-bottom: 0rem;
     
     .self-img {
@@ -200,7 +209,7 @@
       text-align: center;
     }
   }
-  .stats-wrap {
+  .stats-wrap { // .row
     .git-card {
       width: 21rem;
     }

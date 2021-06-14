@@ -10,14 +10,12 @@ const App = () => {
   const [darkMode, setDarkMode] = useState(false);
 
   const handleDarkMode = () => {
-    document.body.classList.add('no-transition');
     setDarkMode(!darkMode);
-    setTimeout(() => {
-      document.body.classList.remove('no-transition');
-    }, 50);
   };
 
   useEffect(()=> {
+    
+    document.body.classList.add('no-transition');
     
     const root = document.documentElement;
     
@@ -32,6 +30,10 @@ const App = () => {
     root?.style.setProperty("--bg-color-disabled", darkMode ? "#727272" : "#dee5e8");
     
     // console.log("dark mode?", darkMode)
+    
+    setTimeout(() => {
+      document.body.classList.remove('no-transition');
+    }, 50);
     
   },[darkMode]);
 

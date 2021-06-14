@@ -1,3 +1,12 @@
+// theme COLORS (2) // 
+
+  // $orangeColor0: hsl(32, 100%, 48%);
+  // $orangeColor1: hsl(28, 100%, 48%);
+  // $orangeColor2: hsl(32, 100%, 62%);
++
+  // $greenColor3: hsl(108, 100%, 38%);
+  // $greenColor4: hsl(120, 100%, 38%);
+  // $greenColor5: hsl(107, 100%, 52%);
 
 // DARK // 
 
@@ -12,10 +21,10 @@
   // $g-bg-color-disabled-dark: #727272;
 
 
-// LIGHT // 
+// LIGHT (blue) // 
 
   :root {
-    --bgcolor: #e4ebf5;
+    --bgcolor: #e5ecf5;
     --dark-shadow: #bec8e4;
     --light-shadow: #ffffff;
 
@@ -23,20 +32,10 @@
     --text-color-secondary: rgba(0, 0, 0, 0.7);
     --text-color-disabled: rgba(0, 0, 0, 0.45);
 
-    --bg-color-disabled: #dee5e8;
-
     --primary: #2977ff;
     --primary-dark: #294cff;
     --primary-light: #80b0ff;
   }
-
-  // $testColor0: hsl(32, 100%, 48%);
-  // $testColor1: hsl(28, 100%, 48%);
-  // $testColor2: hsl(32, 100%, 62%);
-
-  $testColor3: #27c200;
-  $testColor4: hsl(120, 100%, 38%);
-  $testColor5: hsl(107, 100%, 52%);
 
 // SHARED // 
 
@@ -47,8 +46,6 @@
   $text-color-primary: Var(--text-color-primary);
   $text-color-secondary: var(--text-color-secondary);
   $text-color-secondary: var(--text-color-disabled);
-
-  $background-color-disabled: var(--bg-color-disabled);
 
   $primary: var(--primary);
   $primary-dark: var(--primary-dark);
@@ -96,15 +93,16 @@
       transition: none!important;
     }
   }
+
 // end //
+
+
 
 // 🚧🚧🚧 TEST //
 $TEST-COLOR-1: red;
 $TEST-BORDER-1: 0.1px dashed red;
 $TEST-COLOR-2: chartreuse;
 $TEST-BORDER-2: 0.1px dashed chartreuse;
-
-
 
 
   // scrollbars index.css for body //
