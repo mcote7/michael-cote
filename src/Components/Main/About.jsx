@@ -74,9 +74,7 @@ const About = ({darkMode, primaryColor, isBlueActive, isGreenActive, isOrangeAct
       {/* skills */}
       <div className="skills-wrap row">
         {SKILLS && SKILLS.map((sk, idx) => {
-          if(sk === 'TypeScript') return <div key={idx} className="skill-badge key">{sk}</div>
-          if(sk === 'Angular') return <div key={idx} className="skill-badge key">{sk}</div>
-          if(sk === 'SASS') return <div key={idx} className="skill-badge key">{sk}</div>
+          if(sk === 'TypeScript' || sk === 'Angular' || sk === 'SASS') return <div key={idx} className="skill-badge key">{sk}</div>
           return <div key={idx} className="skill-badge">{sk}</div>
         })}
       </div>
