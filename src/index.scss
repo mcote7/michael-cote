@@ -10,16 +10,18 @@ body {
   background-color: $background-color!important;
   color: $text-color-primary!important;
 }
+
+
 ::-webkit-scrollbar {
   width: 0.5rem!important;
 }
 
 ::-webkit-scrollbar-thumb {
-border-radius: 0.25rem!important;
-border: 0.375rem solid transparent!important;
-background-color: $text-color-secondary!important;
+  border-radius: 0.25rem!important;
+  border: 0.375rem solid transparent!important;
+  background-color: $text-color-secondary!important;
 }
 
 ::-webkit-scrollbar-track {
-box-shadow: $box-shadow-inset!important;
+  box-shadow: $box-shadow-inset!important;
 }
