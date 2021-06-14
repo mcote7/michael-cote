@@ -1,14 +1,19 @@
 // theme COLORS (2) // 
 
-  // $orangeColor0: hsl(32, 100%, 48%);
-  // $orangeColor1: hsl(28, 100%, 48%);
-  // $orangeColor2: hsl(32, 100%, 62%);
-+
-  // $greenColor3: hsl(108, 100%, 38%);
-  // $greenColor4: hsl(120, 100%, 38%);
-  // $greenColor5: hsl(107, 100%, 52%);
+  // $blueColor0: #2978FF;
+  // $blueColor1: #0151D9;
+  // $blueColor2: #7DADFE;
 
-// DARK // 
+  // $greenColor3: #28C200;
+  // $greenColor4: #219C00;
+  // $greenColor5: #6BDD4D;
+
+  // $orangeColor0: #F58300;
+  // $orangeColor1: #C16700;
+  // $orangeColor2: #FFB560;
+
+
+// 🌑 DARK // 
 
   // $dark-bg: #444444; //
   // $dark-bg-dark-shadow: #363636; //
@@ -21,9 +26,10 @@
   // $g-bg-color-disabled-dark: #727272;
 
 
-// LIGHT (blue) // 
+// 🌕 LIGHT (blue) // 
 
   :root {
+    // dark/light toggle -> 
     --bgcolor: #e5ecf5;
     --dark-shadow: #bec8e4;
     --light-shadow: #ffffff;
@@ -32,9 +38,10 @@
     --text-color-secondary: rgba(0, 0, 0, 0.7);
     --text-color-disabled: rgba(0, 0, 0, 0.45);
 
-    --primary: #2977ff;
-    --primary-dark: #294cff;
-    --primary-light: #80b0ff;
+    // color toggle -> 
+    --primary: #2978FF;
+    --primary-dark: #0151D9;
+    --primary-light: #7DADFE;
   }
 
 // SHARED // 

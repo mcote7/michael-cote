@@ -76,7 +76,7 @@
 .stats-wrap { // is .row
   display: flex;
   justify-content: center;
-  margin-bottom: 100vh; // <-----<<<|) adjust for projects 
+  margin-bottom: 12rem; // <-----<<<|) adjust for projects 
   
   .git-card {
     display: flex;
@@ -193,6 +193,20 @@
 .skills-wrap { // is .row
   display: flex;
   justify-content: center;
+  margin-bottom: 5rem;
+  
+  .skill-badge {
+    font-size: 0.88rem;
+    border-radius: 1.5rem;
+    box-shadow: $box-shadow-inset;
+    width: fit-content;
+    margin: 1rem;
+    &.key {
+      color: white;
+      box-shadow: $box-shadow-1;
+      background-color: $primary-light;
+    }
+  }
 }
 
 

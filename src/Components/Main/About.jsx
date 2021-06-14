@@ -1,8 +1,14 @@
-import React from 'react';
+import React, { useEffect } from 'react';
+
+import { SKILLS } from '../../Config/skills';
 
 // 🚧 this component holds the section about me, *** parent is .row *** .
 
 const About = ({darkMode, primaryColor, isBlueActive, isGreenActive, isOrangeActive}) => {
+
+  useEffect(()=>{
+    console.log("skills?", SKILLS)
+  },[]);
 
 
   return (<React.Fragment>
@@ -67,7 +73,12 @@ const About = ({darkMode, primaryColor, isBlueActive, isGreenActive, isOrangeAct
       
       {/* skills */}
       <div className="skills-wrap row">
-        Technical Skills
+        {SKILLS && SKILLS.map((sk, idx) => {
+          if(sk === 'TypeScript') return <div key={idx} className="skill-badge key">{sk}</div>
+          if(sk === 'Angular') return <div key={idx} className="skill-badge key">{sk}</div>
+          if(sk === 'SASS') return <div key={idx} className="skill-badge key">{sk}</div>
+          return <div key={idx} className="skill-badge">{sk}</div>
+        })}
       </div>
       
     </div>

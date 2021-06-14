@@ -8,3 +8,5 @@ export const PROJ = [
     tech: ['Angular', 'RXJS', 'SASS', 'Firebase']
   },
 ];
+
+// 👨‍💻 //

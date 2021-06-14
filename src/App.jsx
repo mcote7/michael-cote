@@ -27,7 +27,6 @@ const App = () => {
     root?.style.setProperty("--text-color-secondary", darkMode ? "rgba(255, 255, 255, 0.7)" : "rgba(0, 0, 0, 0.7)");
     root?.style.setProperty("--text-color-disabled", darkMode ? "rgba(255, 255, 255, 0.45)" : "rgba(0, 0, 0, 0.45)");
     
-    root?.style.setProperty("--bg-color-disabled", darkMode ? "#727272" : "#dee5e8");
     
     // console.log("dark mode?", darkMode)
     
@@ -52,28 +51,28 @@ const App = () => {
     const root = document.documentElement;
     
     if(colorMode === 'blue') {
-      root?.style.setProperty("--primary", "hsl(218, 100%, 58%)");
-      root?.style.setProperty("--primary-dark", "hsl(230, 100%, 58%)");
-      root?.style.setProperty("--primary-light", "hsl(217, 100%, 75%)");
-      setPrimaryColor('#2977ff');
+      root?.style.setProperty("--primary", "#2978FF");
+      root?.style.setProperty("--primary-dark", "#0151D9");
+      root?.style.setProperty("--primary-light", "#7DADFE");
+      setPrimaryColor('#2978FF');
       setIsBlueActive('active');
       setIsGreenActive('');
       setIsOrangeActive('');
     }
     if(colorMode === 'green') {
-      root?.style.setProperty("--primary", "hsl(108, 100%, 38%)");
-      root?.style.setProperty("--primary-dark", "hsl(120, 100%, 38%)");
-      root?.style.setProperty("--primary-light", "hsl(107, 100%, 52%)");
-      setPrimaryColor('#27c200');
+      root?.style.setProperty("--primary", "#28C200");
+      root?.style.setProperty("--primary-dark", "#219C00");
+      root?.style.setProperty("--primary-light", "#6BDD4D");
+      setPrimaryColor('#28C200');
       setIsGreenActive('active');
       setIsBlueActive('');
       setIsOrangeActive('');
     }
     if(colorMode === 'orange') {
-      root?.style.setProperty("--primary", "hsl(32, 100%, 48%)");
-      root?.style.setProperty("--primary-dark", "hsl(28, 100%, 48%)");
-      root?.style.setProperty("--primary-light", "hsl(32, 100%, 62%)");
-      setPrimaryColor('#f58300');
+      root?.style.setProperty("--primary", "#F58300");
+      root?.style.setProperty("--primary-dark", "#C16700");
+      root?.style.setProperty("--primary-light", "#FFB560");
+      setPrimaryColor('#F58300');
       setIsOrangeActive('active');
       setIsBlueActive('');
       setIsGreenActive('');

@@ -1,5 +1,5 @@
 
-export const LANGUAGES_LIST = [
+const LANGUAGES_LIST = [
   'JavaScript',
   'TypeScript',
   'HTML5',
@@ -8,7 +8,7 @@ export const LANGUAGES_LIST = [
   'Python'
 ];
 
-export const FRONT_END_TECH = [
+const FRONT_END_TECH = [
   'Angular',
   'React',
   'SASS',
@@ -16,13 +16,13 @@ export const FRONT_END_TECH = [
   'Node'
 ];
 
-export const DATABASE_LIST = [
+const DATABASE_LIST = [
   'Firebase',
   'MySQL',
   'MongoDB'
 ];
 
-export const TOOLS_LIST = [
+const TOOLS_LIST = [
   'VSCode',
   'GitHub',
   'Azure devOps',
@@ -30,3 +30,7 @@ export const TOOLS_LIST = [
   'PostMan',
   'Adobe'
 ];
+
+export const SKILLS = LANGUAGES_LIST.concat(FRONT_END_TECH.concat(DATABASE_LIST.concat(TOOLS_LIST)));
+
+// 🧰 // 

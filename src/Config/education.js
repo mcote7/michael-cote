@@ -76,7 +76,7 @@ export const EDU = [
     title: 'TypeScript master class', 
     id: 9, 
     image: 'ts-2-img', 
-    info: 'Taking my TypeScript to the next level.', 
+    info: 'Taking my TypeScript to the next level.', // make title of card info
     logo: 'ultimate-logo', 
     date: 'June 2021', 
     speach: 'Type script master class' 
