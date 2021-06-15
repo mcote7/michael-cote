@@ -50,7 +50,7 @@
     padding-bottom: 1.25rem;
     border-bottom: 0.125rem solid $border-color;
     
-    a {
+    a, button {
       text-decoration: none!important;
       display: flex;
       justify-content: center;
@@ -58,18 +58,21 @@
       height: 2.25rem;
       width: 2.25rem;
       border-radius: 50%;
+      border: 1px solid $background-color;
       color: $primary;
       box-shadow: $box-shadow-2;
       background: $bg-convex;
-      border: 1px solid $background-color;
       transition: $transition;
       
       &:hover {
         text-decoration: none!important;
         color: $primary-dark;
         box-shadow: $box-shadow-1;
+      }
+      
+      &:active {
         background: $bg-concave;
-        border: 1px solid $background-color;
+        box-shadow: $box-shadow-inset;
       }
       
       i {
@@ -78,38 +81,6 @@
         &.fa-github-alt {
           font-size: 1.33rem;
         }
-      }
-    }
-    
-    button {
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      height: 2.25rem;
-      width: 2.25rem;
-      border-radius: 50%;
-      border: 1px solid transparent;
-      color: $primary;
-      box-shadow: $box-shadow-2;
-      text-decoration: none!important;
-      background: $background-color;
-      transition: $transition;
-      
-      &:hover {
-        color: $primary-dark;
-        border: 1px solid $border-color;
-        box-shadow: $box-shadow-1;
-        text-decoration: none!important;
-      }
-      
-      &:active {
-        border: 1px solid transparent;
-        box-shadow: $box-shadow-inset;
-      }
-      
-      i {
-        font-size: 1.2rem;
-        font-weight: bold;
       }
     }
   }
@@ -171,7 +142,6 @@
     border-top: 0.125rem solid $border-color;
     
     .color-pick {
-      text-decoration: none!important;
       display: flex;
       justify-content: center;
       align-items: center;
@@ -180,20 +150,11 @@
       border-radius: 50%;
       border: 1px solid transparent;
       color: $primary;
-      box-shadow: $box-shadow-2;
+      box-shadow: $box-shadow-1;
       background: $background-color;
-      transition: $transition;
-      
-      &:hover {
-        text-decoration: none!important;
-        color: $primary-dark;
-        border: 1px solid $border-color;
-        box-shadow: $box-shadow-1;
-      }
       
       &.active {
-        cursor: none;
-        border: 1px solid transparent;
+        cursor: default;
         box-shadow: $box-shadow-inset;
         
         i {

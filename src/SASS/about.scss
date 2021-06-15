@@ -15,6 +15,7 @@
   margin-bottom: 3rem;
   
   .self-img {
+    cursor: crosshair;
     position: relative;
     height: 6rem;
     width: 6rem;
@@ -160,13 +161,9 @@
         border-radius: 0.5rem;
         border: 1px solid transparent;
         box-shadow: $box-shadow-inset;
-        transition: $transition;
+        transition: $transition-long;
         &:hover {
-          box-shadow: $box-shadow-1;
           border: 1px solid $primary-dark;
-          small {
-            font-weight: bold;
-          }
         }
         small {
           transition: $transition;

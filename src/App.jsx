@@ -32,7 +32,7 @@ const App = () => {
     
     setTimeout(() => {
       document.body.classList.remove('no-transition');
-    }, 50);
+    }, 100);
     
   },[darkMode]);
 
@@ -82,7 +82,7 @@ const App = () => {
     
     setTimeout(() => {
       document.body.classList.remove('no-transition');
-    }, 50);
+    }, 100);
 
   },[colorMode]);
   

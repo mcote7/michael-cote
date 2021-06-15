@@ -1,16 +1,16 @@
-// theme COLORS (2) // 
+// theme COLORS (3) // 
 
-  // $blueColor0: #2978FF;
-  // $blueColor1: #0151D9;
-  // $blueColor2: #7DADFE;
+  // $blueColor1: #2978FF;
+  // $blueColor2: #0151D9;
+  // $blueColor3: #7DADFE;
 
-  // $greenColor3: #28C200;
-  // $greenColor4: #219C00;
-  // $greenColor5: #6BDD4D;
+  // $greenColor1: #28C200;
+  // $greenColor2: #219C00;
+  // $greenColor3: #6BDD4D;
 
-  // $orangeColor0: #F58300;
-  // $orangeColor1: #C16700;
-  // $orangeColor2: #FFB560;
+  // $orangeColor1: #F58300;
+  // $orangeColor2: #C16700;
+  // $orangeColor3: #FFB560;
 
 
 // 🌑 DARK // 
@@ -22,8 +22,6 @@
   // $g-text-color-dark: rgba(255, 255, 255, 0.93); //
   // $g-text-color-secondary-dark: rgba(255, 255, 255, 0.7); //
   // $g-text-color-disabled-dark: rgba(255, 255, 255, 0.45); //
-
-  // $g-bg-color-disabled-dark: #727272;
 
 
 // 🌕 LIGHT (blue) // 
@@ -62,11 +60,6 @@
   $white: #ffffff;
   $black: #000000;
 
-  $error: #ff5252;
-  $info: #2094f3;
-  $success: #4caf50;
-  $warning: #dfa700;
-
   $border-color: $dark-shadow;
   $border-radius: 0.25rem;
 
@@ -102,6 +95,7 @@
   }
 
 // end //
+
 
 
 
