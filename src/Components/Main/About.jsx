@@ -2,7 +2,7 @@ import React from 'react';
 
 import { SKILLS } from '../../Config/skills';
 
-// 🚧 this component holds the section about me, *** parent is .row *** .
+// this component holds the section about me, *** parent is .row *** .
 
 const About = ({darkMode, primaryColor, isBlueActive, isGreenActive, isOrangeActive}) => {
 

@@ -1,5 +1,6 @@
 import React from 'react';
 import About from './About';
+import Projects from './Projects';
 
 // 🚀 this component holds the rows that wrap each section (3).
 
@@ -22,7 +23,7 @@ const Main = ({darkMode, primaryColor, isBlueActive, isGreenActive, isOrangeActi
       
       <div id="projects" className="row" style={{minHeight: '100vh'}}>
         <p>Projects</p>
-        <small>🚧 in dev...</small>
+        <Projects/>
       </div>
       
       <div className="row">
