@@ -7,12 +7,40 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    position: relative;
     
-    .feat-prod-card {
+    .proj-info {
+      position: absolute;
+      top: 0;
+      margin: 0rem 1rem;
+      
+      .proj-title {
+        display: flex;
+        
+        h4 {
+          display: inline-flex;
+          font-weight: bold;
+          text-decoration: overline;
+          text-decoration-style: wavy;
+          text-decoration-thickness: 2px;
+          color: $primary;
+        }
+        
+        small {
+          margin-left: 1rem;
+        }
+      }
+      
+      p {
+        
+      }
+    }
+    
+    .feat-proj-card {
       transform: scale(0.65);
       padding: 1.5rem;
       padding-bottom: 1rem;
-      border-radius: 0.75rem;
+      border-radius: 0.5rem;
       box-shadow: $box-shadow-inset;
       
       iframe {
@@ -27,7 +55,7 @@
 @media only screen and (max-width: 1020px) {
   .projects-wrap {
     .featured-project {
-      .feat-prod-card {
+      .feat-proj-card {
         iframe {
           width: 26rem;
           height: 44rem;
@@ -36,3 +64,5 @@
     }
   }
 }
+
+// //
