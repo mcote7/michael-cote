@@ -7,31 +7,31 @@
     display: flex;
     justify-content: center;
     align-items: center;
-  }
-  
-  .feat-prod-card {
-    transform: scale(0.65);
-    padding: 1.5rem;
-    padding-bottom: 1rem;
-    border-radius: 0.75rem;
-    box-shadow: $box-shadow-inset;
     
-    iframe {
-      height: 36.5rem;
-      width: 64rem;
-      background-color: $white;
+    .feat-prod-card {
+      transform: scale(0.65);
+      padding: 1.5rem;
+      padding-bottom: 1rem;
+      border-radius: 0.75rem;
+      box-shadow: $box-shadow-inset;
+      
+      iframe {
+        height: 36.5rem;
+        width: 64rem;
+        background-color: $white;
+      }
     }
   }
 }
 
 @media only screen and (max-width: 1020px) {
   .projects-wrap {
-
-    .feat-prod-card {
-      
-      iframe {
-        width: 26rem;
-        height: 44rem;
+    .featured-project {
+      .feat-prod-card {
+        iframe {
+          width: 26rem;
+          height: 44rem;
+        }
       }
     }
   }
