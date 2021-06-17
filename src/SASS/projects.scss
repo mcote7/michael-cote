@@ -2,8 +2,9 @@
 
 .featured-projects-wrap {
   display: flex;
-  margin-top: 4rem;
+  margin-top: 3rem;
   
+  // this is the for loop card // 
   .featured-project {
     display: flex;
     justify-content: center;
@@ -31,10 +32,6 @@
           margin-left: 1rem;
         }
       }
-      
-      // p {
-        
-      // }
     }
     
     .feat-proj-card {
@@ -53,19 +50,46 @@
     
     .proj-links {
       position: absolute;
-      bottom: 0rem;
+      bottom: 3rem;
       margin: 0rem 1rem;
       
       a {
         
       }
     }
+    
   }
+  .break-proj {
+    display: flex;
+    height: 0.25rem;
+    margin: 0rem auto;
+    width: 20rem;
+    box-shadow: $box-shadow-1;
+  }
+}
+
+
+.git-pinned-row {
+  display: flex;
+  margin-top: 12rem;
+  margin-bottom: 12rem;
+  justify-content: center;
+  text-align: center;
+  
 }
 
 @media only screen and (max-width: 1020px) {
   .featured-projects-wrap {
     .featured-project {
+      .proj-info {
+        text-align: center;
+        .proj-title {
+          justify-content: center;
+          h4 {
+            margin-left: 1rem;
+          }
+        }
+      }
       .feat-proj-card {
         iframe {
           width: 26rem;
