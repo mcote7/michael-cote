@@ -32,22 +32,32 @@
         }
       }
       
-      p {
+      // p {
         
-      }
+      // }
     }
     
     .feat-proj-card {
       transform: scale(0.65);
       padding: 1.5rem;
       padding-bottom: 1rem;
-      border-radius: 0.5rem;
+      border-radius: $border-radius;
       box-shadow: $box-shadow-inset;
       
       iframe {
         height: 36.5rem;
         width: 64rem;
         background-color: $white;
+      }
+    }
+    
+    .proj-links {
+      position: absolute;
+      bottom: 0rem;
+      margin: 0rem 1rem;
+      
+      a {
+        
       }
     }
   }

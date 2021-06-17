@@ -24,7 +24,10 @@ const Projects = () => {
                 <iframe src={p.url} frameborder="0" title="o-shop"></iframe>
               </div>
               
-              {/* tech used & links */}
+              <div className="proj-links">
+                <a href={p.repoUrl}>git</a>
+                <a href={p.url}>live</a>
+              </div>
               
             </>);
           })}

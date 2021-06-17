@@ -61,7 +61,8 @@
   $black: #000000;
 
   $border-color: $dark-shadow;
-  $border-radius: 0.25rem;
+  $border-radius: 0.5rem;
+  $border-radius-circle: 50%;
 
   // elevation levels 1(low) - 5(high) //
   $box-shadow-1: 3px 3px 6px $dark-shadow,-3px -3px 6px $light-shadow;
