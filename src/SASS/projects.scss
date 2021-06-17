@@ -1,7 +1,8 @@
 @import './variables.scss';
 
-.projects-wrap {
+.featured-projects-wrap {
   display: flex;
+  margin-top: 4rem;
   
   .featured-project {
     display: flex;
@@ -11,7 +12,7 @@
     
     .proj-info {
       position: absolute;
-      top: 0;
+      top: 1rem;
       margin: 0rem 1rem;
       
       .proj-title {

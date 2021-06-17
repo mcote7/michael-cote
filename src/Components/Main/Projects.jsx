@@ -7,7 +7,7 @@ import {PROJ} from '../../Config/projects';
 const Projects = () => {
   return (
     <div className="col col-sm-12">
-      <div className="projects-wrap row">
+      <div className="featured-projects-wrap row">
         <div className="featured-project">
           {PROJ && PROJ.map((p, idx) => {
             return(<>
@@ -30,6 +30,8 @@ const Projects = () => {
           })}
         </div>
       </div>
+      {/* git pinned row*/}
+      {/* all git row */}
     </div>
   );
 };

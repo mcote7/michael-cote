@@ -190,7 +190,7 @@
 .skills-wrap { // is .row
   display: flex;
   justify-content: center;
-  margin-bottom: 8rem;
+  margin-bottom: 14rem;
   
   .skill-badge {
     border: 1px solid $background-color;
@@ -225,6 +225,7 @@
   .stats-wrap { // .row
     .git-card {
       width: 21rem;
+      margin-bottom: 12rem;
     }
   }
 }
