@@ -24,11 +24,28 @@ const Projects = () => {
                 <iframe src={p.url} frameborder="0" title="o-shop"></iframe>
               </div>
               
-              <div className="proj-links">
-                <a href={p.repoUrl}>git</a>
-                <a href={p.url}>live</a>
+              <div className="tech-used row">
+                {p.tech.map((t, i)=> {
+                  return(
+                    <div key={i} className="tech-badge">{t}</div>
+                  )
+                })}
               </div>
               
+              <div className="proj-links">
+                <a 
+                  target="_blank" 
+                  rel="noopener noreferrer" 
+                  href={p.repoUrl}>git&nbsp;
+                  <i className="fa fa-external-link-square" aria-hidden="true"></i>
+                </a>
+                <a 
+                  target="_blank" 
+                  rel="noopener noreferrer" 
+                  href={p.url}>live&nbsp;
+                  <i className="fa fa-external-link-square" aria-hidden="true"></i>
+                </a>
+              </div>
               
             </div>
             

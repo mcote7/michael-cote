@@ -47,6 +47,7 @@ const About = ({darkMode, primaryColor, isBlueActive, isGreenActive, isOrangeAct
           <div className="role-body">
             <a 
               target="_blank" 
+              title="https://videonet.us/"
               rel="noopener noreferrer" 
               href="https://videonet.us/">videonet holdings&nbsp;
               <i className="fa fa-external-link-square" aria-hidden="true"></i>
@@ -58,6 +59,7 @@ const About = ({darkMode, primaryColor, isBlueActive, isGreenActive, isOrangeAct
               <small>check out our platform:</small>
               <a 
                 target="_blank" 
+                title="https://unity.via3.com/"
                 rel="noopener noreferrer" 
                 href="https://unity.via3.com/">via3&nbsp;
                 <i className="fa fa-external-link-square" aria-hidden="true"></i>
