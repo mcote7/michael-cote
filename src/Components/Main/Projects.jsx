@@ -35,12 +35,14 @@ const Projects = () => {
               <div className="proj-links">
                 <a 
                   target="_blank" 
+                  title="🔗 git repo code" 
                   rel="noopener noreferrer" 
                   href={p.repoUrl}>git&nbsp;
                   <i className="fa fa-external-link-square" aria-hidden="true"></i>
                 </a>
                 <a 
                   target="_blank" 
+                  title="🔗 live site" 
                   rel="noopener noreferrer" 
                   href={p.url}>live&nbsp;
                   <i className="fa fa-external-link-square" aria-hidden="true"></i>
@@ -57,7 +59,6 @@ const Projects = () => {
       <div className="git-pinned-row row">
         <small>git pinned</small>
       </div>
-      {/* git pinned row*/}
       {/* all git row */}
     </div>
   );

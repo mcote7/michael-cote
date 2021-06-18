@@ -11,7 +11,7 @@ const LANGUAGES_LIST = [
 const FRONT_END_TECH = [
   'Angular',
   'React',
-  'SASS',
+  'SaSS',
   'Bootstrap',
   'Node'
 ];
