@@ -13,7 +13,9 @@ const FRONT_END_TECH = [
   'React',
   'SaSS',
   'Bootstrap',
-  'Node'
+  'Node',
+  'RxJS',
+  'Lodash'
 ];
 
 const DATABASE_LIST = [
@@ -28,7 +30,8 @@ const TOOLS_LIST = [
   'Azure devOps',
   'SQL workbench',
   'PostMan',
-  'Adobe'
+  'AdobeXD',
+  'InVision'
 ];
 
 export const SKILLS = LANGUAGES_LIST.concat(FRONT_END_TECH.concat(DATABASE_LIST.concat(TOOLS_LIST)));

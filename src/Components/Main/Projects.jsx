@@ -96,15 +96,15 @@ const Projects = () => {
               </div>
               
               {/* wrap here diection - row */}
-              <div className="mt-auto card-dates">
-                <small>updated: {moment(repo.updated_at).format('MMMM Do YYYY')}</small>
-                <small>created: {moment(repo.created_at).format('MMMM Do YYYY')}</small>
-              </div>
-              
-              <div className="git-circle-outer">
-                  <div className="git-circle-inner">
-                    <i className="fa fa-github git-logo" aria-hidden="true"></i>
-                  </div>
+              <div className="card-foot mt-auto">
+                <div className="card-dates">
+                  <small>updated: {moment(repo.updated_at).format('MM.DD.YY')}</small>
+                  <small>created: {moment(repo.created_at).format('MM.DD.YY')}</small>
+                </div>
+                
+                <div className="git-circle-outer ms-auto">
+                    <div className="git-logo">🎯</div>
+                </div>
               </div>
               {/*  */}
             </a>
