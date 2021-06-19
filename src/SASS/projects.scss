@@ -110,20 +110,102 @@
   }
 }
 
+
 .git-pinned-row {
   display: flex;
   margin-top: 12rem;
   margin-bottom: 12rem;
   justify-content: center;
-  text-align: center;
   
   .git-col {
-    //
-    .git-card {
-      //
+    display: flex;
+    justify-content: center;
+    
+    .git-card { // <a/> looped
+      width: 20rem;
+      color: $text-color-primary;
+      background-color: $background-color;
+      text-decoration: none;
+      padding: 0.25rem 0.5rem;
+      backface-visibility: hidden;
+      will-change: transform;
+      box-shadow: $box-shadow-1;
+      border: 1px solid transparent;
+      border-radius: $border-radius;
+      transition: $transition;
+      
+      &.even {
+        box-shadow: $box-shadow-inset;
+      }
+      
+      &:hover {
+        text-decoration: none;
+        transform: translate3d(0,-0.25rem,0);
+        border: 1px solid $border-color;
+        
+        &::before {
+          opacity: 1;
+          transition: $transition-long;
+        }
+        
+        .card-title {
+          color: $primary;
+        }
+      }
+      
+      &::before {
+        content: 'github_code_repo';
+        position: absolute;
+        top: 0px;
+        right: 5px;
+        color: $text-color-secondary;
+        font-size: 0.75rem;
+        opacity: 0;
+        transition: 0.4s;
+      }
+      
+      .card-title {
+        display: flex;
+        flex-direction: row;
+        align-items: baseline;
+        border-bottom: 1px solid $border-color;
+        padding: 0.25rem 0rem;
+        font-weight: bold;
+        transition: $transition;
+      }
+      
+      .card-info {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+      }
+      
+      .card-dates {
+        display: flex;
+        flex-direction: column;
+        text-align: left;
+        margin-top: 0.25rem;
+      }
+      
+      .git-circle-outer {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        
+        .git-circle-inner {
+          
+          
+          .git-logo {
+            border-radius: $border-radius-circle;
+            border: 1px solid $border-color;
+            font-size: 2.25rem;
+          }
+        }
+      }
     }
   }
 }
+
 
 @media only screen and (max-width: 1020px) {
   .featured-projects-wrap {

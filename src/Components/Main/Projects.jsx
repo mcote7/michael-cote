@@ -72,41 +72,41 @@ const Projects = () => {
         {GIT && GIT.map((repo, idx) => {
           return(
           <div key={idx} className="col-xl-4 col-lg-6 my-3 git-col">
+            
             <a 
               id={`${idx}card`}
-              className="card git-card" 
+              className={idx % 2 === 0 ? 'card git-card even' : 'card git-card'}
               href={`${repo.html_url}`} 
               target="_blank" rel="noopener noreferrer">
               
               <div className="card-title">
-                <i className="fa fa-github git-logo" aria-hidden="true"></i>
-                <div><small>({idx})</small> <strong>{repo.name}</strong></div>
+                <div>{repo.name}</div>
               </div>
               
-              <div className="card-url">
-                <span>{repo.html_url}<i className="fa fa-external-link" aria-hidden="true"></i></span>
-              </div>
-              
-              <div className="mt-auto card-info">
+              <div className="card-info">
                 
                 <div className="card-desc">
-                  <small><i>{repo.description}</i></small>
+                  <small>{repo.description}</small>
                 </div>
                 
                 <div className="repo-languages">
-                  <strong><i className="fa fa-code" aria-hidden="true"></i> {repo.language}</strong>
-                </div>
-                
-                <div className="repo-size">
-                  <small>{repo.size}kb.</small>
+                  <strong>&lt;{repo.language}/&gt;</strong>&nbsp;<span><small><sub>{repo.size}kb.</sub></small></span>
                 </div>
                 
               </div>
               
-              <div className="card-dates">
+              {/* wrap here diection - row */}
+              <div className="mt-auto card-dates">
                 <small>updated: {moment(repo.updated_at).format('MMMM Do YYYY')}</small>
                 <small>created: {moment(repo.created_at).format('MMMM Do YYYY')}</small>
               </div>
+              
+              <div className="git-circle-outer">
+                  <div className="git-circle-inner">
+                    <i className="fa fa-github git-logo" aria-hidden="true"></i>
+                  </div>
+              </div>
+              {/*  */}
             </a>
           </div>
           );
