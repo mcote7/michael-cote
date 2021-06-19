@@ -5,6 +5,9 @@ import {PROJ} from '../../Config/projects';
 // 🚧 this component holds the section about my projects, *** parent is .row *** .
 
 const Projects = () => {
+
+  
+
   return (
     <div className="col col-sm-12">
       <div className="featured-projects-wrap row">
