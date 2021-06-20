@@ -121,6 +121,7 @@
     justify-content: center;
     
     .git-card { // <a/>
+      cursor: none;
       flex-grow: 1;
       min-width: 20rem;
       margin: 0rem 1rem;

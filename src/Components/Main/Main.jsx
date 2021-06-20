@@ -4,7 +4,7 @@ import Projects from './Projects';
 
 // 🚀 this component holds the rows that wrap each section (3).
 
-const Main = ({darkMode, primaryColor, isBlueActive, isGreenActive, isOrangeActive}) => {
+const Main = ({darkMode, primaryColor, isBlueActive, isGreenActive, isOrangeActive, handleMouseMove, handleMouseLeave}) => {
   
   return (<React.Fragment>
       
@@ -23,7 +23,9 @@ const Main = ({darkMode, primaryColor, isBlueActive, isGreenActive, isOrangeActi
       
       <div id="projects" className="row" style={{minHeight: '100vh'}}>
         <p>Projects</p>
-        <Projects/>
+        <Projects 
+          handleMouseMove={handleMouseMove}
+          handleMouseLeave={handleMouseLeave}/>
       </div>
       
       <div className="row">

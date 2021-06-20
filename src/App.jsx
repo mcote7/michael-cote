@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from 'react';
-
+import useRS from "radioactive-state";
 import Main from './Components/Main/Main';
 import Nav from './Components/Navigation/Nav';
 
@@ -85,9 +85,31 @@ const App = () => {
     }, 100);
 
   },[colorMode]);
+
+
+  const state = useRS({
+    x: 0,
+    y: 0
+  });
+
+  const handleMouseMove = (e) => {
+    e.preventDefault();
+    // console.log("coord:", e.clientX, e.clientY)
+    const el = document.getElementById('follow');
+    el.classList.add('on');
+    state.x = e.clientX - 18; // (18) width / height of el //
+    state.y = e.clientY - 18;
+  };
+
+  const handleMouseLeave = (e) => {
+    const el = document.getElementById('follow');
+    el.classList.remove('on');
+  };
+
   
   return (
     <div className="container-fluid neu-app">
+        
       <Nav 
         darkMode={darkMode}
         handleDarkMode={handleDarkMode} 
@@ -95,13 +117,17 @@ const App = () => {
         isBlueActive={isBlueActive} 
         isGreenActive={isGreenActive} 
         isOrangeActive={isOrangeActive}/>
-        
+          
       <Main 
         darkMode={darkMode} 
         primaryColor={primaryColor}
         isBlueActive={isBlueActive} 
         isGreenActive={isGreenActive} 
-        isOrangeActive={isOrangeActive}/>
+        isOrangeActive={isOrangeActive}
+        handleMouseMove={handleMouseMove}
+        handleMouseLeave={handleMouseLeave}/>
+                                        
+      <div id="follow" className="follow" style={{top: `${state.y}px`, left: `${state.x}px`}}></div>
     </div>
   );
 };

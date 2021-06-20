@@ -4,7 +4,7 @@ import {PROJ} from '../../Config/projects';
 
 // 🚧 this component holds the section about my projects, *** parent is .row *** .
 
-const Projects = () => {
+const Projects = ({handleMouseMove, handleMouseLeave}) => {
 
   const [GIT, setGIT] = useState();
 
@@ -15,7 +15,8 @@ const Projects = () => {
         console.log("repos", data)
         setGIT(data);
       });
-  },[])
+  },[]);
+
 
   return (
     <div className="col col-sm-12">
@@ -68,12 +69,14 @@ const Projects = () => {
           })}
       </div>
       
-      <div className="git-pinned-row row">
+      <div id="git" className="git-pinned-row row">
         {GIT && GIT.map((repo, idx) => {
           return(
           <div key={idx} className="col-xl-4 col-lg-6 my-3 git-col">
             
             <a 
+              onMouseMove={(e)=>handleMouseMove(e)}
+              onMouseLeave={(e)=>handleMouseLeave(e)}
               id={`${idx}card`}
               className={idx % 2 === 0 ? 'card git-card even' : 'card git-card'}
               href={`${repo.html_url}`} 
@@ -108,7 +111,6 @@ const Projects = () => {
                     </div>
                 </div>
               </div>
-              {/*  */}
             </a>
           </div>
           );
