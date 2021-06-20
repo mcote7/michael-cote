@@ -1,10 +1,18 @@
 import React, { useEffect, useState } from 'react';
+import useRS from "radioactive-state";
 import moment from 'moment';
 import {PROJ} from '../../Config/projects';
 
 // 🚧 this component holds the section about my projects, *** parent is .row *** .
 
 const Projects = ({handleMouseMove, handleMouseLeave}) => {
+
+  const state = useRS({
+    gitFloatClass: 'all-select',
+    isAllActive: 'active',
+    isReactActive: '',
+    isAngularActive: ''
+  });
 
   const [GIT, setGIT] = useState();
   const [allGIT, setAllGIT] = useState();
@@ -29,6 +37,10 @@ const Projects = ({handleMouseMove, handleMouseLeave}) => {
       return repo.name.includes('react') || repo.description.includes('React');
     });
     setGIT(reactRepos);
+    state.gitFloatClass = 'react-select';
+    state.isAllActive = '';
+    state.isReactActive = 'active';
+    state.isAngularActive = '';
   };
 
   const setAngularRepos = (e) => {
@@ -39,10 +51,18 @@ const Projects = ({handleMouseMove, handleMouseLeave}) => {
               repo.name.includes('ngrx') || repo.description.includes('NGRX');
     });
     setGIT(angularRepos);
+    state.gitFloatClass = 'angular-select';
+    state.isAllActive = '';
+    state.isReactActive = '';
+    state.isAngularActive = 'active';
   };
 
   const resetAllGit = (e) => {
     setGIT(allGIT);
+    state.gitFloatClass = 'all-select';
+    state.isAllActive = 'active';
+    state.isReactActive = '';
+    state.isAngularActive = '';
   };
 
   const searchGit = (e) => {
@@ -101,7 +121,9 @@ const Projects = ({handleMouseMove, handleMouseLeave}) => {
           })}
       </div>
       
-      <div id="git" className="git-pinned-row row">
+      <div
+        id="git" 
+        className="git-pinned-row row">
         
         <div className="git-title-col">
           <div className="git-title-col-card">
@@ -115,20 +137,23 @@ const Projects = ({handleMouseMove, handleMouseLeave}) => {
               <input onBlur={(e)=>e.target.value = ''} onChange={(e)=>searchGit(e)} className="form-control" type="text" placeholder="search git repos..." />
             </div>
             <div className="git-buttons">
-              <button onClick={(e)=>resetAllGit(e)}>All Repos</button>
-              <button onClick={(e)=>setReactRepos(e)}>React</button>
-              <button onClick={(e)=>setAngularRepos(e)}>Angular</button>
+              <button className={`${state.isAllActive}`} onClick={(e)=>resetAllGit(e)}>* Repos</button>
+              <button className={`${state.isReactActive}`} onClick={(e)=>setReactRepos(e)}>React</button>
+              <button className={`${state.isAngularActive}`} onClick={(e)=>setAngularRepos(e)}>Angular</button>
+              <div className={`git-float ${state.gitFloatClass}`}></div>
             </div>
           </div>
         </div>
         
         {GIT && GIT.map((repo, idx) => {
           return(
-          <div key={idx} className="col-xl-4 col-lg-6 my-3 git-col">
+          <div
+            key={idx} 
+            onMouseMove={(e)=>handleMouseMove(e)}
+            onMouseLeave={(e)=>handleMouseLeave(e)}
+            className="col-xl-4 col-lg-6 my-3 git-col">
             
             <a 
-              onMouseMove={(e)=>handleMouseMove(e)}
-              onMouseLeave={(e)=>handleMouseLeave(e)}
               id={`${idx}card`}
               className={idx % 2 === 0 ? 'card git-card even' : 'card git-card'}
               href={`${repo.html_url}`} 
