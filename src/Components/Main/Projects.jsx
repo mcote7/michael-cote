@@ -3,8 +3,6 @@ import useRS from "radioactive-state";
 import moment from 'moment';
 import {PROJ} from '../../Config/projects';
 
-// 🚧 this component holds the section about my projects, *** parent is .row *** .
-
 const Projects = ({handleMouseMove, handleMouseLeave}) => {
 
   const state = useRS({
@@ -34,7 +32,7 @@ const Projects = ({handleMouseMove, handleMouseLeave}) => {
 
   const setReactRepos = (e) => {
     let reactRepos = allGIT.filter(repo => {
-      return repo.name.includes('react') || repo.description.includes('React');
+      return repo.name.toLowerCase().includes('react') || repo.description.toLowerCase().includes('react');
     });
     setGIT(reactRepos);
     state.gitFloatClass = 'react-select';
@@ -45,10 +43,10 @@ const Projects = ({handleMouseMove, handleMouseLeave}) => {
 
   const setAngularRepos = (e) => {
     let angularRepos = allGIT.filter(repo => {
-      return repo.name.includes('angular') || repo.description.includes('Angular') || 
-              repo.name.includes('rxjs') || repo.description.includes('RXJS') || 
-              repo.name.includes('typescript') || repo.description.includes('TypeScript') || 
-              repo.name.includes('ngrx') || repo.description.includes('NGRX');
+      return repo.name.toLowerCase().includes('angular') || repo.description.toLowerCase().includes('angular') || 
+            repo.name.toLowerCase().includes('rxjs') || repo.description.toLowerCase().includes('rxjs') || 
+            repo.name.toLowerCase().includes('typescript') || repo.description.toLowerCase().includes('typescript') || 
+            repo.name.toLowerCase().includes('ngrx') || repo.description.toLowerCase().includes('ngrx');
     });
     setGIT(angularRepos);
     state.gitFloatClass = 'angular-select';
@@ -66,13 +64,14 @@ const Projects = ({handleMouseMove, handleMouseLeave}) => {
   };
 
   const searchGit = (e) => {
-    let result = allGIT.filter(repo => repo.name.includes(e.target.value))
+    let result = allGIT.filter(repo => repo.name.toLowerCase().includes(e.target.value.toLowerCase()));
     setGIT(result);
   };
 
   return (
     <div className="col col-sm-12">
       <div className="featured-projects-wrap row">
+        
           {PROJ && PROJ.map((p, idx) => {
             return(<React.Fragment key={idx}>
               <div className="featured-project">
@@ -113,9 +112,7 @@ const Projects = ({handleMouseMove, handleMouseLeave}) => {
                     <i className="fa fa-external-link-square" aria-hidden="true"></i>
                   </a>
                 </div>
-                
               </div>
-              
               <div className="break-proj"></div>
             </React.Fragment>);
           })}
@@ -132,10 +129,12 @@ const Projects = ({handleMouseMove, handleMouseLeave}) => {
                 &nbsp;github repositorys&nbsp;  
               <i class="fa fa-code-fork fa-flip-horizontal" aria-hidden="true"></i>
             </div>
+            
             <div className="input-group mb-4">
               <span className="input-group-text"><i className="fa fa-search" aria-hidden="true"></i></span>
               <input onBlur={(e)=>e.target.value = ''} onChange={(e)=>searchGit(e)} className="form-control" type="text" placeholder="search git repos..." />
             </div>
+            
             <div className="git-buttons">
               <button className={`${state.isAllActive}`} onClick={(e)=>resetAllGit(e)}>* Repos</button>
               <button className={`${state.isReactActive}`} onClick={(e)=>setReactRepos(e)}>React</button>
@@ -151,7 +150,7 @@ const Projects = ({handleMouseMove, handleMouseLeave}) => {
             key={idx} 
             onMouseMove={(e)=>handleMouseMove(e)}
             onMouseLeave={(e)=>handleMouseLeave(e)}
-            className="col-xl-4 col-lg-6 my-3 git-col">
+            className="col-xl-4 col-lg-6 git-col">
             
             <a 
               id={`${idx}card`}
@@ -164,7 +163,6 @@ const Projects = ({handleMouseMove, handleMouseLeave}) => {
               </div>
               
               <div className="card-info">
-                
                 <div className="card-desc">
                   <small>{repo.description}</small>
                 </div>
@@ -172,10 +170,8 @@ const Projects = ({handleMouseMove, handleMouseLeave}) => {
                 <div title={`🔗 code_repo :\r\n${repo.html_url}`} className="repo-languages mt-3">
                   {repo.language ? <strong>&lt;{repo.language}/&gt;</strong> : <strong>&lt;code/&gt;</strong>}&nbsp;<span><small><sub>{repo.size}kb.</sub></small></span>
                 </div>
-                
               </div>
               
-              {/* wrap here diection - row */}
               <div className="card-foot mt-auto">
                 <div className="card-dates">
                   <small>updated:&nbsp;<span>{moment(repo.updated_at).format('MM.DD.YY')}</span></small>
@@ -193,12 +189,8 @@ const Projects = ({handleMouseMove, handleMouseLeave}) => {
           );
         })}
       </div>
-      
     </div>
   );
 };
 
 export default Projects;
-
-// if repo.stargazers_count > 0;
-
