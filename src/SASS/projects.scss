@@ -117,6 +117,29 @@
   margin-bottom: 12rem;
   justify-content: center;
   
+  .git-title-col {
+    display: flex;
+    justify-content: center;
+    
+    .git-title-col-card {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      cursor: default;
+      width: fit-content;
+      min-width: 20rem;
+      margin: 0rem 1rem;
+      color: $text-color-primary;
+      background-color: $background-color;
+      padding: 1.25rem 1.5rem;
+      box-shadow: $box-shadow-inset;
+      border: 1px solid $border-color;
+      border-radius: $border-radius;
+      transition: $transition;
+    }
+  }
+  
   .git-col { // looped
     display: flex;
     justify-content: center;

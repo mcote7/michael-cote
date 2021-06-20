@@ -7,16 +7,48 @@ import {PROJ} from '../../Config/projects';
 const Projects = ({handleMouseMove, handleMouseLeave}) => {
 
   const [GIT, setGIT] = useState();
+  const [allGIT, setAllGIT] = useState();
 
   useEffect(()=> {
     fetch('https://api.github.com/users/mcote7/repos?page=1&per_page=100', {method: 'GET'})
       .then(res => res.json())
       .then(data => {
-        console.log("repos", data)
-        setGIT(data);
+        // console.log("git_repos", data)
+        let filteredGit = data.sort((repoA, repoB) => {
+          let dateA = new Date(repoA.created_at);
+          let dateB = new Date(repoB.created_at);
+          return dateB - dateA;
+        });
+        setGIT(filteredGit);
+        setAllGIT(filteredGit);
       });
   },[]);
 
+  const setReactRepos = (e) => {
+    let reactRepos = allGIT.filter(repo => {
+      return repo.name.includes('react') || repo.description.includes('React');
+    });
+    setGIT(reactRepos);
+  };
+
+  const setAngularRepos = (e) => {
+    let angularRepos = allGIT.filter(repo => {
+      return repo.name.includes('angular') || repo.description.includes('Angular') || 
+              repo.name.includes('rxjs') || repo.description.includes('RXJS') || 
+              repo.name.includes('typescript') || repo.description.includes('TypeScript') || 
+              repo.name.includes('ngrx') || repo.description.includes('NGRX');
+    });
+    setGIT(angularRepos);
+  };
+
+  const resetAllGit = (e) => {
+    setGIT(allGIT);
+  };
+
+  const searchGit = (e) => {
+    let result = allGIT.filter(repo => repo.name.includes(e.target.value))
+    setGIT(result);
+  };
 
   return (
     <div className="col col-sm-12">
@@ -70,6 +102,23 @@ const Projects = ({handleMouseMove, handleMouseLeave}) => {
       </div>
       
       <div id="git" className="git-pinned-row row">
+        
+        <div className="git-title-col">
+          <div className="git-title-col-card">
+            <div className="control-git">
+              <i class="fa fa-code-fork" aria-hidden="true"></i>
+              _github_repositorys_
+              <i class="fa fa-code-fork fa-flip-horizontal" aria-hidden="true"></i>
+            </div>
+            <input onBlur={(e)=>e.target.value = ''} onChange={(e)=>searchGit(e)} type="text" placeholder="search git repos..." />
+            <div className="git-buttons">
+              <button onClick={(e)=>resetAllGit(e)}>All Repos</button>
+              <button onClick={(e)=>setReactRepos(e)}>React</button>
+              <button onClick={(e)=>setAngularRepos(e)}>Angular</button>
+            </div>
+          </div>
+        </div>
+        
         {GIT && GIT.map((repo, idx) => {
           return(
           <div key={idx} className="col-xl-4 col-lg-6 my-3 git-col">
@@ -107,7 +156,7 @@ const Projects = ({handleMouseMove, handleMouseLeave}) => {
                 
                 <div className="git-circle-outer ms-auto">
                     <div className="git-logo">
-                      <i class="fa fa-github" aria-hidden="true"></i>
+                      <i className="fa fa-github" aria-hidden="true"></i>
                     </div>
                 </div>
               </div>
