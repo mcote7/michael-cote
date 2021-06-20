@@ -103,7 +103,9 @@ const Projects = () => {
                 </div>
                 
                 <div className="git-circle-outer ms-auto">
-                    <div className="git-logo">🎯</div>
+                    <div className="git-logo">
+                      <i class="fa fa-github" aria-hidden="true"></i>
+                    </div>
                 </div>
               </div>
               {/*  */}

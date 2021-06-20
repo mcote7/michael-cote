@@ -110,18 +110,17 @@
   }
 }
 
-
 .git-pinned-row {
   display: flex;
   margin-top: 12rem;
   margin-bottom: 12rem;
   justify-content: center;
   
-  .git-col {
+  .git-col { // looped
     display: flex;
     justify-content: center;
     
-    .git-card { // <a/> looped
+    .git-card { // <a/>
       width: 20rem;
       color: $text-color-primary;
       background-color: $background-color;
@@ -130,20 +129,19 @@
       backface-visibility: hidden;
       will-change: transform;
       box-shadow: $box-shadow-1;
-      border: 1px solid transparent;
+      border: 1px solid $background-color;
       border-radius: $border-radius;
       transition: $transition;
       
       &.even {
         box-shadow: $box-shadow-inset;
         &:hover {
-          // background: $bg-concave;
+          background: $bg-concave;
           
           .card-foot {
             .git-circle-outer {
               background: $bg-convex;
-              box-shadow: $box-shadow-2;
-              border: 1px solid $border-color;
+              box-shadow: none;
               
               .git-logo {
                 background: $bg-concave;
@@ -156,13 +154,12 @@
       
       &:hover {
         text-decoration: none;
-        transform: translate3d(0,-0.25rem,0);
-        // background: $bg-convex;
+        transform: translate3d(0,-0.5rem,0);
+        background: $bg-convex;
         border: 1px solid $border-color;
         
         &::before {
           opacity: 1;
-          transition: $transition-long;
         }
         
         .card-title {
@@ -170,12 +167,13 @@
         }
         .card-foot {
           .git-circle-outer {
-            border: 1px solid $border-color;
-            box-shadow: $box-shadow-2;
             background: $bg-concave;
             .git-logo {
               background: $bg-convex;
               box-shadow: $box-shadow-1;
+              i {
+                color: $primary;
+              }
             }
           }
         }
@@ -190,7 +188,7 @@
         color: $text-color-secondary;
         font-size: 0.75rem;
         opacity: 0;
-        transition: 0.4s;
+        transition: $transition-long;
       }
       
       .card-title {
@@ -200,7 +198,7 @@
         border-bottom: 1px solid $border-color;
         padding: 0.25rem 0rem;
         font-weight: bold;
-        transition: $transition;
+        transition: $transition-long;
       }
       
       .card-info {
@@ -242,6 +240,12 @@
             box-shadow: none;
             border: 1px solid $background-color;
             
+            i {
+              backface-visibility: hidden;
+              color: $text-color-secondary;
+              font-size: 2rem;
+              transition: $transition-long;
+            }
           }
         }
       }
