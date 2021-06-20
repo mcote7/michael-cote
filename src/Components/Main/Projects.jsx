@@ -92,7 +92,7 @@ const Projects = ({handleMouseMove, handleMouseLeave}) => {
                   <small>{repo.description}</small>
                 </div>
                 
-                <div className="repo-languages mt-3">
+                <div title={`🔗 code_repo :\r\n${repo.html_url}`} className="repo-languages mt-3">
                   {repo.language ? <strong>&lt;{repo.language}/&gt;</strong> : <strong>&lt;code/&gt;</strong>}&nbsp;<span><small><sub>{repo.size}kb.</sub></small></span>
                 </div>
                 

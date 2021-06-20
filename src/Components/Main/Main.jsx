@@ -10,11 +10,13 @@ const Main = ({darkMode, primaryColor, isBlueActive, isGreenActive, isOrangeActi
       
       <div id="about" className="row" style={{minHeight: '100vh'}}>
         <About 
-          darkMode={darkMode} 
+          darkMode={darkMode}
           primaryColor={primaryColor}
-          isBlueActive={isBlueActive} 
-          isGreenActive={isGreenActive} 
-          isOrangeActive={isOrangeActive}/>
+          isBlueActive={isBlueActive}
+          isGreenActive={isGreenActive}
+          isOrangeActive={isOrangeActive}
+          handleMouseMove={handleMouseMove}
+          handleMouseLeave={handleMouseLeave}/>
       </div>
       
       <div className="row">

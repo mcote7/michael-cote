@@ -4,7 +4,7 @@ import { SKILLS } from '../../Config/skills';
 
 // this component holds the section about me, *** parent is .row *** .
 
-const About = ({darkMode, primaryColor, isBlueActive, isGreenActive, isOrangeActive}) => {
+const About = ({darkMode, primaryColor, isBlueActive, isGreenActive, isOrangeActive, handleMouseMove, handleMouseLeave}) => {
 
 
   return (<React.Fragment>
@@ -26,7 +26,10 @@ const About = ({darkMode, primaryColor, isBlueActive, isGreenActive, isOrangeAct
       {/* stats */}
       <div className="stats-wrap row">
         
-        <div className="git-card col-lg-6">
+        <div 
+          onMouseLeave={(e)=>handleMouseLeave(e)}
+          onMouseMove={(e)=>handleMouseMove(e)}
+          className="git-card col-lg-6">
           {darkMode ? 
             <><img src={`https://github-readme-stats.vercel.app/api?username=mcote7&show_icons=true&theme=dark&icon_color=${primaryColor.substring(1)}&border_color=444444&bg_color=444444&text_color=E1E1E1&title_color=${primaryColor.substring(1)}`} alt="stats"/>
             <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=mcote7&hide_title=true&layout=compact&theme=dark&border_color=444444&bg_color=444444&text_color=E1E1E1" alt="langs"/></>:
