@@ -89,8 +89,8 @@ const Projects = () => {
                   <small>{repo.description}</small>
                 </div>
                 
-                <div className="repo-languages">
-                  <strong>&lt;{repo.language}/&gt;</strong>&nbsp;<span><small><sub>{repo.size}kb.</sub></small></span>
+                <div className="repo-languages mt-3">
+                  {repo.language ? <strong>&lt;{repo.language}/&gt;</strong> : <strong>&lt;code/&gt;</strong>}&nbsp;<span><small><sub>{repo.size}kb.</sub></small></span>
                 </div>
                 
               </div>
@@ -98,8 +98,8 @@ const Projects = () => {
               {/* wrap here diection - row */}
               <div className="card-foot mt-auto">
                 <div className="card-dates">
-                  <small>updated: {moment(repo.updated_at).format('MM.DD.YY')}</small>
-                  <small>created: {moment(repo.created_at).format('MM.DD.YY')}</small>
+                  <small>updated:&nbsp;<span>{moment(repo.updated_at).format('MM.DD.YY')}</span></small>
+                  <small>created:&nbsp;<span>{moment(repo.created_at).format('MM.DD.YY')}</span></small>
                 </div>
                 
                 <div className="git-circle-outer ms-auto">
