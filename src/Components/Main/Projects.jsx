@@ -105,12 +105,15 @@ const Projects = ({handleMouseMove, handleMouseLeave}) => {
         
         <div className="git-title-col">
           <div className="git-title-col-card">
-            <div className="control-git">
+            <div className="control-git mb-4">
               <i class="fa fa-code-fork" aria-hidden="true"></i>
-              _github_repositorys_
+                &nbsp;github repositorys&nbsp;  
               <i class="fa fa-code-fork fa-flip-horizontal" aria-hidden="true"></i>
             </div>
-            <input onBlur={(e)=>e.target.value = ''} onChange={(e)=>searchGit(e)} type="text" placeholder="search git repos..." />
+            <div className="input-group mb-4">
+              <span className="input-group-text"><i className="fa fa-search" aria-hidden="true"></i></span>
+              <input onBlur={(e)=>e.target.value = ''} onChange={(e)=>searchGit(e)} className="form-control" type="text" placeholder="search git repos..." />
+            </div>
             <div className="git-buttons">
               <button onClick={(e)=>resetAllGit(e)}>All Repos</button>
               <button onClick={(e)=>setReactRepos(e)}>React</button>
