@@ -60,6 +60,9 @@
       }
       
       .content {
+        .cert-title {
+          text-align: right;
+        }
         .cert-img {
           background-position-x: right;
         }
@@ -96,6 +99,10 @@
       background: $background-color;
       box-shadow: $box-shadow-1;
       
+      .cert-title {
+        //
+      }
+      
       .cert-img {
         height: 15rem;
         background-size: contain;
@@ -128,6 +135,22 @@
         &.ts-2-img {
           background-image: url('../Images/edu/certs/TypeScript_master_cert.PNG');
         }
+      }
+    }
+    
+    &:hover {
+      &.left {
+        &::before {
+          border-color: transparent transparent transparent $primary-light;
+        }
+      }
+      &.right {
+        &::before {
+          border-color: transparent $primary-light transparent transparent;
+        }
+      }
+      &::after {
+        background: $primary;
       }
     }
   }
