@@ -8,7 +8,7 @@ const Education = () => {
       
       <div class="timeline">
         
-        {EDU && EDU.reverse().map((cert, idx)=> {
+        {EDU && [...EDU].reverse().map((cert, idx)=> {
           return(
             <div 
               key={idx} 
