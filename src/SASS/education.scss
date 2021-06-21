@@ -63,12 +63,12 @@
         .cert-title {
           padding-right: 1rem;
           padding-left: 0rem;
-          .cert-date-badge {
-            
-          }
-          .cert-title {
-            //
-          }
+          // .cert-date-badge {
+          //   //
+          // }
+          // .cert-title {
+          //   //
+          // }
         }
         .cert-img {
           background-position-x: right;
@@ -112,6 +112,7 @@
         justify-content: space-between;
         border-radius: $border-radius;
         box-shadow: $box-shadow-inset;
+        background: $background-color;
         margin-bottom: 0.75rem;
         padding-left: 1rem;
         border-radius: 1.5rem;
@@ -125,9 +126,9 @@
           background: $bg-convex;
           padding: 0rem 0.5rem;
         }
-        .cert-name {
-          //
-        }
+        // .cert-name {
+        //   //
+        // }
       }
       
       .cert-img {
@@ -165,9 +166,13 @@
       }
     }
     
-    // container :: hov >
+    // .container :: hov >
     &:hover {
+      
       &.left {
+        .content {
+          //
+        }
         &::before {
           border-color: transparent transparent transparent $primary-light;
         }
@@ -178,25 +183,30 @@
         }
       }
       &::after {
-        background: $primary;
+        background: $bg-concave-primary;
         box-shadow: $box-shadow-1;
       }
       .content {
+        // 
         .cert-title {
-          //
+          // 
           .cert-date-badge {
-            border-color: $primary;
+            background: $bg-concave;
+            box-shadow: $box-shadow-inset;
             color: $primary;
+            font-weight: bold;
           }
-          .cert-name {
-            //
-          }
+          // .cert-name {
+          //   //
+          // }
         }
       }
     }
   }
 }
 
+
+// break to 1 column right
 @media screen and (max-width: 1092px) {
   .timeline {
     margin-top: 4rem;
@@ -285,3 +295,6 @@
     }
   }
 }
+
+// small - phone 
+@media screen and (max-width: 750px) {}
