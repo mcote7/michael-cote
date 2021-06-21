@@ -17,8 +17,8 @@ const Education = () => {
               
               <div className="content">
                 {idx % 2 === 0 ? 
-                <div className="cert-title cert-left"><small className="cert-date-badge">{cert.date}</small>&nbsp;{cert.title}</div> :
-                <div className="cert-title">{cert.title}&nbsp;<small className="cert-date-badge">{cert.date}</small></div>}
+                <div className="cert-title cert-left"><small className="cert-date-badge">{cert.date}</small><span className="cert-name">&nbsp;{cert.title}</span></div> :
+                <div className="cert-title"><span className="cert-name">{cert.title}&nbsp;</span><small className="cert-date-badge">{cert.date}</small></div>}
                 
                 <div className={`cert-img ${cert.image}`}></div>
               </div>
