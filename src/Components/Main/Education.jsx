@@ -7,20 +7,22 @@ const Education = () => {
     <div className="col col-sm-12">
       
       <div class="timeline">
-        <div class="container left">
-          <div class="content">
-            <h2>2017</h2>
-            <p>Lorem ipsum..</p>
-          </div>
-        </div>
-        <div class="container right">
-          <div class="content">
-            <h2>2016</h2>
-            <p>Lorem ipsum..</p>
-          </div>
-        </div>
+        
+        {EDU && EDU.reverse().map((cert, idx)=> {
+          return(
+            <div 
+              key={idx} 
+              id={`cert${idx}`} 
+              className={idx % 2 === 0 ? 'container left' : 'container right'}>
+              <div className="content">
+                {/* <h5>{cert.title}</h5>
+                <p>{cert.date}</p> */}
+                <div className={`cert-img ${cert.image}`}></div>
+              </div>
+            </div>
+          );
+        })}
       </div>
-      
     </div>
   );
 };

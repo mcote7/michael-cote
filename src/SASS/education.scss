@@ -6,16 +6,20 @@
   max-width: 1200px;
   margin: 0rem auto;
   padding: 6rem 0rem;
+  margin-top: 12rem;
+  margin-bottom: 8rem;
   
   &::after {
     content: '';
     position: absolute;
-    width: 0.5rem;
-    background-color: white;
+    width: 0.75rem;
     top: 0;
     bottom: 0;
     left: 50%;
-    margin-left: -0.25rem;
+    margin-left: -0.375rem;
+    border-radius: 0.375rem;
+    background: $background-color;
+    box-shadow: $box-shadow-inset;
   }
   
   .container {
@@ -30,9 +34,10 @@
       width: 2rem;
       height: 2rem;
       right: -1rem;
-      background-color: white;
-      border: 0.25rem solid $primary;
-      top: 1rem;
+      background: $bg-convex;
+      border: 0.5rem solid $background-color;
+      box-shadow: $box-shadow-2;
+      top: 0.75rem;
       border-radius: 50%;
       z-index: 1;
     }
@@ -48,10 +53,16 @@
         top: 1.25rem;
         width: 0;
         z-index: 1;
-        right: 2rem;
+        right: 1.5rem;
         border: medium solid;
         border-width: 0.75rem 0 0.75rem 0.75rem;
-        border-color: transparent transparent transparent $primary-light;
+        border-color: transparent transparent transparent $border-color;
+      }
+      
+      .content {
+        .cert-img {
+          background-position-x: right;
+        }
       }
     }
     
@@ -66,10 +77,10 @@
         top: 1.25rem;
         width: 0;
         z-index: 1;
-        left: 2rem;
+        left: 1.5rem;
         border: medium solid;
         border-width: 0.75rem 0.75rem 0.75rem 0;
-        border-color: transparent $primary-light transparent transparent;
+        border-color: transparent $border-color transparent transparent;
       }
       
       &::after {
@@ -79,16 +90,52 @@
     
     .content {
       padding: 1.25rem 1.75rem;
-      background-color: white;
       position: relative;
-      border-radius: 0.5rem;
+      border-radius: $border-radius;
       z-index: 3;
+      background: $background-color;
+      box-shadow: $box-shadow-1;
+      
+      .cert-img {
+        height: 15rem;
+        background-size: contain;
+        background-repeat: no-repeat;
+        
+        &.dojo-img {
+          background-image: url('../Images//edu/certs/DojoCert.png');
+        }
+        &.react-img {
+          background-image: url('../Images/edu/certs/MasterReactCert.png');
+        }
+        &.redux-img {
+          background-image: url('../Images/edu/certs/ReduxCert.png');
+        }
+        &.sass-img {
+          background-image: url('../Images/edu/certs/SassCert.jpg');
+        }
+        &.design-1-img {
+          background-image: url('../Images/edu/certs/DesignIntroCert_2.jpg');
+        }
+        &.es6-img {
+          background-image: url('../Images/edu/certs/ES6cert.jpg');
+        }
+        &.angular-img {
+          background-image: url('../Images/edu/certs/Angular4Cert.jpg');
+        }
+        &.ts-1-img {
+          background-image: url('../Images/edu/certs/TypeScript_basic_cert.PNG');
+        }
+        &.ts-2-img {
+          background-image: url('../Images/edu/certs/TypeScript_master_cert.PNG');
+        }
+      }
     }
   }
 }
 
 @media screen and (max-width: 1092px) {
   .timeline {
+    margin-top: 4rem;
     
     &::after {
       left: 1rem;
