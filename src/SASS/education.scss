@@ -1,0 +1,131 @@
+@import './variables.scss';
+
+/* The actual timeline (the vertical ruler) */
+.timeline {
+  position: relative;
+  max-width: 1200px;
+  margin: 0rem auto;
+  padding: 6rem 0rem;
+  
+  &::after {
+    content: '';
+    position: absolute;
+    width: 0.5rem;
+    background-color: white;
+    top: 0;
+    bottom: 0;
+    left: 50%;
+    margin-left: -0.25rem;
+  }
+  
+  .container {
+    padding: 0.75rem 2.5rem;
+    position: relative;
+    background-color: inherit;
+    width: 50%;
+    
+    &::after {
+      content: '';
+      position: absolute;
+      width: 2rem;
+      height: 2rem;
+      right: -1rem;
+      background-color: white;
+      border: 0.25rem solid $primary;
+      top: 1rem;
+      border-radius: 50%;
+      z-index: 1;
+    }
+    
+    &.left {
+      margin-left: 0;
+      margin-right: auto;
+      
+      &::before {
+        content: " ";
+        height: 0;
+        position: absolute;
+        top: 1.25rem;
+        width: 0;
+        z-index: 1;
+        right: 2rem;
+        border: medium solid;
+        border-width: 0.75rem 0 0.75rem 0.75rem;
+        border-color: transparent transparent transparent $primary-light;
+      }
+    }
+    
+    &.right {
+      margin-left: auto;
+      margin-right: 0;
+      
+      &::before {
+        content: " ";
+        height: 0;
+        position: absolute;
+        top: 1.25rem;
+        width: 0;
+        z-index: 1;
+        left: 2rem;
+        border: medium solid;
+        border-width: 0.75rem 0.75rem 0.75rem 0;
+        border-color: transparent $primary-light transparent transparent;
+      }
+      
+      &::after {
+        left: -1rem;
+      }
+    }
+    
+    .content {
+      padding: 1.25rem 1.75rem;
+      background-color: white;
+      position: relative;
+      border-radius: 0.5rem;
+      z-index: 3;
+    }
+  }
+}
+
+@media screen and (max-width: 1092px) {
+  .timeline {
+    
+    &::after {
+      left: 1rem;
+    }
+    
+    .container {
+      width: 100%;
+      padding: 0.75rem 0.5rem 0.75rem 2.75rem;
+      
+      &.left, &.right {
+        &::before {
+          content: " ";
+          height: 0;
+          position: absolute;
+          top: 1.25rem;
+          width: 0;
+          z-index: 1;
+          left: 2.25rem;
+          border: medium solid;
+          border-width: 0.75rem 0.75rem 0.75rem 0;
+          border-color: transparent $primary-light transparent transparent;
+        }
+      }
+      
+      &.left {
+        &::after {
+          left: 0rem;
+        }
+      }
+      
+      &.right {
+        margin-left: 0;
+        margin-right: auto;
+        &::after {
+          left: 0rem;
+        }
+      }
+    }
+  }
+}

@@ -127,7 +127,7 @@ const Projects = ({handleMouseMove, handleMouseLeave}) => {
           <div className="git-title-col-card">
             <div className="control-git mb-4">
               <i className="fa fa-code-fork" aria-hidden="true"></i>
-                &nbsp;github repositorys&nbsp;  
+                &nbsp;github repository&nbsp;  
               <i className="fa fa-code-fork fa-flip-horizontal" aria-hidden="true"></i>
             </div>
             

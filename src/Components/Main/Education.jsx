@@ -1,0 +1,28 @@
+import React from 'react';
+import {EDU} from '../../Config/education';
+
+
+const Education = () => {
+  return (
+    <div className="col col-sm-12">
+      
+      <div class="timeline">
+        <div class="container left">
+          <div class="content">
+            <h2>2017</h2>
+            <p>Lorem ipsum..</p>
+          </div>
+        </div>
+        <div class="container right">
+          <div class="content">
+            <h2>2016</h2>
+            <p>Lorem ipsum..</p>
+          </div>
+        </div>
+      </div>
+      
+    </div>
+  );
+};
+
+export default Education;
