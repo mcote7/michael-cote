@@ -62,6 +62,9 @@
       .content {
         .cert-title {
           text-align: right;
+          // .cert-date-badge {
+
+          // }
         }
         .cert-img {
           background-position-x: right;
@@ -99,9 +102,23 @@
       background: $background-color;
       box-shadow: $box-shadow-1;
       
-      // .cert-title {
-      //   //
-      // }
+      .cert-title {
+        display: flex;
+        flex-direction: row; // reverse for left on mobile
+        border-radius: $border-radius;
+        box-shadow: $box-shadow-inset;
+        
+        .cert-date-badge {
+          border: 1px solid $background-color;
+          font-size: 0.88rem;
+          border-radius: 1.5rem;
+          box-shadow: $box-shadow-1;
+          width: fit-content;
+          margin: 1rem;
+          background: $bg-convex;
+          padding: 0rem 0.5rem;
+        }
+      }
       
       .cert-img {
         height: 15rem;
@@ -197,6 +214,15 @@
           border-width: 0.75rem 0.75rem 0.75rem 0;
           border-color: transparent $border-color transparent transparent;
         }
+        .content {
+          //
+          .cert-title {
+            //
+            .cert-date-badge {
+                font-size: 0.88rem;
+            }
+          }
+        }
       }
       
       &.left {
@@ -213,6 +239,7 @@
         }
       }
       
+      // container :: hov >
       &:hover {
         &.left {
           &::before {
@@ -225,6 +252,14 @@
           }
         }
       }
+      // .content {
+      //   .cert-title {
+      //     //
+      //     .cert-date-badge {
+      //         font-size: 0.88rem;
+      //     }
+      //   }
+      // }
     }
   }
 }
