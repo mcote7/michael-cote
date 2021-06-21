@@ -138,6 +138,7 @@
       }
     }
     
+    // container :: hov >
     &:hover {
       &.left {
         &::before {
@@ -151,6 +152,7 @@
       }
       &::after {
         background: $primary;
+        box-shadow: $box-shadow-1;
       }
     }
   }
@@ -166,9 +168,9 @@
     
     .container {
       width: 100%;
-      padding: 0.75rem 0.5rem 0.75rem 2.75rem;
+      padding: 0.75rem 0.5rem 0.75rem 3.25rem;
       
-      &.left, &.right {
+      &.right {
         &::before {
           content: " ";
           height: 0;
@@ -179,7 +181,21 @@
           left: 2.25rem;
           border: medium solid;
           border-width: 0.75rem 0.75rem 0.75rem 0;
-          border-color: transparent $primary-light transparent transparent;
+          border-color: transparent $border-color transparent transparent;
+        }
+      }
+      &.left {
+        &::before {
+          content: " ";
+          height: 0;
+          position: absolute;
+          top: 1.25rem;
+          width: 0;
+          z-index: 1;
+          left: 2.25rem;
+          border: medium solid;
+          border-width: 0.75rem 0.75rem 0.75rem 0;
+          border-color: transparent $border-color transparent transparent;
         }
       }
       
@@ -194,6 +210,19 @@
         margin-right: auto;
         &::after {
           left: 0rem;
+        }
+      }
+      
+      &:hover {
+        &.left {
+          &::before {
+            border-color: transparent $primary-light transparent transparent ;
+          }
+        }
+        &.right {
+          &::before {
+            border-color: transparent $primary-light transparent transparent ;
+          }
         }
       }
     }
