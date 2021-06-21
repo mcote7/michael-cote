@@ -3,7 +3,6 @@ import useRS from "radioactive-state";
 import Main from './Components/Main/Main';
 import Nav from './Components/Navigation/Nav';
 
-// 🚀 this component holds the theme change functions, which are passed to Nav controller.
 
 const App = () => {
 
@@ -47,7 +46,7 @@ const App = () => {
   useEffect(()=> {
     
     document.body.classList.add('no-transition');
-
+    
     const root = document.documentElement;
     
     if(colorMode === 'blue') {
@@ -83,7 +82,7 @@ const App = () => {
     setTimeout(() => {
       document.body.classList.remove('no-transition');
     }, 100);
-
+    
   },[colorMode]);
 
 
@@ -97,7 +96,7 @@ const App = () => {
     // console.log("coord:", e.clientX, e.clientY)
     const el = document.getElementById('follow');
     el.classList.add('on');
-    state.x = e.clientX - 18; // (18) width / height of el //
+    state.x = e.clientX - 18; // (18) width =/= height of el //
     state.y = e.clientY - 18;
   };
 
@@ -106,27 +105,40 @@ const App = () => {
     el.classList.remove('on');
   };
 
+  useEffect(()=> {
+    window.addEventListener('blur', left);
+    window.addEventListener('focus', back);
+  },[]);
+
+  const left = (e) => {
+    document.title = 'see you soon 🚀'
+  };
+
+  const back = (e) => {
+    document.title = 'welcome back ✨'
+  };
+
   
   return (
     <div className="container-fluid neu-app">
-        
+      
       <Nav 
-        darkMode={darkMode}
+        darkMode={darkMode} 
         handleDarkMode={handleDarkMode} 
         setColorMode={setColorMode} 
         isBlueActive={isBlueActive} 
         isGreenActive={isGreenActive} 
-        isOrangeActive={isOrangeActive}/>
-          
+        isOrangeActive={isOrangeActive} />
+        
       <Main 
         darkMode={darkMode} 
-        primaryColor={primaryColor}
+        primaryColor={primaryColor} 
         isBlueActive={isBlueActive} 
         isGreenActive={isGreenActive} 
-        isOrangeActive={isOrangeActive}
-        handleMouseMove={handleMouseMove}
-        handleMouseLeave={handleMouseLeave}/>
-                                        
+        isOrangeActive={isOrangeActive} 
+        handleMouseMove={handleMouseMove} 
+        handleMouseLeave={handleMouseLeave} />
+                                                
       <div id="follow" className="follow" style={{top: `${state.y}px`, left: `${state.x}px`}}></div>
     </div>
   );

@@ -3,6 +3,7 @@ import useRS from "radioactive-state";
 import moment from 'moment';
 import {PROJ} from '../../Config/projects';
 
+
 const Projects = ({handleMouseMove, handleMouseLeave}) => {
 
   const state = useRS({
@@ -125,9 +126,9 @@ const Projects = ({handleMouseMove, handleMouseLeave}) => {
         <div className="git-title-col">
           <div className="git-title-col-card">
             <div className="control-git mb-4">
-              <i class="fa fa-code-fork" aria-hidden="true"></i>
+              <i className="fa fa-code-fork" aria-hidden="true"></i>
                 &nbsp;github repositorys&nbsp;  
-              <i class="fa fa-code-fork fa-flip-horizontal" aria-hidden="true"></i>
+              <i className="fa fa-code-fork fa-flip-horizontal" aria-hidden="true"></i>
             </div>
             
             <div className="input-group mb-4">
@@ -136,7 +137,7 @@ const Projects = ({handleMouseMove, handleMouseLeave}) => {
             </div>
             
             <div className="git-buttons">
-              <button className={`${state.isAllActive}`} onClick={(e)=>resetAllGit(e)}>* Repos</button>
+              <button className={`${state.isAllActive}`} onClick={(e)=>resetAllGit(e)}>Repos</button>
               <button className={`${state.isReactActive}`} onClick={(e)=>setReactRepos(e)}>React</button>
               <button className={`${state.isAngularActive}`} onClick={(e)=>setAngularRepos(e)}>Angular</button>
               <div className={`git-float ${state.gitFloatClass}`}></div>

@@ -2,7 +2,6 @@ import React from 'react';
 import About from './About';
 import Projects from './Projects';
 
-// 🚀 this component holds the rows that wrap each section (3).
 
 const Main = ({darkMode, primaryColor, isBlueActive, isGreenActive, isOrangeActive, handleMouseMove, handleMouseLeave}) => {
   

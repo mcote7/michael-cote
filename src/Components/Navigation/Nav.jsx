@@ -1,7 +1,6 @@
 import React, { useEffect } from 'react';
 import useRS from "radioactive-state";
 
-// 🚀 this component holds & handles the scrolling functions, and sets theme changes in template.
 
 const Nav = ({darkMode, handleDarkMode, setColorMode, isBlueActive, isGreenActive, isOrangeActive }) => {
 
@@ -85,7 +84,6 @@ const Nav = ({darkMode, handleDarkMode, setColorMode, isBlueActive, isGreenActiv
       </div>
       
       <div className="left-nav-social-links">
-        
         <button onClick={(e)=>handleDarkMode(e)}>
           {darkMode ? <i className="fa fa-sun-o" aria-hidden="true"></i> : <i className="fa fa-moon-o" aria-hidden="true"></i> }
         </button>
@@ -106,7 +104,6 @@ const Nav = ({darkMode, handleDarkMode, setColorMode, isBlueActive, isGreenActiv
       </div>
       
       <div className="left-nav-main-links">
-        
         <button id="a" className={`neu-btn ${state.isAboutActive}`} onClick={(e)=> scrollTo(e, 'about')}>About</button>
         <button id="p" className={`neu-btn ${state.isProjectsActive}`} onClick={(e)=> scrollTo(e, 'projects')} onDoubleClick={(e)=> scrollTo(e, 'git')}>Projects</button>
         <button id="e" className={`neu-btn ${state.isEducationActive}`} onClick={(e)=> scrollTo(e, 'education')}>Education</button>
@@ -114,7 +111,6 @@ const Nav = ({darkMode, handleDarkMode, setColorMode, isBlueActive, isGreenActiv
       </div>
       
       <div className="colors">
-        
         <button 
           onClick={()=>setColorMode('blue')}
           className={`color-pick blue ${isBlueActive}`}>

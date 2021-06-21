@@ -144,7 +144,6 @@
           .input-group-text {
             color: $primary;
             background: $bg-concave;
-            // box-shadow: $box-shadow-inset;
             border: 1px solid $primary;
           }
         }
@@ -211,13 +210,13 @@
           height: 1.5rem;
           width: 6.5rem;
           border-radius: $border-radius;
-          transition: $transition-long cubic-bezier(0.18, 0.89, 0.32, 1.28);
+          transition: 0.450s cubic-bezier(0.18, 0.89, 0.32, 1.28);
           box-shadow: $box-shadow-1;
           background: $background-color;
           border: 1px solid $background-color;
           
           &.all-select {
-            transform: translateX(0.25rem);
+            transform: translateX(0rem);
           }
           &.react-select {
             transform: translateX(6.5rem);
