@@ -182,7 +182,7 @@
         height: 0rem;
         width: 0%;
         overflow: hidden;
-        transition: opacity 0.425s ease-in-out $transition, height 0.325s cubic-bezier(0.48, 0.89, 0.32, 1.28);
+        transition: 0.325s cubic-bezier(0.48, 0.89, 0.32, 1.28);
       }
     }
     
