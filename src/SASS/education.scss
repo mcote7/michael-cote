@@ -73,6 +73,7 @@
           justify-content: flex-end;
           text-align: end;
           background: $bg-concave-primary;
+          margin-left: auto;
         }
       }
     }
@@ -166,8 +167,10 @@
           background-image: url('../Images/edu/certs/TypeScript_master_cert.PNG');
         }
       }
+      
       .cert-description {
         display: flex;
+        position: absolute;
         padding: 0.25rem 0.75rem;
         margin-top: 1.25rem;
         color: $white;
@@ -176,7 +179,11 @@
         background: $bg-convex-primary;
         border: 0.25rem solid $background-color;
         text-shadow: 2px 1px 1px $black;
-        
+        height: 0rem;
+        width: 0%;
+        overflow: hidden;
+        // opacity: 0;
+        transition: opacity 0.425s ease-in-out $transition, height 0.325s cubic-bezier(0.48, 0.89, 0.32, 1.28);
       }
     }
     
@@ -213,6 +220,12 @@
           // .cert-name {
           //   //
           // }
+        }
+        
+        .cert-description {
+          height: min-content;
+          width: 100%;
+          opacity: 1;
         }
       }
     }
@@ -345,9 +358,9 @@
               margin-bottom: 0.5rem;
             }
           }
-          .cert-img {
-            height: 10rem;
-          }
+          // .cert-img {
+          //   height: 11rem;
+          // }
           .cert-description {
             text-align: left;
             background: $bg-concave-primary;
@@ -366,7 +379,7 @@
           }
         }
         .cert-img {
-          height: 10rem;
+          height: 11rem;
         }
         .cert-description {
           background: $bg-concave-primary;
@@ -374,21 +387,21 @@
       }
       // container : hov 
       &:hover {
-        &.left {
-          .content {
-            .cert-title {
-              //
-              // background: $bg-convex-primary;
-              // box-shadow: $box-shadow-1;
-              .cert-name {
-                // color: $white;
-              }
-              .cert-date-badge {
-                // box-shadow: $box-shadow-inset;
-              }
-            }
-          }
-        }
+        // &.left {
+        //   .content {
+        //     .cert-title {
+        //       //
+        //       // background: $bg-convex-primary;
+        //       // box-shadow: $box-shadow-1;
+        //       .cert-name {
+        //         // color: $white;
+        //       }
+        //       .cert-date-badge {
+        //         // box-shadow: $box-shadow-inset;
+        //       }
+        //     }
+        //   }
+        // }
         .content {
           .cert-title {
             //
