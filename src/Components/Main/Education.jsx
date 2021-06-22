@@ -21,6 +21,11 @@ const Education = () => {
                 <div className="cert-title"><span className="cert-name">{cert.title}&nbsp;</span><small className="cert-date-badge">{cert.date}</small></div>}
                 
                 <div className={`cert-img ${cert.image}`}></div>
+                
+                <div className="cert-description">
+                  <div>{cert.info}</div>
+                </div>
+                
               </div>
               
             </div>
