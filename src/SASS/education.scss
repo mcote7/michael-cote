@@ -224,6 +224,10 @@
           // }
         }
         
+        // .cert-img {
+        //   // background-size: 100%;
+        // }
+        
         .cert-description {
           height: min-content;
           width: 100%;
@@ -291,7 +295,7 @@
           }
           .cert-description {
             background: $bg-convex-primary;
-            justify-content: flex-start;
+            text-align: left;
           }
         }
       }
@@ -312,6 +316,7 @@
       
       .content {
         .cert-description {
+          position: relative;
           background: $bg-convex-primary;
         }
       }
