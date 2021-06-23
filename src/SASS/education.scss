@@ -65,9 +65,9 @@
           padding-right: 1rem;
           padding-left: 0rem;
         }
-        .cert-img {
-          background-position-x: right;
-        }
+        // .cert-img {
+        //   background-position-x: right;
+        // }
         .cert-description {
           display: flex;
           justify-content: flex-end;
@@ -138,6 +138,7 @@
         height: 15rem;
         background-size: contain;
         background-repeat: no-repeat;
+        background-position-x: center;
         position: relative;
         z-index: 4;
         
@@ -290,9 +291,9 @@
             //     // font-size: 0.88rem;
             // }
           }
-          .cert-img {
-            background-position: initial;
-          }
+          // .cert-img {
+          //   background-position: initial;
+          // }
           .cert-description {
             background: $bg-convex-primary;
             text-align: left;
@@ -389,6 +390,7 @@
           height: 11rem;
         }
         .cert-description {
+          margin-top: 1rem;
           background: $bg-concave-primary;
         }
       }
