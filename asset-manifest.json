@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/michael-cote/static/css/main.0eb6c2b9.chunk.css",
+    "main.css": "/michael-cote/static/css/main.cda751d9.chunk.css",
     "main.js": "/michael-cote/static/js/main.78f1907b.chunk.js",
     "main.js.map": "/michael-cote/static/js/main.78f1907b.chunk.js.map",
     "runtime-main.js": "/michael-cote/static/js/runtime-main.b03479cc.js",
@@ -12,7 +12,7 @@
     "static/js/3.a392a4f8.chunk.js.map": "/michael-cote/static/js/3.a392a4f8.chunk.js.map",
     "index.html": "/michael-cote/index.html",
     "static/css/2.1c412a2b.chunk.css.map": "/michael-cote/static/css/2.1c412a2b.chunk.css.map",
-    "static/css/main.0eb6c2b9.chunk.css.map": "/michael-cote/static/css/main.0eb6c2b9.chunk.css.map",
+    "static/css/main.cda751d9.chunk.css.map": "/michael-cote/static/css/main.cda751d9.chunk.css.map",
     "static/js/2.4b30e180.chunk.js.LICENSE.txt": "/michael-cote/static/js/2.4b30e180.chunk.js.LICENSE.txt",
     "static/media/global.scss": "/michael-cote/static/media/self1.b48c34e7.jfif",
     "static/media/font-awesome.css": "/michael-cote/static/media/fontawesome-webfont.f691f37e.woff"
@@ -21,7 +21,7 @@
     "static/js/runtime-main.b03479cc.js",
     "static/css/2.1c412a2b.chunk.css",
     "static/js/2.4b30e180.chunk.js",
-    "static/css/main.0eb6c2b9.chunk.css",
+    "static/css/main.cda751d9.chunk.css",
     "static/js/main.78f1907b.chunk.js"
   ]
 }
