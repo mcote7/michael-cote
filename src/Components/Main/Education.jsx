@@ -23,7 +23,7 @@ const Education = () => {
                 <div className={`cert-img ${cert.image}`}></div>
                 
                 <div className="cert-description">
-                  <div>{cert.info}</div>
+                  <div>{cert.info} <small> - ({cert.institution})</small></div>
                 </div>
                 
               </div>

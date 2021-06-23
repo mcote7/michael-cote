@@ -73,7 +73,7 @@
           justify-content: flex-end;
           text-align: end;
           background: $bg-concave-primary;
-          margin-left: auto;
+          left: 0rem;
         }
       }
     }
@@ -138,6 +138,8 @@
         height: 15rem;
         background-size: contain;
         background-repeat: no-repeat;
+        position: relative;
+        z-index: 4;
         
         &.dojo-img {
           background-image: url('../Images//edu/certs/DojoCert.png');
@@ -172,10 +174,11 @@
         display: flex;
         position: absolute;
         padding: 0.25rem 0.75rem;
-        margin-top: 1.25rem;
+        margin-top: 0.25rem;
+        right: 0rem;
         color: $white;
-        box-shadow: $box-shadow-1; // 2?
-        border-radius: $border-radius;
+        box-shadow: $box-shadow-1;
+        border-radius: 0.75rem;
         background: $bg-convex-primary;
         border: 0.25rem solid $background-color;
         text-shadow: 2px 1px 1px $black;
@@ -224,6 +227,7 @@
         .cert-description {
           height: min-content;
           width: 100%;
+          box-shadow: $box-shadow-2;
         }
       }
     }
