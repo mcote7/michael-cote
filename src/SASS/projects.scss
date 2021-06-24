@@ -83,15 +83,18 @@
         font-weight: bold;
         border-left: 0.5rem solid transparent;
         transition: $transition-long;
+        
         i {
           opacity: 0.8;
           transform: translateX(0rem);
           transition: $transition-long;
         }
+        
         &:hover {
           box-shadow: $box-shadow-inset;
           color: $primary-dark!important;
           border-left: 0.5rem solid;
+          
           i {
             opacity: 1;
             transform: translateX(0.5rem);
@@ -159,6 +162,7 @@
         box-shadow: $box-shadow-1;
         transition: $transition;
       }
+      
       input {
         border: none;
         border-radius: 0rem $border-radius $border-radius 0rem;
@@ -255,8 +259,10 @@
       
       &.even {
         box-shadow: $box-shadow-inset;
+        
         &:hover {
           background: $bg-concave;
+          
           .card-info {
             .repo-languages {
               background: $background-color;
@@ -310,9 +316,11 @@
           }
           .git-circle-outer {
             background: $bg-concave;
+            
             .git-logo {
               background: $bg-convex;
               box-shadow: $box-shadow-1;
+              
               i {
                 color: $primary;
               }
@@ -363,6 +371,7 @@
           box-shadow: none;
           background: $background-color;
           transition: $transition-long;
+          
           &:hover {
             border: 1px solid $primary-light;
           }
@@ -378,6 +387,7 @@
           flex-direction: column;
           font-size: 0.88rem;
           width: fit-content;
+          
           small {
             span {
               color: $text-color-secondary;
@@ -429,8 +439,10 @@
       .proj-info {
         text-align: center;
         top: 2.25rem;
+        
         .proj-title {
           justify-content: center;
+          
           h4 {
             margin-left: 1rem;
           }

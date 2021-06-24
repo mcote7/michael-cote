@@ -27,7 +27,7 @@
 // 🌕 LIGHT (blue) // 
 
   :root {
-    // dark/light toggle -> 
+    // dark/light toggle in app -> 
     --bgcolor: #e5ecf5;
     --dark-shadow: #bec8e4;
     --light-shadow: #ffffff;
@@ -36,13 +36,13 @@
     --text-color-secondary: rgba(0, 0, 0, 0.7);
     --text-color-disabled: rgba(0, 0, 0, 0.45);
 
-    // color toggle -> 
+    // color toggle in app -> 
     --primary: #2978FF;
     --primary-dark: #0151D9;
     --primary-light: #7DADFE;
   }
 
-// SHARED // 
+// DYNAMIC GLOBAL VARS for * .SCSS // 
 
   $background-color: var(--bgcolor);
   $dark-shadow: var(--dark-shadow);

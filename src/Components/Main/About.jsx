@@ -9,7 +9,6 @@ const About = ({darkMode, primaryColor, isBlueActive, isGreenActive, isOrangeAct
       
       {/* intro */}
       <div className="self-wrap row">
-        
         <div className="self-img col-lg-6">
           <span className="back-1"></span>
           <span className="back-2"></span>
@@ -22,7 +21,6 @@ const About = ({darkMode, primaryColor, isBlueActive, isGreenActive, isOrangeAct
       
       {/* stats */}
       <div className="stats-wrap row">
-        
         <div 
           onMouseLeave={(e)=>handleMouseLeave(e)}
           onMouseMove={(e)=>handleMouseMove(e)}
@@ -76,7 +74,6 @@ const About = ({darkMode, primaryColor, isBlueActive, isGreenActive, isOrangeAct
           return <div key={idx} className="skill-badge">{sk}</div>
         })}
       </div>
-      
     </div>
   </React.Fragment>);
 };

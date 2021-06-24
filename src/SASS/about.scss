@@ -32,10 +32,12 @@
       .back-1 {
         animation: waves 1s linear infinite;
       }
+      
       .back-2 {
         animation: waves 2s linear 2s infinite;
       }
     }
+    
     &:active {
       background-image: $bg-concave;
       cursor: none;
@@ -112,6 +114,7 @@
         background-image: url('../Images/abo/ang-logo.png');
         background-size: contain;
         background-repeat: no-repeat;
+        
         &.blue {
           filter: hue-rotate(225deg) brightness(1.5);
         }
@@ -119,11 +122,13 @@
           filter: hue-rotate(140deg) brightness(1.5);
         }
       }
+      
       div {
         p {
           font-weight: bold;
           margin-bottom: 0rem;
         }
+        
         .sub {
           color: $primary;
         }
@@ -142,14 +147,17 @@
         border-radius: $border-radius;
         box-shadow: $box-shadow-1;
         color: $primary!important;
+        
         i {
           opacity: 0.8;
           transform: translateX(0rem);
           transition: $transition-long;
         }
+        
         &:hover {
           box-shadow: $box-shadow-inset;
           color: $primary-dark!important;
+          
           i {
             opacity: 1;
             transform: translateX(0.5rem);
@@ -164,13 +172,16 @@
         border: 1px solid transparent;
         box-shadow: $box-shadow-inset;
         transition: $transition-long;
+        
         &:hover {
           border: 1px solid $primary-dark;
         }
+        
         small {
           transition: $transition;
           padding: 1rem;
         }
+        
         &.via3 {
           background: none;
           text-align: center;
@@ -179,6 +190,7 @@
           flex-direction: column;
           padding-bottom: 1rem;
           margin: 0rem 0rem 0rem 0rem;
+          
           small {
             font-weight: bold;
           }
@@ -202,6 +214,7 @@
     width: fit-content;
     margin: 1rem;
     background: $bg-concave;
+    
     &.key {
       box-shadow: $box-shadow-1;
       font-weight: bold;
@@ -213,17 +226,19 @@
 
 // mobile //
 @media only screen and (max-width: 650px) {
-
+  
   .self-wrap { // .row
     margin-bottom: 0rem;
     
     .self-img {
       margin-right: 0rem;
     }
+    
     .self-text {
       text-align: center;
     }
   }
+  
   .stats-wrap { // .row
     .git-card {
       width: 21rem;

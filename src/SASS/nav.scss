@@ -78,6 +78,7 @@
       i {
         font-size: 1.2rem;
         font-weight: bold;
+        
         &.fa-github-alt {
           font-size: 1.33rem;
         }
@@ -194,8 +195,10 @@
     -webkit-transform: translateZ(0);
     backface-visibility: hidden;
     -webkit-backface-visibility: hidden;
+    
     &.show-nav {
       top: auto;
+      
       .nav-toggle {
         i {
           &::before {
@@ -207,6 +210,7 @@
     .nav-toggle {
       display: block;
     }
+    
     .left-nav-title {
       margin-bottom: 0.75rem;
     }

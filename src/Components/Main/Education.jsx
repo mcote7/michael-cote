@@ -25,9 +25,7 @@ const Education = () => {
                 <div className="cert-description">
                   <div>{cert.info} <small> - ({cert.institution})</small></div>
                 </div>
-                
               </div>
-              
             </div>
           );
         })}

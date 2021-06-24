@@ -96,7 +96,7 @@ const App = () => {
     // console.log("coord:", e.clientX, e.clientY)
     const el = document.getElementById('follow');
     el.classList.add('on');
-    state.x = e.clientX - 18; // (18) width =/= height of el //
+    state.x = e.clientX - 18; // (18) 1/2 width/height of el to center //
     state.y = e.clientY - 18;
   };
 
@@ -111,11 +111,11 @@ const App = () => {
   },[]);
 
   const left = (e) => {
-    document.title = 'see you soon 🚀'
+    document.title = 'see you soon 🚀';
   };
 
   const back = (e) => {
-    document.title = 'welcome back ✨'
+    document.title = 'welcome back ✨';
   };
 
   
@@ -138,7 +138,7 @@ const App = () => {
         isOrangeActive={isOrangeActive} 
         handleMouseMove={handleMouseMove} 
         handleMouseLeave={handleMouseLeave} />
-                                                
+                                              
       <div id="follow" className="follow" style={{top: `${state.y}px`, left: `${state.x}px`}}></div>
     </div>
   );
