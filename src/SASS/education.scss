@@ -380,11 +380,13 @@
         .content {
           .cert-title {
             background: $bg-convex-primary;
-            box-shadow: $box-shadow-1;
+            box-shadow: $box-shadow-2;
             border: 0.25rem solid $background-color;
+            border-radius: 0.75rem;
             
             .cert-name {
               color: $white;
+              font-weight: bold;
             }
             
             .cert-date-badge {

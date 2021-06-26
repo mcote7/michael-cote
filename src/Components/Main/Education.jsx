@@ -6,7 +6,7 @@ const Education = () => {
   return (
     <div className="col col-sm-12">
       
-      <div class="timeline">
+      <div className="timeline">
         
         {EDU && [...EDU].reverse().map((cert, idx)=> {
           return(
