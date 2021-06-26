@@ -84,10 +84,20 @@ export const EDU = [
     title: 'TypeScript master', 
     id: 9, 
     image: 'ts-2-img', 
-    info: 'Taking my TypeScript to the next level.', // make title of card info
+    info: 'Taking my TypeScript to the next level.', 
     logo: 'ultimate-logo', 
     date: 'June 2021', 
     speach: 'Type script master class', 
+    institution: 'ultimate courses'
+  },
+  {
+    title: 'RxJS basics', 
+    id: 9, 
+    image: 'rx-1-img', 
+    info: 'Introduction to reactive programing.', 
+    logo: 'ultimate-logo', 
+    date: 'June 2021', 
+    speach: 'r x j s basics', 
     institution: 'ultimate courses'
   },
 ];
