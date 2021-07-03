@@ -92,13 +92,23 @@ export const EDU = [
   },
   {
     title: 'RxJS basics', 
-    id: 9, 
+    id: 10, 
     image: 'rx-1-img', 
     info: 'Introduction to reactive programing.', 
     logo: 'ultimate-logo', 
     date: 'June 2021', 
     speach: 'r x j s basics', 
     institution: 'ultimate courses'
+  },
+  {
+    title: 'UX Design', 
+    id: 11, 
+    image: 'design-2-img', 
+    info: 'User experience design fundamentals.', 
+    logo: 'udemy-logo', 
+    date: 'July 2021', 
+    speach: 'user experience design fundamentals', 
+    institution: 'udemy'
   },
 ];
 
