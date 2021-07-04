@@ -196,6 +196,7 @@
     -webkit-transform: translateZ(0);
     backface-visibility: hidden;
     -webkit-backface-visibility: hidden;
+    transition: top 99999999ms;
     
     &.show-nav {
       top: auto;
