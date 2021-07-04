@@ -187,7 +187,7 @@
   .neu-left-nav {
     height: fit-content;
     width: calc(100% - 2.5rem);
-    top: calc(100% - 4rem);
+    top: calc(100vh - 4rem);
     bottom: 0rem;
     padding-bottom: 4rem;
     border-radius: $border-radius $border-radius 0rem 0rem;
@@ -196,7 +196,6 @@
     -webkit-transform: translateZ(0);
     backface-visibility: hidden;
     -webkit-backface-visibility: hidden;
-    transition: top 99999999ms;
     
     &.show-nav {
       top: auto;
