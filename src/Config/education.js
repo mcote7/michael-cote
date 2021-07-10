@@ -120,6 +120,16 @@ export const EDU = [
     speach: 'Angular fundamentals', 
     institution: 'ultimate courses' 
   },
+  {
+    title: 'JS advanced 2021', 
+    id: 13, 
+    image: 'js-advanced-img', 
+    info: 'In depth JavaScript course, closures, prototype inheratince, hash maps...', 
+    logo: 'udemy-logo', 
+    date: 'July 2021', 
+    speach: 'java script advanced', 
+    institution: 'udemy' 
+  },
 ];
 
 // 🏫 //
