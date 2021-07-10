@@ -19,7 +19,7 @@ const Nav = ({darkMode, handleDarkMode, setColorMode, isBlueActive, isGreenActiv
     let educationTop = document.getElementById('education').offsetTop - 300;
     let winScroll = +window.scrollY.toFixed();
     // console.log("🔵 tops?", aboutTop, projectsTop, educationTop)
-    console.log("🟠 scrollY?", winScroll)
+    // console.log("🟠 scrollY?", winScroll)
     if(winScroll < projectsTop) {
       state.borderFloatClass = 'abo-select';
       state.isAboutActive = 'active';
