@@ -1,5 +1,6 @@
 import React, { useEffect } from 'react';
 import useRS from "radioactive-state";
+import * as _ from 'lodash';
 
 
 const Nav = ({darkMode, handleDarkMode, setColorMode, isBlueActive, isGreenActive, isOrangeActive }) => {
@@ -18,7 +19,7 @@ const Nav = ({darkMode, handleDarkMode, setColorMode, isBlueActive, isGreenActiv
     let educationTop = document.getElementById('education').offsetTop - 300;
     let winScroll = +window.scrollY.toFixed();
     // console.log("🔵 tops?", aboutTop, projectsTop, educationTop)
-    // console.log("🟠 scrollY?", winScroll)
+    console.log("🟠 scrollY?", winScroll)
     if(winScroll < projectsTop) {
       state.borderFloatClass = 'abo-select';
       state.isAboutActive = 'active';
@@ -47,8 +48,8 @@ const Nav = ({darkMode, handleDarkMode, setColorMode, isBlueActive, isGreenActiv
 
   useEffect(()=>{
     document.title = 'Hi 👋';
-    document.addEventListener('scroll', updateScrollPos );
-    return () => document.removeEventListener('scroll', updateScrollPos );
+    document.addEventListener('scroll', _.throttle(updateScrollPos, 100) );
+    return () => document.removeEventListener('scroll', _.throttle(updateScrollPos, 100) );
     // eslint-disable-next-line react-hooks/exhaustive-deps 
   },[]);
 

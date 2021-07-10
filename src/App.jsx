@@ -93,7 +93,7 @@ const App = () => {
 
   const handleMouseMove = (e) => {
     e.preventDefault();
-    // console.log("coord:", e.clientX, e.clientY)
+    console.log("coord:", e.clientX, e.clientY)
     const el = document.getElementById('follow');
     el.classList.add('on');
     state.x = e.clientX - 18; // (18) 1/2 width/height of el to center //
