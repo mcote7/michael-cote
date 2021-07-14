@@ -155,6 +155,7 @@ const Projects = ({handleMouseMove, handleMouseLeave}) => {
             
             <a 
               id={`${idx}card`}
+              title={`🔗 code_repo :\r\n  \r\n${repo.html_url}`}
               className={idx % 2 === 0 ? 'card git-card even' : 'card git-card'}
               href={`${repo.html_url}`} 
               target="_blank" rel="noopener noreferrer">
@@ -168,7 +169,7 @@ const Projects = ({handleMouseMove, handleMouseLeave}) => {
                   <small>{repo.description}</small>
                 </div>
                 
-                <div title={`🔗 code_repo :\r\n${repo.html_url}`} className="repo-languages mt-3">
+                <div className="repo-languages mt-3">
                   {repo.language ? <strong>&lt;{repo.language}/&gt;</strong> : <strong>&lt;code/&gt;</strong>}&nbsp;<span><small><sub>{repo.size}kb.</sub></small></span>
                 </div>
               </div>

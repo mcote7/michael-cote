@@ -23,7 +23,15 @@ export const PROJ = [
     repoUrl: 'https://github.com/mcote7/jitsi-chat',
     info: 'Jitsi video chat with React.',
     tech: ['React', 'SaSS', 'Jitsi']
-  }
+  },
+  {
+    title: 'FACEBOOP',
+    date: 'current',
+    url: 'https://mcote7.github.io/faceboop/',
+    repoUrl: 'https://github.com/mcote7/faceboop',
+    info: '...',
+    tech: ['React', 'SaSS', 'Bootstrap']
+  },
 ];
 
 // 👨‍💻 //
