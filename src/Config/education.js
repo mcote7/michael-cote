@@ -130,6 +130,16 @@ export const EDU = [
     speach: 'java script advanced', 
     institution: 'udemy' 
   },
+  {
+    title: 'RxJS masterclass', 
+    id: 14, 
+    image: 'rx-2-img', 
+    info: 'Subjects & multicasting operators, marbel diagrams & Schedulers', 
+    logo: 'ultimate-logo', 
+    date: 'July 2021', 
+    speach: 'r x j s master class', 
+    institution: 'ultimate courses' 
+  },
 ];
 
 // 🏫 //
