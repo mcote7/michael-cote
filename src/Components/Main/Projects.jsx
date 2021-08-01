@@ -126,9 +126,7 @@ const Projects = ({handleMouseMove, handleMouseLeave}) => {
         <div className="git-title-col">
           <div className="git-title-col-card">
             <div className="control-git mb-4">
-              <i className="fa fa-code-fork" aria-hidden="true"></i>
-                &nbsp;github repository&nbsp;  
-              <i className="fa fa-code-fork fa-flip-horizontal" aria-hidden="true"></i>
+              <span>&lt;</span> github <span>code</span> repository <span>/&gt;</span> 
             </div>
             
             <div className="input-group mb-4">
@@ -149,8 +147,6 @@ const Projects = ({handleMouseMove, handleMouseLeave}) => {
           return(
           <div
             key={idx} 
-            onMouseMove={(e)=>handleMouseMove(e)}
-            onMouseLeave={(e)=>handleMouseLeave(e)}
             className="col-xl-4 col-lg-6 git-col">
             
             <a 

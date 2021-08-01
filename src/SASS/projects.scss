@@ -140,6 +140,10 @@
       
       .control-git {
         font-size: 1.25rem;
+        span {
+          color: $primary;
+          font-weight: bold;
+        }
       }
       
       .input-group {
@@ -235,14 +239,14 @@
   }
   
   .git-col { // looped
-    cursor: none;
+    // cursor: none;
     display: flex;
     justify-content: center;
     padding-top: 1rem;
     padding-bottom: 1rem;
     
     .git-card { // <a/>
-      cursor: none;
+      // cursor: none;
       flex-grow: 1;
       min-width: 20rem;
       margin: 0rem 1rem;
