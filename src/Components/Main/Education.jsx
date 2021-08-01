@@ -31,7 +31,7 @@ const Education = ({darkMode}) => {
         })}
       </div>
       
-      <div id="metrics" style={{textAlign: 'center'}}> development metrics</div>
+      <div id="metrics" style={{textAlign: 'center'}}>development 📈 metrics</div>
       { darkMode ? 
       <div className="waka-wrap">
       <figure><embed src="https://wakatime.com/share/@b94737ec-5326-4fb7-9eb6-e13175e91bf8/2791a21b-5877-4d74-a468-cd5c8471e133.svg"></embed></figure>

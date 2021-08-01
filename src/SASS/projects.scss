@@ -140,6 +140,8 @@
       
       .control-git {
         font-size: 1.25rem;
+        white-space: nowrap;
+        
         span {
           color: $primary;
           font-weight: bold;
