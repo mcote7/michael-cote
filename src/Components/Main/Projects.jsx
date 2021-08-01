@@ -126,7 +126,7 @@ const Projects = ({handleMouseMove, handleMouseLeave}) => {
         <div className="git-title-col">
           <div className="git-title-col-card">
             <div className="control-git mb-4">
-              <span>&lt;</span> github <span>code</span> repository <span>/&gt;</span> 
+              github <span>&lt;code/&gt;</span> repository 
             </div>
             
             <div className="input-group mb-4">

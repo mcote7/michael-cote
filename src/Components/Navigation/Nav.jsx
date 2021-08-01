@@ -107,7 +107,7 @@ const Nav = ({darkMode, handleDarkMode, setColorMode, isBlueActive, isGreenActiv
       <div className="left-nav-main-links">
         <button id="a" className={`neu-btn ${state.isAboutActive}`} onClick={(e)=> scrollTo(e, 'about')}>About</button>
         <button id="p" className={`neu-btn ${state.isProjectsActive}`} onClick={(e)=> scrollTo(e, 'projects')} onDoubleClick={(e)=> scrollTo(e, 'git')}>Projects</button>
-        <button id="e" className={`neu-btn ${state.isEducationActive}`} onClick={(e)=> scrollTo(e, 'education')}>Education</button>
+        <button id="e" className={`neu-btn ${state.isEducationActive}`} onClick={(e)=> scrollTo(e, 'education')} onDoubleClick={(e)=> scrollTo(e, 'metrics')}>Education</button>
         <div className={`border-float ${state.borderFloatClass}`}></div>
       </div>
       
