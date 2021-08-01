@@ -9,6 +9,7 @@ const Main = ({darkMode, primaryColor, isBlueActive, isGreenActive, isOrangeActi
   return (<React.Fragment>
       
       <div id="about" className="row" style={{minHeight: '100vh'}}>
+        
         <About 
           darkMode={darkMode}
           primaryColor={primaryColor}
@@ -25,6 +26,7 @@ const Main = ({darkMode, primaryColor, isBlueActive, isGreenActive, isOrangeActi
       
       <div id="projects" className="row" style={{minHeight: '100vh'}}>
         <p>Projects</p>
+        
         <Projects 
           handleMouseMove={handleMouseMove}
           handleMouseLeave={handleMouseLeave}/>
@@ -36,7 +38,9 @@ const Main = ({darkMode, primaryColor, isBlueActive, isGreenActive, isOrangeActi
       
       <div id="education" className="row" style={{minHeight: '100vh'}}>
         <p>Education</p> 
-        <Education/>
+        
+        <Education
+          darkMode={darkMode}/>
       </div>
       
   </React.Fragment>);

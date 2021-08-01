@@ -238,6 +238,17 @@
   }
 }
 
+.waka-wrap {
+  figure {
+    embed {
+      transform: scaleY(0.6);
+      margin-bottom: 4rem;
+      @media screen and (max-width: 440px) {
+        transform: scaleY(1);
+      }
+    }
+  }
+}
 
 // break to 1 column right
 @media screen and (max-width: 1092px) {

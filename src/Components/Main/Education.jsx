@@ -2,7 +2,7 @@ import React from 'react';
 import {EDU} from '../../Config/education';
 
 
-const Education = () => {
+const Education = ({darkMode}) => {
   return (
     <div className="col col-sm-12">
       
@@ -30,6 +30,15 @@ const Education = () => {
           );
         })}
       </div>
+      
+      { darkMode ? 
+      <div className="waka-wrap">
+      <figure><embed src="https://wakatime.com/share/@b94737ec-5326-4fb7-9eb6-e13175e91bf8/2791a21b-5877-4d74-a468-cd5c8471e133.svg"></embed></figure>
+      </div>
+      :
+      <div className="row waka-wrap">
+        <figure><embed src="https://wakatime.com/share/@b94737ec-5326-4fb7-9eb6-e13175e91bf8/fe39fa84-48a9-4876-99e2-7c5786ac952d.svg"></embed></figure>
+      </div> } 
     </div>
   );
 };
