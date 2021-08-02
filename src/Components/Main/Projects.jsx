@@ -2,7 +2,7 @@ import React, { useEffect, useState } from 'react';
 import useRS from "radioactive-state";
 import moment from 'moment';
 import {PROJ} from '../../Config/projects';
-
+import Tilt from 'react-parallax-tilt';
 
 const Projects = () => {
 
@@ -148,7 +148,7 @@ const Projects = () => {
           <div
             key={idx} 
             className="col-xl-4 col-lg-6 git-col">
-            
+            <Tilt style={{width: '100%'}}>
             <a 
               id={`${idx}card`}
               title={`🔗 code_repo :\r\n  \r\n${repo.html_url}`}
@@ -183,6 +183,7 @@ const Projects = () => {
                 </div>
               </div>
             </a>
+            </Tilt>
           </div>
           );
         })}
