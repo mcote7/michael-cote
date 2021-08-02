@@ -4,7 +4,7 @@ import moment from 'moment';
 import {PROJ} from '../../Config/projects';
 
 
-const Projects = ({handleMouseMove, handleMouseLeave}) => {
+const Projects = () => {
 
   const state = useRS({
     gitFloatClass: 'all-select',

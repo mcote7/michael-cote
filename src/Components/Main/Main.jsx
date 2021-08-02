@@ -27,9 +27,7 @@ const Main = ({darkMode, primaryColor, isBlueActive, isGreenActive, isOrangeActi
       <div id="projects" className="row" style={{minHeight: '100vh'}}>
         <p>Projects</p>
         
-        <Projects 
-          handleMouseMove={handleMouseMove}
-          handleMouseLeave={handleMouseLeave}/>
+        <Projects />
       </div>
       
       <div className="row">
