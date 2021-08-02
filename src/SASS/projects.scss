@@ -293,6 +293,10 @@
         text-decoration: none;
         background: $bg-convex;
         border: 1px solid $border-color;
+        @media only screen and (max-width: 992px) {
+          transform: scale(0.9);
+        }
+        
         
         &::before {
           opacity: 1;
@@ -304,6 +308,12 @@
           transform: translateZ(80px) scale(1.2) translateX(2rem);
           text-shadow: 1px 1px 0px $primary;
           text-decoration: overline wavy;
+          @media only screen and (max-width: 992px) {
+            color: $primary;
+            transform: translateZ(0px) scale(1) translateX(0rem);
+            text-shadow: none;
+            text-decoration: none;
+          }
         }
         
         .card-info {
@@ -328,6 +338,9 @@
           .git-circle-outer {
             background: $bg-concave;
             transform: translate3d(0.5rem,0.5rem,80px) scale(1.1);
+            @media only screen and (max-width: 992px) {
+              transform: translate3d(0rem,0rem,0px) scale(1);
+            }
             
             .git-logo {
               background: $bg-convex;

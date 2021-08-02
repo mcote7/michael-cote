@@ -148,7 +148,7 @@ const Projects = () => {
           <div
             key={idx} 
             className="col-xl-4 col-lg-6 git-col">
-            <Tilt scale={1.05} style={{width: '100%'}} >
+            <Tilt style={{width: '100%'}} >
             <a 
               id={`${idx}card`}
               title={`🔗 code_repo :\r\n  \r\n${repo.html_url}`}
