@@ -305,7 +305,7 @@
         .card-title {
           color: $text-color-primary;
           border-bottom: 1px solid transparent;
-          transform: translateZ(80px) scale(1.2) translateX(2rem);
+          transform: translateZ(100px) scale(1.2) translateX(2rem);
           text-shadow: 1px 1px 0px $primary;
           text-decoration: overline wavy;
           @media only screen and (max-width: 992px) {
@@ -319,6 +319,7 @@
         .card-info {
           .card-desc {
             text-shadow: 1px 1px $black;
+            transform: translateZ(100px);
           }
           .repo-languages {
             background: $bg-concave;
@@ -331,13 +332,13 @@
               span {
                 color: $primary-dark;
                 text-shadow: 1px 1px $primary-light;
-                transform: translateZ(80px);
+                transform: translateZ(100px);
               }
             }
           }
           .git-circle-outer {
             background: $bg-concave;
-            transform: translate3d(0.5rem,0.5rem,80px) scale(1.1);
+            transform: translate3d(0.5rem,0.5rem,100px) scale(1.1);
             @media only screen and (max-width: 992px) {
               transform: translate3d(0rem,0rem,0px) scale(1);
             }
@@ -386,6 +387,7 @@
           text-shadow: 1px 1px transparent;
           text-align: left;
           transition: $transition-long;
+          will-change: transform;
         }
         
         .repo-languages {
