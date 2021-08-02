@@ -1,27 +1,27 @@
 {
   "files": {
-    "main.css": "/michael-cote/static/css/main.12a7317a.chunk.css",
-    "main.js": "/michael-cote/static/js/main.a62c2187.chunk.js",
-    "main.js.map": "/michael-cote/static/js/main.a62c2187.chunk.js.map",
-    "runtime-main.js": "/michael-cote/static/js/runtime-main.8c5e6561.js",
-    "runtime-main.js.map": "/michael-cote/static/js/runtime-main.8c5e6561.js.map",
+    "main.css": "/michael-cote/static/css/main.3f0a3ada.chunk.css",
+    "main.js": "/michael-cote/static/js/main.dd168911.chunk.js",
+    "main.js.map": "/michael-cote/static/js/main.dd168911.chunk.js.map",
+    "runtime-main.js": "/michael-cote/static/js/runtime-main.4917a978.js",
+    "runtime-main.js.map": "/michael-cote/static/js/runtime-main.4917a978.js.map",
     "static/css/2.1c412a2b.chunk.css": "/michael-cote/static/css/2.1c412a2b.chunk.css",
-    "static/js/2.8bb14922.chunk.js": "/michael-cote/static/js/2.8bb14922.chunk.js",
-    "static/js/2.8bb14922.chunk.js.map": "/michael-cote/static/js/2.8bb14922.chunk.js.map",
-    "static/js/3.8ceedf43.chunk.js": "/michael-cote/static/js/3.8ceedf43.chunk.js",
-    "static/js/3.8ceedf43.chunk.js.map": "/michael-cote/static/js/3.8ceedf43.chunk.js.map",
+    "static/js/2.1da115b8.chunk.js": "/michael-cote/static/js/2.1da115b8.chunk.js",
+    "static/js/2.1da115b8.chunk.js.map": "/michael-cote/static/js/2.1da115b8.chunk.js.map",
+    "static/js/3.d1b960aa.chunk.js": "/michael-cote/static/js/3.d1b960aa.chunk.js",
+    "static/js/3.d1b960aa.chunk.js.map": "/michael-cote/static/js/3.d1b960aa.chunk.js.map",
     "index.html": "/michael-cote/index.html",
     "static/css/2.1c412a2b.chunk.css.map": "/michael-cote/static/css/2.1c412a2b.chunk.css.map",
-    "static/css/main.12a7317a.chunk.css.map": "/michael-cote/static/css/main.12a7317a.chunk.css.map",
-    "static/js/2.8bb14922.chunk.js.LICENSE.txt": "/michael-cote/static/js/2.8bb14922.chunk.js.LICENSE.txt",
+    "static/css/main.3f0a3ada.chunk.css.map": "/michael-cote/static/css/main.3f0a3ada.chunk.css.map",
+    "static/js/2.1da115b8.chunk.js.LICENSE.txt": "/michael-cote/static/js/2.1da115b8.chunk.js.LICENSE.txt",
     "static/media/global.scss": "/michael-cote/static/media/self2.44caa36c.jfif",
     "static/media/font-awesome.css": "/michael-cote/static/media/fontawesome-webfont.f691f37e.woff"
   },
   "entrypoints": [
-    "static/js/runtime-main.8c5e6561.js",
+    "static/js/runtime-main.4917a978.js",
     "static/css/2.1c412a2b.chunk.css",
-    "static/js/2.8bb14922.chunk.js",
-    "static/css/main.12a7317a.chunk.css",
-    "static/js/main.a62c2187.chunk.js"
+    "static/js/2.1da115b8.chunk.js",
+    "static/css/main.3f0a3ada.chunk.css",
+    "static/js/main.dd168911.chunk.js"
   ]
 }
