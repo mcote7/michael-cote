@@ -292,7 +292,6 @@
       &:hover {
         text-decoration: none;
         background: $bg-convex;
-        border: 1px solid $border-color;
         @media only screen and (max-width: 992px) {
           transform: scale(0.9);
         }
@@ -304,10 +303,10 @@
         
         .card-title {
           color: $text-color-primary;
-          border-bottom: 1px solid transparent;
           transform: translateZ(100px) scale(1.2) translateX(2rem);
           text-shadow: 1px 1px 0px $primary;
           text-decoration: overline wavy;
+          
           @media only screen and (max-width: 992px) {
             color: $primary;
             transform: translateZ(0px) scale(1) translateX(0rem);
@@ -371,7 +370,6 @@
         display: flex;
         flex-direction: row;
         align-items: baseline;
-        border-bottom: 1px solid $border-color;
         padding: 0.25rem 0rem;
         font-weight: bold;
         transition: $transition-long;
