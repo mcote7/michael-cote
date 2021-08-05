@@ -304,8 +304,12 @@
         .card-title {
           color: $text-color-primary;
           transform: translateZ(100px) scale(1.2) translateX(2rem);
-          text-shadow: 1px 1px 0px $primary;
+          // text-shadow: 1px 1px 0px $primary;
           text-decoration: overline wavy;
+          text-shadow:1px 1px 0px $primary,
+                      1px 6px 4px rgba(0, 0, 0, 0.5),
+                      1px 8px 10px rgba(0, 0, 0, 0.4),
+                      1px 10px 35px rgba(0, 0, 0, 0.4);
           
           @media only screen and (max-width: 992px) {
             color: $primary;
@@ -317,8 +321,12 @@
         
         .card-info {
           .card-desc {
-            text-shadow: 1px 1px $black;
+            // text-shadow: 1px 1px $black;
             transform: translateZ(100px);
+            text-shadow:1px 1px 0px $black,
+                        1px 6px 4px rgba(0, 0, 0, 0.5),
+                        1px 8px 10px rgba(0, 0, 0, 0.4),
+                        1px 10px 35px rgba(0, 0, 0, 0.4);
           }
           .repo-languages {
             background: $bg-concave;
@@ -501,9 +509,9 @@
 }
 
 // //
-.glare-wrapper {
-  width: calc(100% - 2rem)!important;
-  pointer-events: none!important;
-  margin: 0 1rem!important;
-  z-index: 0!important;
-}
+// .glare-wrapper {
+//   width: calc(100% - 2rem)!important;
+//   pointer-events: none!important;
+//   margin: 0 1rem!important;
+//   z-index: 0!important;
+// }
