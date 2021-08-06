@@ -309,7 +309,7 @@
           text-shadow:1px 1px 0px $primary,
                       1px 6px 4px rgba(0, 0, 0, 0.5),
                       1px 8px 10px rgba(0, 0, 0, 0.4),
-                      1px 10px 35px rgba(0, 0, 0, 0.4);
+                      1px 10px 35px $primary-dark;
           
           @media only screen and (max-width: 992px) {
             color: $primary;
@@ -345,7 +345,9 @@
           }
           .git-circle-outer {
             background: $bg-concave;
-            transform: translate3d(0.5rem,0.5rem,100px) scale(1.1);
+            border-color: $background-color;
+            transform: translate3d(-1.25rem,-0.75rem,100px) scale(1.1);
+            
             @media only screen and (max-width: 992px) {
               transform: translate3d(0rem,0rem,0px) scale(1);
             }
@@ -353,6 +355,7 @@
             .git-logo {
               background: $bg-convex;
               box-shadow: $box-shadow-1;
+              transform: translate3d(-0.1rem,-0.1rem,100px) scale(1.05);
               
               i {
                 color: $primary;
@@ -444,6 +447,7 @@
           border-radius: $border-radius-circle;
           background: $bg-concave;
           box-shadow: $box-shadow-inset;
+          border: 2px solid $background-color;
           will-change: transform;
           transition: $transition-long;
           
@@ -457,6 +461,7 @@
             background: $background-color;
             box-shadow: none;
             border: 1px solid $background-color;
+            transition: $transition-long;
             
             i {
               backface-visibility: hidden;
