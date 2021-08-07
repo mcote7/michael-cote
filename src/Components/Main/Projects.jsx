@@ -69,6 +69,21 @@ const Projects = () => {
     setGIT(result);
   };
 
+  const handleTiltMove = (e, id) => {
+    const tar = document.getElementById(`${id}card`);
+    console.log("mouse move", +e.toFixed(0))
+    if(+e.toFixed(0) > 0) {
+      tar.style.boxShadow = '3px 3px 6px var(--dark-shadow), -3px -3px 6px var(--light-shadow), 1rem 1rem 1rem var(--dark-shadow)';
+    } else if(+e.toFixed(0) < 0) {
+      tar.style.boxShadow = '3px 3px 6px var(--dark-shadow), -3px -3px 6px var(--light-shadow), -1rem -1rem 1rem var(--dark-shadow)';
+    }
+  };
+
+  const handleTiltLeave = (e, id) => {
+    const tar = document.getElementById(`${id}card`);
+    tar.style.boxShadow = '';
+  };
+
   return (
     <div className="col col-sm-12">
       <div className="featured-projects-wrap row">
@@ -148,7 +163,7 @@ const Projects = () => {
           <div
             key={idx} 
             className="col-xl-4 col-lg-6 git-col">
-            <Tilt style={{width: '100%'}} >
+            <Tilt style={{width: '100%'}} onMove={(tilt)=>handleTiltMove(tilt, idx)} onLeave={(tilt)=>handleTiltLeave(tilt, idx)}>
             <a 
               id={`${idx}card`}
               title={`🔗 code_repo :\r\n  \r\n${repo.html_url}`}
