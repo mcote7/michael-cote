@@ -1,7 +1,7 @@
 
 export const EDU = [
   {
-    title: 'Coding Dojo',
+    title: 'Coding Dojo', 
     id: 1, 
     image: 'dojo-img', 
     info: 'An intensive full-time software development program. Developed multiple full-stack projects in ASP.Net, Python/Django & MERN.', 
@@ -11,7 +11,7 @@ export const EDU = [
     institution: 'coding dojo' 
   },
   {
-    title: 'React library',
+    title: 'React library', 
     id: 2, 
     image: 'react-img', 
     info: 'Course in React library, gained knowledge of both legacy class component structure and the latest functional component structure along with MongoDb database and testing with Jest.', 
@@ -21,7 +21,7 @@ export const EDU = [
     institution: 'code w/ mosh' 
   },
   {
-    title: 'Redux architecture',
+    title: 'Redux architecture', 
     id: 3, 
     image: 'redux-img', 
     info: 'Course on Redux state management and its intergration with React.', 
@@ -41,7 +41,7 @@ export const EDU = [
     institution: 'udemy' 
   },
   {
-    title: 'Angular 4+',
+    title: 'Angular 4+', 
     id: 5, 
     image: 'angular-img', 
     info: 'Course on Angular 4+, a deep dive into Angular’s core modules and integration with Firebase.', 
@@ -51,7 +51,7 @@ export const EDU = [
     institution: 'code w/ mosh' 
   },
   {
-    title: 'SASS workflow',
+    title: 'SASS workflow', 
     id: 6, 
     image: 'sass-img', 
     info: 'Course in SASS workflow, taking my stylesheets to the next level.', 
@@ -134,10 +134,20 @@ export const EDU = [
     title: 'RxJS masterclass', 
     id: 14, 
     image: 'rx-2-img', 
-    info: 'Subjects & multicasting operators, marbel diagrams & Schedulers', 
+    info: 'Subjects & multicasting operators, marbel diagrams & Schedulers.', 
     logo: 'ultimate-logo', 
     date: 'July 2021', 
     speach: 'r x j s master class', 
+    institution: 'ultimate courses' 
+  },
+  {
+    title: 'NgRx Store & Effects', 
+    id: 15, 
+    image: 'ngrx-img', 
+    info: 'State management with actions, reducers, effects, selectors.', 
+    logo: 'ultimate-logo', 
+    date: 'August 2021', 
+    speach: 'n g r x store & effects', 
     institution: 'ultimate courses' 
   },
 ];
