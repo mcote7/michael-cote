@@ -40,6 +40,9 @@
     --primary: #2978FF;
     --primary-dark: #0151D9;
     --primary-light: #7DADFE;
+
+    --bg-convex: linear-gradient(145deg, var(--light-shadow), var(--dark-shadow));
+    --bg-concave: linear-gradient(145deg, var(--dark-shadow), var(--light-shadow));
   }
 
 // DYNAMIC GLOBAL VARS for * .SCSS // 
@@ -75,8 +78,8 @@
   $box-shadow-inset: inset -2px -2px 5px $light-shadow,inset 2px 2px 5px $dark-shadow;
 
   // 3D buttons & concave gradients 
-  $bg-convex: linear-gradient(145deg, $light-shadow, $dark-shadow);
-  $bg-concave: linear-gradient(145deg, $dark-shadow, $light-shadow);
+  $bg-convex: var(--bg-convex);
+  $bg-concave: var(--bg-concave);
 
   $bg-convex-primary: linear-gradient(145deg, $primary-light, $primary-dark);
   $bg-concave-primary: linear-gradient(145deg, $primary-dark, $primary-light);

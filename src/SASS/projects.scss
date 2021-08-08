@@ -267,7 +267,7 @@
         box-shadow: $box-shadow-inset;
         
         &:hover {
-          background: $bg-concave;
+          // background: $bg-concave;
           
           .card-info {
             .repo-languages {
@@ -291,7 +291,7 @@
       
       &:hover {
         text-decoration: none;
-        background: $bg-convex;
+        // background: $bg-convex;
         @media only screen and (max-width: 992px) {
           transform: scale(0.9);
         }

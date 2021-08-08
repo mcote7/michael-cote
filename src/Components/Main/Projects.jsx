@@ -74,14 +74,17 @@ const Projects = () => {
     console.log("mouse move", +e.toFixed(0))
     if(+e.toFixed(0) > 0) {
       tar.style.boxShadow = '3px 3px 6px var(--dark-shadow), -3px -3px 6px var(--light-shadow), 1rem 1rem 1rem var(--dark-shadow)';
+      tar.style.background = 'var(--bg-convex)';
     } else if(+e.toFixed(0) < 0) {
       tar.style.boxShadow = '3px 3px 6px var(--dark-shadow), -3px -3px 6px var(--light-shadow), -1rem -1rem 1rem var(--dark-shadow)';
+      tar.style.background = 'var(--bg-concave)';
     }
   };
 
   const handleTiltLeave = (e, id) => {
     const tar = document.getElementById(`${id}card`);
     tar.style.boxShadow = '';
+    tar.style.background = '';
   };
 
   return (
