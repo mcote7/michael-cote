@@ -86,7 +86,9 @@ const Nav = ({darkMode, handleDarkMode, setColorMode, isBlueActive, isGreenActiv
       
       <div className="left-nav-social-links">
         <button onClick={(e)=>handleDarkMode(e)}>
-          {darkMode ? <i className="fa fa-sun-o" aria-hidden="true"></i> : <i className="fa fa-moon-o" aria-hidden="true"></i> }
+          {darkMode ? 
+            <i className="fa fa-sun-o" aria-hidden="true" title="☀ set light mode"></i> : 
+            <i className="fa fa-moon-o" aria-hidden="true" title="🌑 set dark mode"></i> }
         </button>
         <a 
           title="🔗 GitHub"
