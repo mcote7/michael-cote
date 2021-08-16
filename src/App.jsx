@@ -6,7 +6,7 @@ import Nav from './Components/Navigation/Nav';
 
 const App = () => {
 
-  const [darkMode, setDarkMode] = useState(false);
+  const [darkMode, setDarkMode] = useState(true);
 
   const handleDarkMode = () => {
     setDarkMode(!darkMode);
