@@ -129,6 +129,9 @@ const Nav = ({darkMode, handleDarkMode, setColorMode, isBlueActive, isGreenActiv
           className={`color-pick orange ${isOrangeActive}`}>
           {isOrangeActive ? <i className="fa fa-circle" aria-hidden="true"></i> : <i className="fa fa-circle-o" aria-hidden="true"></i>}
         </button>
+        <div className="logo-inset">
+          videonet
+        </div>
       </div>
     </div>
   );

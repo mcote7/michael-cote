@@ -8,7 +8,7 @@
   left: 1.25rem;
   width: 11.25rem;
   padding: 1.25rem 0.75rem;
-  padding-bottom: 3.75rem;
+  padding-bottom: 4.25rem;
   background-color: $background-color;
   border-radius: 1.5rem 1.5rem 4.5rem 4.5rem;
   box-shadow: $box-shadow-1;
@@ -135,6 +135,7 @@
   
   .colors {
     display: flex;
+    position: relative;
     justify-content: space-around;
     margin-top: 0.25rem;
     padding-top: 1.5rem;
@@ -163,18 +164,51 @@
       
       &.blue {
         color: hsl(218, 100%, 58%);
+        &:hover {
+          ~.logo-inset {
+            color: $background-color;
+            text-shadow: 0px 2px 3px #7DADFE;
+          }
+        }
       }
       &.green {
         color: hsl(108, 100%, 38%);
+        &:hover {
+          ~.logo-inset {
+            color: $background-color;
+            text-shadow: 0px 2px 3px #6BDD4D;
+          }
+        }
       }
       &.orange {
         color: hsl(32, 100%, 48%);
+        &:hover {
+          ~.logo-inset {
+            color: $background-color;
+            text-shadow: 0px 2px 3px #FFB560;
+          }
+        }
       }
       
       i {
         font-size: 1.2rem;
         font-weight: bold;
       }
+    }
+    
+    .logo-inset {
+      position: absolute;
+      bottom: -2.75rem;
+      margin: 0 auto;
+      font-size: 1.5rem;
+      font-weight: 500;
+      font-style: oblique;
+      background-color: $dark-shadow;
+      color: transparent;
+      text-shadow: 0px 2px 3px $light-shadow;
+      background-clip: text;
+      letter-spacing: 2px;
+      transition: $transition-long ease-in-out;
     }
   }
 }
