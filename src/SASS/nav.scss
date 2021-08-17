@@ -155,6 +155,12 @@
       &.active {
         cursor: default;
         box-shadow: $box-shadow-inset;
+        &:hover {
+          ~.logo-inset {
+            color: transparent!important;
+            text-shadow: 0px 2px 3px $light-shadow!important;
+          }
+        }
         
         i {
           font-size: 0.8rem;
@@ -166,8 +172,7 @@
         color: hsl(218, 100%, 58%);
         &:hover {
           ~.logo-inset {
-            color: $background-color;
-            text-shadow: 0px 2px 3px #7DADFE;
+            color: #7DADFE;
           }
         }
       }
@@ -175,8 +180,7 @@
         color: hsl(108, 100%, 38%);
         &:hover {
           ~.logo-inset {
-            color: $background-color;
-            text-shadow: 0px 2px 3px #6BDD4D;
+            color: #6BDD4D;
           }
         }
       }
@@ -184,8 +188,7 @@
         color: hsl(32, 100%, 48%);
         &:hover {
           ~.logo-inset {
-            color: $background-color;
-            text-shadow: 0px 2px 3px #FFB560;
+            color: #FFB560;
           }
         }
       }
@@ -200,9 +203,9 @@
       position: absolute;
       bottom: -2.75rem;
       margin: 0 auto;
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
       font-size: 1.5rem;
       font-weight: 500;
-      font-style: oblique;
       background-color: $dark-shadow;
       color: transparent;
       text-shadow: 0px 2px 3px $light-shadow;
