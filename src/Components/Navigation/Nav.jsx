@@ -1,6 +1,7 @@
 import React, { useEffect } from 'react';
 import useRS from "radioactive-state";
 import * as _ from 'lodash';
+import { animateBulb } from '../../Util/bulb.anime';
 
 
 const Nav = ({darkMode, handleDarkMode, setColorMode, isBlueActive, isGreenActive, isOrangeActive }) => {
@@ -12,7 +13,6 @@ const Nav = ({darkMode, handleDarkMode, setColorMode, isBlueActive, isGreenActiv
     isEducationActive: ''
   });
 
-  // 🚧👷‍♂️ needs fine tuning //
   const updateScrollPos = () => {
     // let aboutTop = document.getElementById('about').offsetTop; // not used in calc (is 20) //
     let projectsTop = document.getElementById('projects').offsetTop - 300;
@@ -54,6 +54,7 @@ const Nav = ({darkMode, handleDarkMode, setColorMode, isBlueActive, isGreenActiv
   },[]);
 
   const scrollTo = (e, id) => {
+    animateBulb();
     let el = document.getElementById(id);
     let elTop = el.offsetTop;
     if(el.id !== 'about') {
@@ -70,6 +71,8 @@ const Nav = ({darkMode, handleDarkMode, setColorMode, isBlueActive, isGreenActiv
 
   return (
     <div id="nav" className="neu-left-nav">
+      
+      <div id="bulb" className="bulb"></div>
       
       <button 
         className="nav-toggle"

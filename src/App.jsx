@@ -2,6 +2,7 @@ import React, { useEffect, useState } from 'react';
 import useRS from "radioactive-state";
 import Main from './Components/Main/Main';
 import Nav from './Components/Navigation/Nav';
+import { animateBulb } from './Util/bulb.anime';
 
 
 const App = () => {
@@ -13,6 +14,7 @@ const App = () => {
   };
 
   useEffect(()=> {
+    animateBulb();
     
     document.body.classList.add('no-transition');
     
@@ -50,6 +52,7 @@ const App = () => {
     const root = document.documentElement;
     
     if(colorMode === 'blue') {
+      animateBulb();
       root?.style.setProperty("--primary", "#2978FF");
       root?.style.setProperty("--primary-dark", "#0151D9");
       root?.style.setProperty("--primary-light", "#7DADFE");
@@ -59,6 +62,7 @@ const App = () => {
       setIsOrangeActive('');
     }
     if(colorMode === 'green') {
+      animateBulb();
       root?.style.setProperty("--primary", "#28C200");
       root?.style.setProperty("--primary-dark", "#219C00");
       root?.style.setProperty("--primary-light", "#6BDD4D");
@@ -68,6 +72,7 @@ const App = () => {
       setIsOrangeActive('');
     }
     if(colorMode === 'orange') {
+      animateBulb();
       root?.style.setProperty("--primary", "#F58300");
       root?.style.setProperty("--primary-dark", "#C16700");
       root?.style.setProperty("--primary-light", "#FFB560");
