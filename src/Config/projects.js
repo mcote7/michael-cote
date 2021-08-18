@@ -5,8 +5,8 @@ export const PROJ = [
     date: '5/21',
     url: 'https://o-shop-c0e98.web.app/',
     repoUrl: 'https://github.com/mcote7/o-shop',
-    info: 'A mock produce storefront, e-commerce functionality.',
-    tech: ['Angular', 'RXJS', 'SaSS', 'Firebase']
+    info: 'A mock produce storefront, e-commerce functionality with NgRx Redux store.',
+    tech: ['Angular', 'NgRx', 'RxJS', 'SaSS', 'Firebase']
   },
   {
     title: 'MENU-CUBE',
