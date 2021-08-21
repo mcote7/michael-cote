@@ -345,7 +345,6 @@
           }
           .git-circle-outer {
             background: $bg-concave;
-            border-color: $background-color;
             transform: translate3d(-1.25rem,-0.75rem,100px) scale(1.1);
             
             @media only screen and (max-width: 992px) {
@@ -447,7 +446,6 @@
           border-radius: $border-radius-circle;
           background: $bg-concave;
           box-shadow: $box-shadow-inset;
-          border: 2px solid $background-color;
           will-change: transform;
           transition: $transition-long;
           
