@@ -5,7 +5,7 @@ export const PROJ = [
     date: '5/21',
     url: 'https://o-shop-c0e98.web.app/',
     repoUrl: 'https://github.com/mcote7/o-shop',
-    info: 'A mock produce storefront, e-commerce functionality with NgRx Redux store.',
+    info: 'Mock produce storefront, NgRx Redux store.',
     tech: ['Angular', 'NgRx', 'Firebase']
   },
   {
@@ -29,7 +29,7 @@ export const PROJ = [
     date: 'current',
     url: 'https://mcote7.github.io/faceboop/',
     repoUrl: 'https://github.com/mcote7/faceboop',
-    info: '...',
+    info: 'Social media experiment.',
     tech: ['React', 'SaSS', 'Bootstrap']
   },
 ];
