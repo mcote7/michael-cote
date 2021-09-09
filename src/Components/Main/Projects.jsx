@@ -22,8 +22,8 @@ const Projects = () => {
       .then(data => {
         // console.log("git_repos", data)
         let filteredGit = data.sort((repoA, repoB) => {
-          let dateA = new Date(repoA.created_at);
-          let dateB = new Date(repoB.created_at);
+          let dateA = new Date(repoA.updated_at);
+          let dateB = new Date(repoB.updated_at);
           return dateB - dateA;
         });
         setGIT(filteredGit);
