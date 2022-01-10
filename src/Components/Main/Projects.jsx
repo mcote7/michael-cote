@@ -33,6 +33,7 @@ const Projects = () => {
 
   const setReactRepos = (e) => {
     let reactRepos = allGIT.filter(repo => {
+      // console.log(repo)
       return repo.name.toLowerCase().includes('react') || repo.description.toLowerCase().includes('react');
     });
     setGIT(reactRepos);
@@ -71,7 +72,7 @@ const Projects = () => {
 
   const handleTiltMove = (e, id) => {
     const tar = document.getElementById(`${id}card`);
-    console.log("mouse move", +e.toFixed(0))
+    // console.log("mouse move", +e.toFixed(0))
     if(+e.toFixed(0) > 0) {
       tar.style.boxShadow = '3px 3px 6px var(--dark-shadow), -3px -3px 6px var(--light-shadow), 1rem 1rem 1rem var(--dark-shadow)';
       tar.style.background = 'var(--bg-convex)';
