@@ -53,7 +53,7 @@ const Nav = ({darkMode, handleDarkMode, setColorMode, isBlueActive, isGreenActiv
     // eslint-disable-next-line react-hooks/exhaustive-deps 
   },[]);
 
-  const scrollTo = (e, id) => {
+  const scrollTo = (id) => {
     animateBulb();
     let el = document.getElementById(id);
     let elTop = el.offsetTop;
@@ -133,7 +133,7 @@ const Nav = ({darkMode, handleDarkMode, setColorMode, isBlueActive, isGreenActiv
           {isOrangeActive ? <i className="fa fa-circle" aria-hidden="true"></i> : <i className="fa fa-circle-o" aria-hidden="true"></i>}
         </button>
         <div className="logo-inset">
-          videonet
+          cote
         </div>
       </div>
     </div>
