@@ -83,7 +83,7 @@
   margin-bottom: 12rem; // <-----<<<|) adjust for projects 
   
   .git-card {
-    cursor: none;
+    // cursor: none;
     position: relative;
     display: flex;
     flex-direction: column;
@@ -222,6 +222,7 @@
 
 // 🟣 //
 .skills-wrap { // is .row
+  cursor: none;
   display: flex;
   justify-content: center;
   margin-bottom: 14rem;

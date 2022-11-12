@@ -76,19 +76,19 @@ const Nav = ({darkMode, handleDarkMode, setColorMode, isBlueActive, isGreenActiv
       
       <button 
         className="nav-toggle"
-        onClick={(e)=>handleNavToggle(e)}>
+        onClick={()=>handleNavToggle()}>
         <i className="fa fa-bars" aria-hidden="true"></i>
       </button>
       
       <div 
         className="left-nav-title"
-        onClick={(e)=>handleNavToggle(e)}>
+        onClick={()=>handleNavToggle()}>
         <h4>Michael Cote</h4>
         <small>software developer</small>
       </div>
       
       <div className="left-nav-social-links">
-        <button onClick={(e)=>handleDarkMode(e)}>
+        <button onClick={()=>handleDarkMode()}>
           {darkMode ? 
             <i className="fa fa-sun-o" aria-hidden="true" title="☀ set light mode"></i> : 
             <i className="fa fa-moon-o" aria-hidden="true" title="🌑 set dark mode"></i> }
@@ -110,9 +110,9 @@ const Nav = ({darkMode, handleDarkMode, setColorMode, isBlueActive, isGreenActiv
       </div>
       
       <div className="left-nav-main-links">
-        <button id="a" className={`neu-btn ${state.isAboutActive}`} onClick={(e)=> scrollTo(e, 'about')}>About</button>
-        <button id="p" className={`neu-btn ${state.isProjectsActive}`} onClick={(e)=> scrollTo(e, 'projects')} onDoubleClick={(e)=> scrollTo(e, 'git')}>Projects</button>
-        <button id="e" className={`neu-btn ${state.isEducationActive}`} onClick={(e)=> scrollTo(e, 'education')} onDoubleClick={(e)=> scrollTo(e, 'metrics')}>Education</button>
+        <button id="a" className={`neu-btn ${state.isAboutActive}`} onClick={()=> scrollTo('about')}>About</button>
+        <button id="p" className={`neu-btn ${state.isProjectsActive}`} onClick={()=> scrollTo('projects')} onDoubleClick={()=> scrollTo('git')}>Projects</button>
+        <button id="e" className={`neu-btn ${state.isEducationActive}`} onClick={()=> scrollTo('education')} onDoubleClick={()=> scrollTo('metrics')}>Education</button>
         <div className={`border-float ${state.borderFloatClass}`}></div>
       </div>
       

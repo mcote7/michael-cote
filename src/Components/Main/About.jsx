@@ -21,10 +21,7 @@ const About = ({darkMode, primaryColor, isBlueActive, isGreenActive, isOrangeAct
       
       {/* stats */}
       <div className="stats-wrap row">
-        <div 
-          onMouseLeave={(e)=>handleMouseLeave(e)}
-          onMouseMove={(e)=>handleMouseMove(e)}
-          className="col-lg-6">
+        <div className="col-lg-6">
           {darkMode ? 
             <React.Fragment>
               <div className="git-card">
@@ -83,7 +80,10 @@ const About = ({darkMode, primaryColor, isBlueActive, isGreenActive, isOrangeAct
       </div>
       
       {/* skills */}
-      <div className="skills-wrap row">
+      <div 
+        className="skills-wrap row"
+        onMouseLeave={(e)=>handleMouseLeave(e)}
+        onMouseMove={(e)=>handleMouseMove(e)}>
         {SKILLS && SKILLS.map((sk, idx) => {
           if(sk === 'TypeScript' || sk === 'Angular' || sk === 'SaSS' || sk === 'RxJS') return <div key={idx} className="skill-badge key">{sk}</div>
           return <div key={idx} className="skill-badge">{sk}</div>
