@@ -1,32 +1,32 @@
 // theme COLORS (3) // 
 
-  // $blueColor1: #2978FF;
-  // $blueColor2: #0151D9;
-  // $blueColor3: #7DADFE;
+// $blueColor1: rgb(41, 120, 255);
+// $blueColor2: #0151D9;
+// $blueColor3: #7DADFE;
 
-  // $greenColor1: #28C200;
-  // $greenColor2: #219C00;
-  // $greenColor3: #6BDD4D;
+// $greenColor1: #28c270;
+// $greenColor2: #219c59;
+// $greenColor3: #6bdd90;
 
-  // $orangeColor1: #F58300;
-  // $orangeColor2: #C16700;
-  // $orangeColor3: #FFB560;
+// $orangeColor1: #F58300; // is now red/pink ... 
+// $orangeColor2: #C16700;
+// $orangeColor3: #FFB560;
 
 
 // 🌑 DARK // 
 
-  // $dark-bg: #444444; //
-  // $dark-bg-dark-shadow: #363636; //
-  // $dark-bg-light-shadow: #525252; //
+// $dark-bg: #444444; //
+// $dark-bg-dark-shadow: #363636; //
+// $dark-bg-light-shadow: #525252; //
 
-  // $text-color-dark: rgba(255, 255, 255, 0.93); //
-  // $text-color-secondary-dark: rgba(255, 255, 255, 0.7); //
-  // $text-color-disabled-dark: rgba(255, 255, 255, 0.45); //
+// $text-color-dark: rgba(255, 255, 255, 0.93); //
+// $text-color-secondary-dark: rgba(255, 255, 255, 0.7); //
+// $text-color-disabled-dark: rgba(255, 255, 255, 0.45); //
 
 
 // 🌕 LIGHT (blue) // 
 
-  :root {
+:root {
     // dark/light toggle in app -> 
     --bgcolor: #e5ecf5;
     --dark-shadow: #bec8e4;
@@ -43,63 +43,63 @@
 
     --bg-convex: linear-gradient(145deg, var(--light-shadow), var(--dark-shadow));
     --bg-concave: linear-gradient(145deg, var(--dark-shadow), var(--light-shadow));
-  }
+}
 
 // DYNAMIC GLOBAL VARS for * .SCSS // 
 
-  $background-color: var(--bgcolor);
-  $dark-shadow: var(--dark-shadow);
-  $light-shadow: var(--light-shadow);
+$background-color: var(--bgcolor);
+$dark-shadow: var(--dark-shadow);
+$light-shadow: var(--light-shadow);
 
-  $text-color-primary: Var(--text-color-primary);
-  $text-color-secondary: var(--text-color-secondary);
-  $text-color-disabled: var(--text-color-disabled);
+$text-color-primary: Var(--text-color-primary);
+$text-color-secondary: var(--text-color-secondary);
+$text-color-disabled: var(--text-color-disabled);
 
-  $primary: var(--primary);
-  $primary-dark: var(--primary-dark);
-  $primary-light: var(--primary-light);
+$primary: var(--primary);
+$primary-dark: var(--primary-dark);
+$primary-light: var(--primary-light);
 
-  // default . don't change //
-  $white: #ffffff;
-  $black: #000000;
+// default . don't change //
+$white: #ffffff;
+$black: #000000;
 
-  $border-color: $dark-shadow;
-  $border-radius: 0.5rem;
-  $border-radius-circle: 50%;
+$border-color: $dark-shadow;
+$border-radius: 0.5rem;
+$border-radius-circle: 50%;
 
-  // elevation levels 1(low) - 5(high) //
-  $box-shadow-1: 3px 3px 6px $dark-shadow,-3px -3px 6px $light-shadow;
-  $box-shadow-2: 6px 6px 12px $dark-shadow,-6px -6px 12px $light-shadow;
-  $box-shadow-3: 9px 9px 18px $dark-shadow,-9px -9px 18px $light-shadow;
-  $box-shadow-4: 12px 12px 24px $dark-shadow,-12px -12px 24px $light-shadow;
-  $box-shadow-5: 15px 15px 30px $dark-shadow,-15px -15px 30px $light-shadow;
+// elevation levels 1(low) - 5(high) //
+$box-shadow-1: 3px 3px 6px $dark-shadow, -3px -3px 6px $light-shadow;
+$box-shadow-2: 6px 6px 12px $dark-shadow, -6px -6px 12px $light-shadow;
+$box-shadow-3: 9px 9px 18px $dark-shadow, -9px -9px 18px $light-shadow;
+$box-shadow-4: 12px 12px 24px $dark-shadow, -12px -12px 24px $light-shadow;
+$box-shadow-5: 15px 15px 30px $dark-shadow, -15px -15px 30px $light-shadow;
 
-  // depressed 
-  $box-shadow-inset: inset -2px -2px 5px $light-shadow, inset 2px 2px 5px $dark-shadow;
+// depressed 
+$box-shadow-inset: inset -2px -2px 5px $light-shadow, inset 2px 2px 5px $dark-shadow;
 
-  // 3D buttons & concave gradients 
-  $bg-convex: var(--bg-convex);
-  $bg-concave: var(--bg-concave);
+// 3D buttons & concave gradients 
+$bg-convex: var(--bg-convex);
+$bg-concave: var(--bg-concave);
 
-  $bg-convex-primary: linear-gradient(145deg, $primary-light, $primary-dark);
-  $bg-concave-primary: linear-gradient(145deg, $primary-dark, $primary-light);
+$bg-convex-primary: linear-gradient(145deg, $primary-light, $primary-dark);
+$bg-concave-primary: linear-gradient(145deg, $primary-dark, $primary-light);
 
-  $normal-font: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-  'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-  sans-serif;
+$normal-font: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
 
-  $transition: 0.125s;
-  $transition-long: 0.325s;
+$transition: 0.125s;
+$transition-long: 0.325s;
 
-  * {
+* {
     user-select: none;
-  }
+}
 
-  .no-transition {
+.no-transition {
     * {
-      transition: none!important;
+        transition: none !important;
     }
-  }
+}
 
 // end //
 
@@ -113,20 +113,20 @@ $TEST-COLOR-2: chartreuse;
 $TEST-BORDER-2: 0.1px dashed chartreuse;
 
 
-  // scrollbars index.css for body //
+// scrollbars index.css for body //
 
-  // ::-webkit-scrollbar {
-  //     width: 0.25rem!important;
-  // }
-  
-  // ::-webkit-scrollbar-thumb {
-  //   border-radius: 0.125rem!important;
-  //   border: 0.188rem solid transparent!important;
-  //   background-color: $text-color-secondary!important;
-  // }
-  
-  // ::-webkit-scrollbar-track {
-  //   box-shadow: $box-shadow-inset!important;
-  // }
+// ::-webkit-scrollbar {
+//     width: 0.25rem!important;
+// }
+
+// ::-webkit-scrollbar-thumb {
+//   border-radius: 0.125rem!important;
+//   border: 0.188rem solid transparent!important;
+//   background-color: $text-color-secondary!important;
+// }
+
+// ::-webkit-scrollbar-track {
+//   box-shadow: $box-shadow-inset!important;
+// }
 
 // //

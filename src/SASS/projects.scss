@@ -1,477 +1,489 @@
 @import './variables.scss';
 
 .featured-projects-wrap {
-  display: flex;
-  margin-top: 3rem;
-  
-  // this is the for loop card // 
-  .featured-project {
     display: flex;
-    justify-content: center;
-    align-items: center;
-    position: relative;
-    
-    .proj-info {
-      position: absolute;
-      top: 1.5rem;
-      margin: 0rem 1rem;
-      
-      .proj-title {
+    margin-top: 3rem;
+
+    // this is the for loop card // 
+    .featured-project {
         display: flex;
-        
-        h4 {
-          display: inline-flex;
-          font-weight: bold;
-          text-decoration: overline;
-          text-decoration-style: wavy;
-          text-decoration-thickness: 2px;
-          color: $primary;
+        justify-content: center;
+        align-items: center;
+        position: relative;
+
+        .proj-info {
+            position: absolute;
+            top: 1.5rem;
+            margin: 0rem 1rem;
+
+            .proj-title {
+                display: flex;
+
+                h4 {
+                    display: inline-flex;
+                    font-weight: bold;
+                    text-decoration: overline;
+                    text-decoration-style: wavy;
+                    text-decoration-thickness: 2px;
+                    color: $primary;
+                }
+
+                small {
+                    margin-left: 1rem;
+                }
+            }
         }
-        
-        small {
-          margin-left: 1rem;
+
+        .feat-proj-card {
+            transform: scale(0.65);
+            padding: 1.5rem;
+            padding-bottom: 1rem;
+            border-radius: $border-radius;
+            box-shadow: $box-shadow-inset;
+
+            iframe {
+                height: 36.5rem;
+                width: 64rem;
+                background-color: $white;
+            }
         }
-      }
+
+        .tech-used {
+            display: flex;
+            position: absolute;
+            bottom: 4rem;
+            margin: 0rem 1rem;
+            justify-content: center;
+
+            .tech-badge {
+                border: 1px solid $background-color;
+                font-size: 0.77rem;
+                border-radius: 1.5rem;
+                box-shadow: $box-shadow-inset;
+                width: fit-content;
+                margin: 0.5rem;
+                background: $bg-concave;
+            }
+        }
+
+        .proj-links {
+            position: absolute;
+            bottom: 1.75rem;
+            margin: 0rem 1rem;
+
+            a {
+                width: fit-content;
+                padding: 0.133rem 1.25rem;
+                padding-left: 0.75rem;
+                margin: 0rem 1rem;
+                border-radius: $border-radius;
+                box-shadow: $box-shadow-1;
+                color: $primary !important;
+                font-size: 0.77rem;
+                font-weight: bold;
+                border-left: 0.5rem solid transparent;
+                transition: $transition-long;
+                text-decoration: none;
+
+                i {
+                    opacity: 0.8;
+                    transform: translateX(0rem);
+                    transition: $transition-long;
+                }
+
+                &:hover {
+                    box-shadow: $box-shadow-inset;
+                    color: $primary-dark !important;
+                    border-left: 0.5rem solid;
+
+                    i {
+                        opacity: 1;
+                        transform: translateX(0.5rem);
+                    }
+                }
+            }
+        }
     }
-    
-    .feat-proj-card {
-      transform: scale(0.65);
-      padding: 1.5rem;
-      padding-bottom: 1rem;
-      border-radius: $border-radius;
-      box-shadow: $box-shadow-inset;
-      
-      iframe {
-        height: 36.5rem;
-        width: 64rem;
-        background-color: $white;
-      }
-    }
-    
-    .tech-used {
-      display: flex;
-      position: absolute;
-      bottom: 4rem;
-      margin: 0rem 1rem;
-      justify-content: center;
-      
-      .tech-badge {
-        border: 1px solid $background-color;
-        font-size: 0.77rem;
-        border-radius: 1.5rem;
-        box-shadow: $box-shadow-inset;
-        width: fit-content;
-        margin: 0.5rem;
-        background: $bg-concave;
-      }
-    }
-    
-    .proj-links {
-      position: absolute;
-      bottom: 1.75rem;
-      margin: 0rem 1rem;
-      
-      a {
-        width: fit-content;
-        padding: 0.133rem 1.25rem;
-        padding-left: 0.75rem;
-        margin: 0rem 1rem;
-        border-radius: $border-radius;
+
+    .break-proj {
+        display: flex;
+        height: 0.25rem;
+        margin: 0rem auto;
+        margin-bottom: 8rem;
+        width: 20rem;
         box-shadow: $box-shadow-1;
-        color: $primary!important;
-        font-size: 0.77rem;
-        font-weight: bold;
-        border-left: 0.5rem solid transparent;
-        transition: $transition-long;
-        
-        i {
-          opacity: 0.8;
-          transform: translateX(0rem);
-          transition: $transition-long;
-        }
-        
-        &:hover {
-          box-shadow: $box-shadow-inset;
-          color: $primary-dark!important;
-          border-left: 0.5rem solid;
-          
-          i {
-            opacity: 1;
-            transform: translateX(0.5rem);
-          }
-        }
-      }
+        border-radius: 0.125rem;
     }
-  }
-  .break-proj {
-    display: flex;
-    height: 0.25rem;
-    margin: 0rem auto;
-    margin-bottom: 8rem;
-    width: 20rem;
-    box-shadow: $box-shadow-1;
-    border-radius: 0.125rem;
-  }
 }
 
 .git-pinned-row {
-  display: flex;
-  margin-top: 12rem;
-  margin-bottom: 12rem;
-  justify-content: center;
-  
-  .git-title-col {
     display: flex;
+    margin-top: 12rem;
+    margin-bottom: 12rem;
     justify-content: center;
-    
-    .git-title-col-card {
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-      align-items: center;
-      width: fit-content;
-      min-width: 20rem;
-      margin: 0rem 1rem 3rem 1rem;
-      color: $text-color-primary;
-      background-color: $background-color;
-      padding: 0.75rem 1.5rem;
-      border-radius: $border-radius;
-      transition: $transition;
-      
-      .control-git {
-        font-size: 1.25rem;
-        white-space: nowrap;
-        
-        span {
-          color: $primary;
-          font-weight: bold;
-        }
-      }
-      
-      .input-group {
-        &:focus-within {
-        
-          .input-group-text {
-            color: $primary;
-            background: $bg-concave;
-            border: 1px solid $primary;
-          }
-        }
-      }
-      
-      .input-group-text {
-        color: $primary-dark;
-        border: 1px solid $background-color;
-        padding: 0rem 0.5rem;
-        border-radius: $border-radius 0rem 0rem $border-radius;
-        background: $bg-convex;
-        box-shadow: $box-shadow-1;
-        transition: $transition;
-      }
-      
-      input {
-        border: none;
-        border-radius: 0rem $border-radius $border-radius 0rem;
-        background: $background-color;
-        box-shadow: $box-shadow-inset;
-        color: $text-color-primary;
-        padding: 0.25rem 0.75rem;
-        font-size: 0.88rem;
-        transition: $transition;
-        
-        &:focus, :active {
-          outline: none;
-          box-shadow: $box-shadow-1;
-        }
-      }
-      
-      .git-buttons {
-        position: relative;
+
+    .git-title-col {
         display: flex;
-        text-align: left;
-        
-        button {
-          position: relative;
-          z-index: 1;
-          border: none;
-          width: 5rem;
-          margin: 0rem 0.75rem;
-          background: transparent;
-          text-align: center;
-          padding: 0rem;
-          color: $text-color-primary;
-          transition: $transition;
-          
-          &:hover {
-            color: $primary;
-          }
-          
-          &.active {
-            color: $primary-dark;
-            font-weight: bold;
-            cursor: default;
-          }
-        }
-        
-        .git-float {
-          pointer-events: none;
-          display: flex;
-          position: absolute;
-          z-index: 0;
-          height: 1.5rem;
-          width: 6.5rem;
-          border-radius: $border-radius;
-          transition: 0.625s cubic-bezier(0.48, 0.89, 0.32, 1.28);
-          box-shadow: $box-shadow-1;
-          background: $background-color;
-          border: 1px solid $background-color;
-          
-          &.all-select {
-            transform: translateX(0rem);
-          }
-          &.react-select {
-            transform: translateX(6.5rem);
-          }
-          &.angular-select {
-            transform: translateX(13rem);
-          }
-        }
-      }
-    }
-  }
-  
-  .git-col { // looped
-    display: flex;
-    justify-content: center;
-    padding-top: 1rem;
-    padding-bottom: 1rem;
-    
-    .git-card { // <a/>
-      flex-grow: 1;
-      min-width: 20rem;
-      margin: 0rem 1rem;
-      color: $text-color-primary;
-      background-color: $background-color;
-      text-decoration: none;
-      padding: 0.25rem 0.5rem;
-      backface-visibility: hidden;
-      will-change: transform;
-      box-shadow: $box-shadow-1;
-      border: 1px solid $background-color;
-      border-radius: $border-radius;
-      transition: $transition-long;
-      transform-style: preserve-3d;
-      transform: perspective(1000px);
-      
-      &.even {
-        box-shadow: $box-shadow-inset;
-        
-        &:hover {
-          // background: $bg-concave;
-          
-          .card-info {
-            .repo-languages {
-              background: $background-color;
-              box-shadow: $box-shadow-1;
-            }
-          }
-          .card-foot {
-            .git-circle-outer {
-              background: $bg-convex;
-              box-shadow: none;
-              
-              .git-logo {
-                background: $bg-concave;
-                box-shadow: $box-shadow-1;
-              }
-            }
-          }
-        }
-      }
-      
-      &:hover {
-        text-decoration: none;
-        // background: $bg-convex;
-        @media only screen and (max-width: 992px) {
-          transform: scale(0.9);
-        }
-        
-        
-        &::before {
-          opacity: 1;
-        }
-        
-        .card-title {
-          color: $text-color-primary;
-          transform: translateZ(100px) scale(1.2) translateX(2rem);
-          // text-shadow: 1px 1px 0px $primary;
-          text-decoration: overline wavy;
-          text-shadow:1px 1px 0px $primary,
-                      1px 6px 4px rgba(0, 0, 0, 0.5),
-                      1px 8px 10px rgba(0, 0, 0, 0.4),
-                      1px 10px 35px $primary-dark;
-          
-          @media only screen and (max-width: 992px) {
-            color: $primary;
-            transform: translateZ(0px) scale(1) translateX(0rem);
-            text-shadow: none;
-            text-decoration: none;
-          }
-        }
-        
-        .card-info {
-          .card-desc {
-            // text-shadow: 1px 1px $black;
-            transform: translateZ(100px);
-            text-shadow:1px 1px 0px $black,
-                        1px 6px 4px rgba(0, 0, 0, 0.5),
-                        1px 8px 10px rgba(0, 0, 0, 0.4),
-                        1px 10px 35px rgba(0, 0, 0, 0.4);
-          }
-          .repo-languages {
-            background: $bg-concave;
-            box-shadow: $box-shadow-inset;
-          }
-        }
-        .card-foot {
-          .card-dates {
-            small {
-              span {
-                color: $primary-dark;
-                text-shadow: 1px 1px $primary-light;
-                transform: translateZ(100px);
-              }
-            }
-          }
-          .git-circle-outer {
-            background: $bg-concave;
-            transform: translate3d(-1.25rem,-0.75rem,100px) scale(1.1);
-            
-            @media only screen and (max-width: 992px) {
-              transform: translate3d(0rem,0rem,0px) scale(1);
-            }
-            
-            .git-logo {
-              background: $bg-convex;
-              box-shadow: $box-shadow-1;
-              transform: translate3d(-0.1rem,-0.1rem,100px) scale(1.05);
-              
-              i {
-                color: $primary;
-              }
-            }
-          }
-        }
-        
-      }
-      
-      &::before {
-        content: 'github_code_repo';
-        position: absolute;
-        top: 0px;
-        right: 0.5rem;
-        color: $text-color-secondary;
-        font-size: 0.75rem;
-        opacity: 0;
-        transition: $transition-long;
-      }
-      
-      .card-title {
-        display: flex;
-        flex-direction: row;
-        align-items: baseline;
-        padding: 0.25rem 0rem;
-        font-weight: bold;
-        transition: $transition-long;
-        will-change: transform;
-      }
-      
-      .card-info {
-        display: flex;
-        flex-direction: column;
-        text-align: center;
-        
-        .card-desc {
-          text-shadow: 1px 1px transparent;
-          text-align: left;
-          transition: $transition-long;
-          will-change: transform;
-        }
-        
-        .repo-languages {
-          border: 1px solid $background-color;
-          width: fit-content;
-          padding: 0 0.25rem;
-          margin: 0 auto;
-          border-radius: $border-radius;
-          box-shadow: none;
-          background: $background-color;
-          transition: $transition-long;
-          will-change: transform;
-          
-          &:hover {
-            border: 1px solid $primary-light;
-            transform: translateZ(120px);
-          }
-        }
-      }
-      
-      .card-foot {
-        display: flex;
-        align-items: flex-end;
-        
-        .card-dates {
-          display: flex;
-          flex-direction: column;
-          font-size: 0.88rem;
-          width: fit-content;
-          
-          small {
-            span {
-              color: $text-color-secondary;
-              text-shadow: 1px 1px $border-color;
-              transition: $transition-long;
-              will-change: transform;
-            }
-          }
-        }
-        
-        .git-circle-outer {
-          display: flex;
-          justify-content: center;
-          align-items: center;
-          width: 4rem;
-          height: 4rem;
-          margin: 0rem 0.25rem 0.5rem 0rem;
-          border-radius: $border-radius-circle;
-          background: $bg-concave;
-          box-shadow: $box-shadow-inset;
-          will-change: transform;
-          transition: $transition-long;
-          
-          .git-logo {
+        justify-content: center;
+
+        .git-title-col-card {
             display: flex;
+            flex-direction: column;
             justify-content: center;
             align-items: center;
-            width: 2.5rem;
-            height: 2.5rem;
-            border-radius: $border-radius-circle;
-            background: $background-color;
-            box-shadow: none;
-            border: 1px solid $background-color;
-            transition: $transition-long;
-            
-            i {
-              backface-visibility: hidden;
-              color: $text-color-secondary;
-              font-size: 2rem;
-              transition: $transition-long;
+            width: fit-content;
+            min-width: 20rem;
+            margin: 0rem 1rem 3rem 1rem;
+            color: $text-color-primary;
+            background-color: $background-color;
+            padding: 0.75rem 1.5rem;
+            border-radius: $border-radius;
+            transition: $transition;
+
+            .control-git {
+                font-size: 1.25rem;
+                white-space: nowrap;
+
+                span {
+                    color: $primary;
+                    font-weight: bold;
+                }
             }
-          }
+
+            .input-group {
+                &:focus-within {
+
+                    .input-group-text {
+                        color: $primary;
+                        background: $bg-concave;
+                        border: 1px solid $primary;
+                    }
+                }
+            }
+
+            .input-group-text {
+                color: $primary-dark;
+                border: 1px solid $background-color;
+                padding: 0rem 0.5rem;
+                border-radius: $border-radius 0rem 0rem $border-radius;
+                background: $bg-convex;
+                box-shadow: $box-shadow-1;
+                transition: $transition;
+            }
+
+            input {
+                border: none;
+                border-radius: 0rem $border-radius $border-radius 0rem;
+                background: $background-color;
+                box-shadow: $box-shadow-inset;
+                color: $text-color-primary;
+                padding: 0.25rem 0.75rem;
+                font-size: 0.88rem;
+                transition: $transition;
+
+                &:focus,
+                :active {
+                    outline: none;
+                    box-shadow: $box-shadow-1;
+                }
+            }
+
+            .git-buttons {
+                position: relative;
+                display: flex;
+                text-align: left;
+
+                button {
+                    position: relative;
+                    z-index: 1;
+                    border: none;
+                    width: 5rem;
+                    margin: 0rem 0.75rem;
+                    background: transparent;
+                    text-align: center;
+                    padding: 0rem;
+                    color: $text-color-primary;
+                    transition: $transition;
+
+                    &:hover {
+                        color: $primary;
+                    }
+
+                    &.active {
+                        color: $primary-dark;
+                        font-weight: bold;
+                        cursor: default;
+                    }
+                }
+
+                .git-float {
+                    pointer-events: none;
+                    display: flex;
+                    position: absolute;
+                    z-index: 0;
+                    height: 1.5rem;
+                    width: 6.5rem;
+                    border-radius: $border-radius;
+                    transition: 0.625s cubic-bezier(0.48, 0.89, 0.32, 1.28);
+                    box-shadow: $box-shadow-1;
+                    background: $background-color;
+                    border: 1px solid $background-color;
+
+                    &.all-select {
+                        transform: translateX(0rem);
+                    }
+
+                    &.react-select {
+                        transform: translateX(6.5rem);
+                    }
+
+                    &.angular-select {
+                        transform: translateX(13rem);
+                    }
+                }
+            }
         }
-      }
     }
-  }
+
+    .git-col {
+        // looped
+        display: flex;
+        justify-content: center;
+        padding-top: 1rem;
+        padding-bottom: 1rem;
+
+        .git-card {
+            // <a/>
+            flex-grow: 1;
+            min-width: 20rem;
+            margin: 0rem 1rem;
+            color: $text-color-primary;
+            background-color: $background-color;
+            text-decoration: none;
+            padding: 0.25rem 0.5rem;
+            backface-visibility: hidden;
+            will-change: transform;
+            box-shadow: $box-shadow-1;
+            border: 1px solid $background-color;
+            border-radius: $border-radius;
+            transition: $transition-long;
+            transform-style: preserve-3d;
+            transform: perspective(1000px);
+
+            &.even {
+                box-shadow: $box-shadow-inset;
+
+                &:hover {
+                    // background: $bg-concave;
+
+                    .card-info {
+                        .repo-languages {
+                            background: $background-color;
+                            box-shadow: $box-shadow-1;
+                        }
+                    }
+
+                    .card-foot {
+                        .git-circle-outer {
+                            background: $bg-convex;
+                            box-shadow: none;
+
+                            .git-logo {
+                                background: $bg-concave;
+                                box-shadow: $box-shadow-1;
+                            }
+                        }
+                    }
+                }
+            }
+
+            &:hover {
+                text-decoration: none;
+
+                // background: $bg-convex;
+                @media only screen and (max-width: 992px) {
+                    transform: scale(0.9);
+                }
+
+
+                &::before {
+                    opacity: 1;
+                }
+
+                .card-title {
+                    color: $text-color-primary;
+                    transform: translateZ(100px) scale(1.2) translateX(2rem);
+                    // text-shadow: 1px 1px 0px $primary;
+                    text-decoration: overline wavy;
+                    text-shadow: 1px 1px 0px $primary,
+                        1px 6px 4px rgba(0, 0, 0, 0.5),
+                        1px 8px 10px rgba(0, 0, 0, 0.4),
+                        1px 10px 35px $primary-dark;
+
+                    @media only screen and (max-width: 992px) {
+                        color: $primary;
+                        transform: translateZ(0px) scale(1) translateX(0rem);
+                        text-shadow: none;
+                        text-decoration: none;
+                    }
+                }
+
+                .card-info {
+                    .card-desc {
+                        // text-shadow: 1px 1px $black;
+                        transform: translateZ(100px);
+                        text-shadow: 1px 1px 0px $black,
+                            1px 6px 4px rgba(0, 0, 0, 0.5),
+                            1px 8px 10px rgba(0, 0, 0, 0.4),
+                            1px 10px 35px rgba(0, 0, 0, 0.4);
+                    }
+
+                    .repo-languages {
+                        background: $bg-concave;
+                        box-shadow: $box-shadow-inset;
+                    }
+                }
+
+                .card-foot {
+                    .card-dates {
+                        small {
+                            span {
+                                color: $primary-dark;
+                                text-shadow: 1px 1px $primary-light;
+                                transform: translateZ(100px);
+                            }
+                        }
+                    }
+
+                    .git-circle-outer {
+                        background: $bg-concave;
+                        transform: translate3d(-1.25rem, -0.75rem, 100px) scale(1.1);
+
+                        @media only screen and (max-width: 992px) {
+                            transform: translate3d(0rem, 0rem, 0px) scale(1);
+                        }
+
+                        .git-logo {
+                            background: $bg-convex;
+                            box-shadow: $box-shadow-1;
+                            transform: translate3d(-0.1rem, -0.1rem, 100px) scale(1.05);
+
+                            i {
+                                color: $primary;
+                            }
+                        }
+                    }
+                }
+
+            }
+
+            &::before {
+                content: 'github_code_repo';
+                position: absolute;
+                top: 0px;
+                right: 0.5rem;
+                color: $text-color-secondary;
+                font-size: 0.75rem;
+                opacity: 0;
+                transition: $transition-long;
+            }
+
+            .card-title {
+                display: flex;
+                flex-direction: row;
+                align-items: baseline;
+                padding: 0.25rem 0rem;
+                font-weight: bold;
+                transition: $transition-long;
+                will-change: transform;
+            }
+
+            .card-info {
+                display: flex;
+                flex-direction: column;
+                text-align: center;
+
+                .card-desc {
+                    text-shadow: 1px 1px transparent;
+                    text-align: left;
+                    transition: $transition-long;
+                    will-change: transform;
+                }
+
+                .repo-languages {
+                    border: 1px solid $background-color;
+                    width: fit-content;
+                    padding: 0 0.25rem;
+                    margin: 0 auto;
+                    border-radius: $border-radius;
+                    box-shadow: none;
+                    background: $background-color;
+                    transition: $transition-long;
+                    will-change: transform;
+
+                    &:hover {
+                        border: 1px solid $primary-light;
+                        transform: translateZ(120px);
+                    }
+                }
+            }
+
+            .card-foot {
+                display: flex;
+                align-items: flex-end;
+
+                .card-dates {
+                    display: flex;
+                    flex-direction: column;
+                    font-size: 0.88rem;
+                    width: fit-content;
+
+                    small {
+                        span {
+                            color: $text-color-secondary;
+                            text-shadow: 1px 1px $border-color;
+                            transition: $transition-long;
+                            will-change: transform;
+                        }
+                    }
+                }
+
+                .git-circle-outer {
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    width: 4rem;
+                    height: 4rem;
+                    margin: 0rem 0.25rem 0.5rem 0rem;
+                    border-radius: $border-radius-circle;
+                    background: $bg-concave;
+                    box-shadow: $box-shadow-inset;
+                    will-change: transform;
+                    transition: $transition-long;
+
+                    .git-logo {
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                        width: 2.5rem;
+                        height: 2.5rem;
+                        border-radius: $border-radius-circle;
+                        background: $background-color;
+                        box-shadow: none;
+                        border: 1px solid $background-color;
+                        transition: $transition-long;
+
+                        i {
+                            backface-visibility: hidden;
+                            color: $text-color-secondary;
+                            font-size: 2rem;
+                            transition: $transition-long;
+                        }
+                    }
+                }
+            }
+        }
+    }
 }
 
 // @keyframes pulse {
@@ -481,34 +493,37 @@
 // }
 
 @media only screen and (max-width: 1020px) {
-  .featured-projects-wrap {
-    .featured-project {
-      .proj-info {
-        text-align: center;
-        top: 2.25rem;
-        
-        .proj-title {
-          justify-content: center;
-          
-          h4 {
-            margin-left: 1rem;
-          }
+    .featured-projects-wrap {
+        .featured-project {
+            .proj-info {
+                text-align: center;
+                top: 2.25rem;
+
+                .proj-title {
+                    justify-content: center;
+
+                    h4 {
+                        margin-left: 1rem;
+                    }
+                }
+            }
+
+            .feat-proj-card {
+                iframe {
+                    width: 26rem;
+                    height: 44rem;
+                }
+            }
+
+            .tech-used {
+                bottom: 5.5rem;
+            }
+
+            .proj-links {
+                bottom: 2.5rem;
+            }
         }
-      }
-      .feat-proj-card {
-        iframe {
-          width: 26rem;
-          height: 44rem;
-        }
-      }
-      .tech-used {
-        bottom: 5.5rem;
-      }
-      .proj-links {
-        bottom: 2.5rem;
-      }
     }
-  }
 }
 
 // //
